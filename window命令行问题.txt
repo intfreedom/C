@@ -1,0 +1,3 @@
+﻿1.Window10用管理员账户登录，cmd，输入tasklist可以；
+直接cmd不行，
+2.在cmd输入start notepad可以，直接不可以，为何，有何区别；
