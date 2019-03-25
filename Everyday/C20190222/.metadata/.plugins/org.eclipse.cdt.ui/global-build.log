@@ -1,0 +1,5 @@
+10:40:35 **** Incremental Build of configuration Debug for project PointC ****
+Info: Internal Builder is used for build
+gcc -o PointC.exe Cdemo.o 
+c:/mingw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PointC.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status

@@ -1,0 +1,161 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define BLUE 'B'
+#define WHITE 'W'
+#define RED 'R'
+#define swap(x,y){char temp;\
+	temp=color[x];\
+	color[x]=color[y];\
+	color[y]=temp;}
+
+
+int main()
+{
+	char color[]={'R','W','B','W','W','B','R','B','W','R','\0'};
+	int w=0;
+	int b=0;
+	int r=strlen(color)-1;
+	int i;
+
+	for(i=0;i<strlen(color);i++)
+	{
+		printf("%c",color[i]);
+	}
+	printf("\n");
+	while(w<=r)
+	{
+		if(color[w]==WHITE)
+			w++;
+		else
+		{
+			if(color[w]==BLUE)
+			{
+				swap(b,w)
+				b++;
+				w++;
+			}
+			else
+			{
+				while(w<r&&color[r]==RED)
+					r--;
+				swap(r,w);
+					r--;
+			}
+		}
+	}
+	for(i=0;i<strlen(color);i++)
+		printf("%c",color[i]);
+	printf("\n");
+	return 0;
+
+}
+
+
+
+
+
+//#include<stdio.h>
+//
+//int main()
+//{
+//	int hanoi(int,char,char,char);
+//	hanoi(3,'A','B','C');
+//}
+//
+//int hanoi(int n,char x, char y,char z)
+//{
+//	int move(char,int,char);
+//	if(n==1)
+//	{
+//		move(x,n,z);
+//	}
+//	else
+//	{
+//		hanoi(n-1,x,z,y);
+//		move(x,n,z);
+//		hanoi(n-1,y,x,z);
+//	}
+//	return 0;
+//}
+//
+//int move(char m, int number, char n)
+//{
+//	printf("Move the disk %d from %c to %c\n",number, m, n);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//
+//int main()
+//{
+//	int hanoi(int,char,char,char);
+//	hanoi(3,'A','B','C');
+//
+//	return 0;
+//}
+//
+//int hanoi(int n,char x, char y,char z)
+//{
+//	int move(char, int, char);
+//	if(n==1)
+//	{
+//		move(x,n,z);
+//	}
+//	else
+//	{
+//		hanoi(n-1,x,z,y);
+//		move(x,n,z);
+//		hanoi(n-1,y,x,z);
+//	}
+//
+//	return 0;
+//}
+//
+//int move(char m,int number, char n )
+//{
+//	printf("move the disk %d from %c to %c\n", number,m,n);
+//	return 0;
+//}
+//
+//
+//
+
+//#include<stdio.h>
+//
+//int k = 1;
+//int main()
+//{
+//	int hanoi(int,char,char,char);
+//	int n;
+//	printf("Input the number of disks: ");
+//	scanf("%d",&n);
+//	printf("\n");
+//	hanoi(n,'A','B','C');
+//	printf("The total number is %d\n", k-1);
+//
+//	return 0;
+//}
+//
+//
+//int hanoi(int n,char x,char y,char z)
+//{
+//	int move(char,int,char);
+//	if(n==1)
+//		move(x,1,z);
+//	else
+//	{
+//		hanoi(n-1,x,z,y);
+//		move(x,n,z);
+//		hanoi(n-1,y,x,z);
+//	}
+//
+//	return 0;
+//}
+//
+//int move(char getone,int n, char putone)
+//{
+//	printf("%2d:%3d ||| %c--%c\n",k,n,getone,putone);
+//	k++;
+//	return 0;
+//}

@@ -1,0 +1,18 @@
+17:04:17 **** Incremental Build of configuration Debug for project PointSupport ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o PointS.o "..\\PointS.c" 
+..\PointS.c: In function 'main':
+..\PointS.c:14:12: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'int *' [-Wformat=]
+  printf("%#X\n",pl);
+          ~~^    ~~
+          %#n
+..\PointS.c:8:9: warning: unused variable 'pf' [-Wunused-variable]
+  float* pf;
+         ^~
+..\PointS.c:7:8: warning: unused variable 'pc' [-Wunused-variable]
+  char* pc;
+        ^~
+gcc -o PointSupport.exe PointS.o 
+
+17:04:17 Build Finished. 0 errors, 3 warnings. (took 605ms)
+
