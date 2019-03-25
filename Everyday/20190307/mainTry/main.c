@@ -7,3 +7,8 @@ int main()
 
 	return 0;
 }
+int voidsd()
+{
+	int a = 4;
+	
+}
