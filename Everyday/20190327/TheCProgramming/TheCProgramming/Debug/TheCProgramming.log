@@ -1,0 +1,3 @@
+﻿  UNIXgrep.c
+d:\02ability\learnc\everyday\20190327\thecprogramming\thecprogramming\unixgrep.c(47): warning C4715: “strindex”: 不是所有的控件路径都返回值
+  TheCProgramming.vcxproj -> D:\02ability\LearnC\Everyday\20190327\TheCProgramming\Debug\TheCProgramming.exe
