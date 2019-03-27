@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+#include<windows.h>
+int main(){
+	HANDLE hOut;
+	COORD pos={5,2};
+	hOut=GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleCursorPosition(hOut,pos);
+	SetConsoleTextAttribute(hOut,0x0c|0x0e|0x22);
+	printf("hello world!\n");
+	return 0;
+}

@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <malloc.h>
+#include <stdlib.h>
+
+#define LEN sizeof(struct student)
+
+struct student *creat();
+struct student *del(struct student *head, int num);
+
+void print(struct student *head);
+
+struct student
+{
+		int num;
+		float score;
+		struct student *next;
+};
+
+int n;//global varity, data;
+
+void main()
+{
+	struct student *stu, *p;
+	int n;
+
+	stu = creat();
+	p = stu;
+	print(p);
+
+	printf("Please enter the num to delete: ");
+	scanf("%d",&n);
+	printf(del(p,n));
+
+	printf("\n\n");
+	system("pause");
+}
+
+struct student *creat()
+{
+
+}
+
+struct student *del(struct student *head,int num)
+{
+	struct student *p1,*p2;
+
+	if(NULL == head)
+	{
+		printf("\nThis list is null!\n");
+		goto END;
+	}
+
+	p1 = head;
+	while(p1->num != num && p1->next != NULL)
+	{
+		p2 = p1;
+		p1 = p1->next;
+	}
+	if(num == p1->num)
+	{
+		if(p1 == head)
+		{
+			head = p1->next;
+		}
+		else
+		{
+
+		}
+	}
+END:
+	return head;
+}

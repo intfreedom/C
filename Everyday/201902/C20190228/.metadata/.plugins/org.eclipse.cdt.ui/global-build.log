@@ -1,0 +1,11 @@
+13:44:46 **** Rebuild of configuration Debug for project HanoiTowerC ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o HanoiTowerDemo.o "..\\HanoiTowerDemo.c" 
+..\HanoiTowerDemo.c:41:1: warning: multi-line comment [-Wcomment]
+ //#define swap(x,y){char temp;\
+ ^
+gcc -o HanoiTowerC.exe HanoiTowerDemo.o 
+
+13:44:47 Build Finished. 0 errors, 1 warnings. (took 890ms)
+
+Info: Nothing to build for HanoiTowerC

@@ -1,0 +1,362 @@
+#include<stdio.h>
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<time.h>
+#include<windows.h>
+#include<stdlib.h>
+#include<conio.h>
+
+
+#define U 1
+#define D 2
+#define L 3
+#define R 4
+
+typedef struct snake
+{
+	int x;
+	int y;
+	struct snake*next;
+} snake;
+int score=0,add=10;
+int status,sleeptime=200;
+snake *head,*food;
+snake *q;
+int endgamestatus=0;
+HANDLE hOut;
+
+void getoxy(int x, int y);
+int color(int c);
+void welcometogame();
+void createMap();
+void scoreandtips();
+void initsnake();
+void createfood();
+int biteself();
+void cantcrosswall();
+void speedup();
+void speeddown();
+void snakemove();
+void keyboardControl();
+void Lostdraw();
+void endgame();
+void choose();
+void explation();
+
+void gotoxy(int x, int y)
+{
+	COORD c;
+	c.X=x;
+	c.Y=y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),c);
+}
+
+int color(int c)
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),c);
+	return 0;
+}
+
+void welcometogame()
+{
+	int n;
+	gotoxy(43,10);
+	color(11);
+	printf("Snake off!!!");
+	color(12);
+	gotoxy(25,22);
+	printf("1.Start Games");
+	gotoxy(45,22);
+	printf("2.Games Introduction");
+	gotoxy(65,22);
+	printf("3.Quit Game");
+	gotoxy(40,27);
+	color(3);
+	printf("Please choose 1 2 3: ");
+	color(14);
+	scanf("%d",&n);
+	switch(n)
+	{
+		case 1:
+			system("cls");
+			createMap();
+			initsnake();
+			createfood();
+			keyboardControl();
+			break;
+		case 2:
+			explation();
+			break;
+		case 3:
+			exit(0);
+			break;
+		default:
+			color(12);
+			gotoxy(40,28);
+			printf("Please input 1-3!!!");
+			_getch();
+			system("cls");
+			welcometogame();
+	}
+}
+
+void createMap()
+{
+	int i,j;
+	for(i=0;i<58;i+=2)
+	{
+		gotoxy(i,0);
+		color(5);
+		printf("□");
+		gotoxy(i,26);
+		printf("□");
+	}
+	for(i=1;i<26;i++)
+	{
+		gotoxy(0,i);
+		printf("□");
+		gotoxy(56,i);
+		printf("□");
+	}
+	for(i=2;i<56;i+=2)
+	{
+		for(j=1;j<26;j++)
+		{
+			gotoxy(i,j);
+			color(3);
+			printf("■");
+		}
+	}
+}
+
+void scoreandtips()
+{
+	gotoxy(64,8);
+	color(14);
+	printf("Gores:%d",score);
+
+	gotoxy(64,14);
+	printf("Every food score is:%d",add);
+	gotoxy(64,16);
+	printf("Can't through the wall, cant't bite yourself");
+	gotoxy(64,18);
+	printf("use keyboard control the moving of snake");
+	gotoxy(64,20);
+	printf("F1 is speed up,F2 is speed down");
+	gotoxy(64,22);
+	printf("space: pause games");
+	gotoxy(64,24);
+	printf("ESC: quit games");
+}
+
+void initsnake()
+{
+	snake *tail;
+	int i;
+	tail=(snake*)malloc(sizeof(snake));//动态分配内存
+	tail->x=24;//蛇初始位置（24，5）
+	tail->y=5;
+	tail->next=NULL;
+	for(i=1;i<=4;i++)
+	{
+		head=(snake*)malloc(sizeof(snake));
+		head->next=tail;
+		head->x=24+2*i;
+		head->y=5;
+		tail=head;
+	}
+	while(tail!=NULL)
+	{
+		gotoxy(tail->x,tail->y);
+		color(14);
+		printf("★");
+		tail=tail->next;
+	}
+}
+
+void createfood()
+{
+	snake *food_1;
+	srand((unsigned)time(NULL));
+	food_1=(snake*)malloc(sizeof(snake));
+	while((food_1->x%2)!=0)
+	{
+		food-1->x=rand()%52+2;
+	}
+	food_1->y=rand()%52+2;
+	q=head;
+	while(q->next==NULL)
+	{
+		if(q->x==food_1->x && q->y==food_1->y)
+		{
+			free(food_1);
+			createfood();
+		}
+		q=q->next;
+	}
+	gotoxy(food_1->x,food_1->y);
+	food=food_1;
+	color(12);
+	printf("●");
+}
+
+int biteself()
+{
+	snake *self;
+	self=head->next;
+	while(self!=NULL)
+	{
+		if(self->x==head-x&&self->y==head->y)
+		{
+			return 1;
+		}
+		self=self->next;
+	}
+	return 0;
+}
+
+void cantcrosswall()
+{
+	if(head->x==0 || head->x==56 || head->y==0 || head->y==26)
+	{
+		endgamestatus=1;
+		endgame();
+	}
+}
+
+
+
+void speedup()
+{
+	if(sleeptime>=50)
+	{
+		sleeptime=sleeptime-10;
+		add=add+2;
+	}
+}
+
+void speeddown()
+{
+	if(sleeptime<350)
+	{
+		sleeptime=sleeptime+30;
+		add=add-2;
+	}
+}
+
+
+void snakemove()
+{
+	snake *nexthead;
+	cantcrosswall();
+	nexthead=(snake*)malloc(sizeof(snake));
+	if(status==U)
+	{
+		nexthead->x=head->x;
+		nexthead->y=head->y-1;
+		nexthead->next=head;
+		head=nexthead;
+		q=head;
+		if(nexthead->x==food->x&&nexthead->y)
+		{
+			while(q!=NULL)
+			{
+				gotoxy(q->x,q->y);
+				color(14);
+				printf("★");
+				q=q->next;
+			}
+			score=score+add;
+			speedup();
+			createfood();
+		}
+		else
+		{
+			while(q->next->next!=NULL)
+			{
+				gotoxy(q->x,q->y);
+				color(14);
+				printf("★");
+				q=q->next;
+
+			}
+			gotoxy(q->next->x,q->next->y);
+			color(3);
+			printf("■");
+			free(q->next);
+			q->next=NULL;
+		}
+	}
+	if(status==D)
+	{
+		nexthead->x=head->x;
+		nexthead->y=head->y+1;
+		nexthead->next=head;
+		head=nexthead;
+		q=head;
+		if(nexthead->x==food->x && nexthead ->y==food->y)
+		{
+			while(q!=NULL)
+			{
+				gotoxy(q->x,q->y);
+				color(14);
+				printf("★");
+				q=q->next;
+			}
+			score=score+add;
+			speedup();//tan.c line 350;
+			createfood();
+		}
+		else
+		{
+			while(q->next->next!=NULL)
+			{
+				gotoxy(q->x,q->y);
+				color(14);
+				printf("★");
+				q=q->next;
+			}
+			gotoxy(q->next->x,q->next->y);
+			color(3);
+			printf("■");
+			free(q->next);
+			q->next=NULL;
+		}
+	}
+	if(status==L)
+	{
+		nexthead->x=head->x-2;
+		nexthead->y=head->y;
+		nexthead->next=head;
+		head=nexthead;
+		q=head;
+		if(nexthead->x==food->x && nexthead->y==food->y)
+		{
+			while(q!=NULL)
+			{
+				gotoxy(q->x,q->y);
+				color(14);
+				printf("★");
+			}
+		}
+	}
+}
+
+
+
+
+
+
+int main()
+{
+	int var1 = 20;
+	char var2[10];
+	int *ip;
+	ip = &var1;
+
+	printf("the address of var1 is: %p\n",&var1);
+	printf("the address of var2 is: %p\n",&var2);
+	printf("the address of var1 is: %p\n",ip);
+	printf("the value of var1 is: %d\n",*ip);
+
+	return 0;
+}

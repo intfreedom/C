@@ -1,0 +1,10 @@
+LaunchTargetManager/configs/PointSupport.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/pointC.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:tryGamesTan.exe,org.eclipse.launchbar.core.descriptorType.default\:pointC.exe,org.eclipse.launchbar.core.descriptorType.default\:PointSupport.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:pointC.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:tryGamesTan.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:tryGamesTan.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
