@@ -1,0 +1,2 @@
+1.学习Tkinter时，运用面向对象，出错；
+stroopTest_erro_2018111701.py

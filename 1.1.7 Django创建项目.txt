@@ -1,0 +1,57 @@
+1.1.1
+设置之前用http://106.12.96.18/可以访问到页面；
+1.1.2
+建立/var/www/djangostudy目录，
+1.1.2.1执行django-admin.py报错：
+
+-bash: django-admin.py: 
+command not found
+
+原因：环境变量中找不到django-admin.py
+
+解决办法：
+
+
+软连接：
+ln -s /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/bin/django-admin.py /usr/local/bin
+
+然后再执行django-admin.py，运行成功
+--------------------- 
+1.1.2.2建立软连接，ln -s /usr/local/python3/lib/python3.6/site-packages/django/bin/django-admin.py /usr/local/bin
+有时候我们在liunx上想修改查看python的包路径可以试试以下命令
+>>> from distutils.sysconfig import get_python_lib
+>>> print(get_python_lib())
+得到的结果：/usr/local/python/lib/python3.6/site-packages
+
+1.1.3先用绝对路径创建项目，后续设置软连接；
+python3 /usr/local/python3/lib/python3.6/site-packages/django/bin/django-admin.py startproject blog
+
+进行到https://blog.csdn.net/a249900679/article/details/51527200
+下的#python manage.py startapp apptest
+报错如下：
+no module named _sqlite3
+解决： 
+1 安装 sqlite-devel：shell> yum install sqlite-devel
+2 重新编译python
+shell> cd /usr/local/python3.6.4(python源码安装文件解压后的文件夹，我的是Python*)
+shell> ./configure     #./configure --enable-optimizations
+shell> make
+shell> make install
+
+临时添加export  PATH="$PATH:/usr/local/python"
+
+pip3 install virtualenv
+cd [项目目录]
+virtualenv venv
+这时候返回执行1.1.3绝对路径创建项目，无法成功，报错；
+没有进展，还退步；
+
+vi ~/.bash_profile
+打开bash_profile文件,用vim编辑(之前特意学了常用命令,但还是忘了,就记得 i 进入编辑模式,esc 进入命令模式,:wq 保存并退出)
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH # 在这一行增加python的bin路径,如下 export PATH=$HOME/bin:/usr/python/bin:/usr/local/bin:$PATH
+将python的bin文件路径添加到$PATH,问题就解决了。再按 pip 试试,是不是列出了帮助文件~~~
+
+当然,如果shell用的zsh,那就是修改~.zshrc文件,最后再更新下PATH
+
+1.1.3.1https://blog.csdn.net/g695144224/article/details/53876209相似问题参考；
