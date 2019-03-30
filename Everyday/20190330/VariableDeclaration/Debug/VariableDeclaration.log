@@ -1,0 +1,7 @@
+﻿  VariableDeclarationDemo.c
+d:\009c\learnc\everyday\20190330\variabledeclaration\variabledeclarationdemo.c(28): warning C4305: “初始化”: 从“double”到“float”截断
+d:\009c\learnc\everyday\20190330\variabledeclaration\variabledeclarationdemo.c(29): warning C4305: “初始化”: 从“double”到“float”截断
+d:\009c\learnc\everyday\20190330\variabledeclaration\variabledeclarationdemo.c(30): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+d:\009c\learnc\everyday\20190330\variabledeclaration\variabledeclarationdemo.c(41): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“double”
+d:\009c\learnc\everyday\20190330\variabledeclaration\variabledeclarationdemo.c(43): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  VariableDeclaration.vcxproj -> D:\009C\LearnC\Everyday\20190330\ASCII\Debug\VariableDeclaration.exe
