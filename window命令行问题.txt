@@ -1,3 +1,4 @@
 ﻿1.Window10用管理员账户登录，cmd，输入tasklist可以；
 直接cmd不行，
 2.在cmd输入start notepad可以，直接不可以，为何，有何区别；
+3.抓包工具Ethereal，Cisco Packet Tracer v7.0 思科官方网络模拟器；
