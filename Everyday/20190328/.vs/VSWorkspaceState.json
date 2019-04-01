@@ -4,8 +4,12 @@
     "\\define",
     "\\defineDemo",
     "\\define\\define",
-    "\\Values"
+    "\\Memory",
+    "\\SystemChange",
+    "\\SystemChange\\SystemChange",
+    "\\Values",
+    "\\VariableChange\\x64"
   ],
-  "SelectedNode": "\\Values\\Values.c",
+  "SelectedNode": "\\Memory\\int.c",
   "PreviewInSolutionExplorer": false
 }
