@@ -1,0 +1,18 @@
+﻿  P55_2prinf.c
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(43): warning C4305: “初始化”: 从“double”到“float”截断
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(58): warning C4476: "printf": 格式说明符中的类型字段字符“D”未知
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(58): warning C4474: printf: 格式字符串中传递的参数太多
+  d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(58): note: 占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(59): warning C4476: "printf": 格式说明符中的类型字段字符“O”未知
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(59): warning C4474: printf: 格式字符串中传递的参数太多
+  d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(59): note: 占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(60): warning C4476: "printf": 格式说明符中的类型字段字符“U”未知
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(60): warning C4474: printf: 格式字符串中传递的参数太多
+  d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(60): note: 占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(62): warning C4477: “printf”: 格式字符串“%E”需要类型“double”的参数，但可变参数 1 拥有了类型“int”
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(67): warning C4474: printf: 格式字符串中传递的参数太多
+  d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(67): note: 占位符和其参数预计 2 可变参数，但提供的却是 5 参数
+d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(68): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+  d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(68): note: 占位符和其参数预计 6 可变参数，但提供的却是 3 参数
+  d:\009c\learnc\everyday\20190401\20190401\p55_2prinf.c(68): note: 缺失的可变参数 4 为格式字符串“%d”所需
+  20190401.vcxproj -> D:\009C\LearnC\Everyday\20190401\Debug\20190401.exe
