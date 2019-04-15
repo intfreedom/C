@@ -1,0 +1,3 @@
+﻿  Bool.c
+d:\009c\learnc\everyday\20190415\p66\p66\bool.c(12): warning C4476: "sprintf": 格式说明符中的类型字段字符“/”未知
+  P66.vcxproj -> D:\009C\LearnC\Everyday\20190415\P66\Debug\P66.exe
