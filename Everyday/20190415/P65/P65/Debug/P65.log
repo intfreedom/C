@@ -1,0 +1,6 @@
+﻿  Character.c
+d:\02ability\learnc\everyday\20190415\p65\p65\character.c(9): warning C4013: “system”未定义；假设外部返回 int
+d:\02ability\learnc\everyday\20190415\p65\p65\character.c(33): warning C4477: “wprintf”: 格式字符串“%ls”需要类型“unsigned short *”的参数，但可变参数 1 拥有了类型“char *”
+  d:\02ability\learnc\everyday\20190415\p65\p65\character.c(33): note: 请考虑在格式字符串中使用“%hs”
+  d:\02ability\learnc\everyday\20190415\p65\p65\character.c(33): note: 请考虑在格式字符串中使用“%Ts”
+  P65.vcxproj -> D:\02ability\LearnC\Everyday\20190415\P65\Debug\P65.exe
