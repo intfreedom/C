@@ -1,0 +1,5 @@
+﻿  P73.c
+d:\009c\learnc\everyday\20190416\sixday\sixday\p73.c(21): warning C4101: “a”: 未引用的局部变量
+d:\009c\learnc\everyday\20190416\sixday\sixday\p73.c(24): warning C4101: “a”: 未引用的局部变量
+d:\009c\learnc\everyday\20190416\sixday\sixday\p73.c(26): warning C4101: “a”: 未引用的局部变量
+  SixDay.vcxproj -> D:\009C\LearnC\Everyday\20190416\SixDay\Debug\SixDay.exe

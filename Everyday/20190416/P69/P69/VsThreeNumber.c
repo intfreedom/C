@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 //排序算法
-int main()
+int main69()
 {
 
 	int a, b, c;
@@ -21,3 +21,17 @@ int main()
 }
 
 
+void main()
+{
+
+	char c;
+	int d = 9999;
+	printf("请输入一个字符： ");
+	scanf("%c",&c);
+	c = c ^ d;
+	printf("加密后： %c\n",c);
+	c = c ^ d;
+	printf("解密后： %c\n",c);
+	system("pause");
+
+}
