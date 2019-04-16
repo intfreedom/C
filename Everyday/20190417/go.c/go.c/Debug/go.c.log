@@ -1,0 +1,10 @@
+﻿  go.c
+d:\02ability\learnc\everyday\20190417\go.c\go.c\go.c(46): warning C4047: “函数”:“BYTE”与“char [2]”的间接级别不同
+d:\02ability\learnc\everyday\20190417\go.c\go.c\go.c(46): warning C4024: “keybd_event”: 形参和实参 1 的类型不同
+d:\02ability\learnc\everyday\20190417\go.c\go.c\go.c(47): warning C4047: “函数”:“BYTE”与“char [2]”的间接级别不同
+d:\02ability\learnc\everyday\20190417\go.c\go.c\go.c(47): warning C4024: “keybd_event”: 形参和实参 1 的类型不同
+d:\02ability\learnc\everyday\20190417\go.c\go.c\go.c(67): warning C4047: “函数”:“BYTE”与“char [2]”的间接级别不同
+d:\02ability\learnc\everyday\20190417\go.c\go.c\go.c(67): warning C4024: “keybd_event”: 形参和实参 1 的类型不同
+d:\02ability\learnc\everyday\20190417\go.c\go.c\go.c(68): warning C4047: “函数”:“BYTE”与“char [2]”的间接级别不同
+d:\02ability\learnc\everyday\20190417\go.c\go.c\go.c(68): warning C4024: “keybd_event”: 形参和实参 1 的类型不同
+  go.c.vcxproj -> D:\02ability\LearnC\Everyday\20190417\go.c\Debug\KeyboardWindows.exe
