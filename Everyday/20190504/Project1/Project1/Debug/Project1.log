@@ -1,0 +1,7 @@
+﻿  PointSort.c
+d:\009c\learnc\everyday\20190504\project1\project1\pointsort.c(15): warning C4013: “system”未定义；假设外部返回 int
+d:\009c\learnc\everyday\20190504\project1\project1\pointsort.c(79): warning C4047: “函数”:“const char *”与“char”的间接级别不同
+d:\009c\learnc\everyday\20190504\project1\project1\pointsort.c(79): warning C4024: “strcmp”: 形参和实参 1 的类型不同
+d:\009c\learnc\everyday\20190504\project1\project1\pointsort.c(79): warning C4024: “strcmp”: 形参和实参 2 的类型不同
+d:\009c\learnc\everyday\20190504\project1\project1\pointsort.c(99): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
+  Project1.vcxproj -> D:\009C\LearnC\Everyday\20190504\Project1\Debug\Project1.exe
