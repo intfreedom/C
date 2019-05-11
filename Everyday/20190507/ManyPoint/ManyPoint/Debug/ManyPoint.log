@@ -1,0 +1,10 @@
+﻿  ThreePoint.c
+d:\009c\learnc\everyday\20190507\manypoint\manypoint\threepoint.c(8): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
+d:\009c\learnc\everyday\20190507\manypoint\manypoint\threepoint.c(9): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int (*)[4]”
+d:\009c\learnc\everyday\20190507\manypoint\manypoint\threepoint.c(10): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
+d:\009c\learnc\everyday\20190507\manypoint\manypoint\threepoint.c(11): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int (*)[3][4]”
+d:\009c\learnc\everyday\20190507\manypoint\manypoint\threepoint.c(12): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
+d:\009c\learnc\everyday\20190507\manypoint\manypoint\threepoint.c(13): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int (*)[4]”
+d:\009c\learnc\everyday\20190507\manypoint\manypoint\threepoint.c(14): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
+d:\009c\learnc\everyday\20190507\manypoint\manypoint\threepoint.c(15): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int (*)[3][4]”
+  ManyPoint.vcxproj -> D:\009C\LearnC\Everyday\20190507\ManyPoint\Debug\ManyPoint.exe
