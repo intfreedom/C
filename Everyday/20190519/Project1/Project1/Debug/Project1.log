@@ -1,0 +1,4 @@
+﻿  Ponit8.c
+d:\009c\learnc\everyday\20190519\project1\project1\ponit8.c(8): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“char **”
+d:\009c\learnc\everyday\20190519\project1\project1\ponit8.c(11): warning C4013: “system”未定义；假设外部返回 int
+  Project1.vcxproj -> D:\009C\LearnC\Everyday\20190519\Project1\Debug\Project1.exe
