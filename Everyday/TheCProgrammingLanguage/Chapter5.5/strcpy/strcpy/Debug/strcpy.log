@@ -1,0 +1,4 @@
+﻿  strcpydemo.c
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(25): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[13]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(41): warning C4013: “system”未定义；假设外部返回 int
+  strcpy.vcxproj -> D:\02ability\LearnC\Everyday\TheCProgrammingLanguage\Chapter5.5\strcpy\Debug\strcpy.exe
