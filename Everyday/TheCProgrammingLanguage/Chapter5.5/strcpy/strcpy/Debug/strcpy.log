@@ -1,21 +1,35 @@
 ﻿  strcpydemo.c
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(26): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[13]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(39): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(40): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(41): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(42): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *(*)[3]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(45): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(46): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(47): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(48): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(49): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(50): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(59): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[3][20]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(62): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(63): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(64): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(65): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(66): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(67): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(76): warning C4013: “system”未定义；假设外部返回 int
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(14): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(14): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(15): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(15): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char (*)[35]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(29): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[13]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(56): warning C4047: “=”:“int *”与“int”的间接级别不同
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(57): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(66): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(69): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(70): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(71): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(72): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(73): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(74): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(77): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(77): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char *(*)[3]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(81): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(82): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(83): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(84): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(85): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(86): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(95): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[3][20]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(98): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(99): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(100): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(101): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(102): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(103): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(112): warning C4013: “system”未定义；假设外部返回 int
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(60): warning C4047: “初始化”:“int *”与“int”的间接级别不同
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(55): warning C4101: “apintthree”: 未引用的局部变量
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.5\strcpy\strcpy\strcpydemo.c(55): warning C4101: “apinttwo”: 未引用的局部变量
   strcpy.vcxproj -> D:\02ability\LearnC\Everyday\TheCProgrammingLanguage\Chapter5.5\strcpy\Debug\strcpy.exe
