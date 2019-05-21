@@ -31,6 +31,39 @@ void main()
 	printf("%c\n\n", *(aa+4));
 	printf("%c\n\n", *(aa+5));
 	printf("%c\n\n", *(aa+6));
+	printf("************");
+	char *ap[] = { "I and you","Love", "CProgramming" };
+	/*注意指针数组与二维数组的区别*/
+	printf("%s\n", ap[0]);
+	printf("%s\n", ap[1]);
+	printf("%s\n", ap[2]);
+
+	printf("%0x\n", &ap);
+	//printf("%0x\n", &(ap+1));
+	//printf("%0x\n", &(ap+2));
+	printf("%0x\n", &ap[0]);
+	printf("%0x\n", &ap[1]);//为何地址差值为4；
+	printf("%0x\n", &ap[2]);
+	printf("%0x\n", &ap[3]);
+	printf("%0x\n", &ap[4]);
+	printf("%0x\n", &ap[5]);
+	printf("************");
+	/*不能定义char bp[]={ "I and you","Love", "CProgramming" },因为"I and you"是一个字符数组
+	右值为二维数组，左值定义不符
+	*/
+	char bp[][20] = { "I and you","Love", "CProgramming" };
+	printf("%s\n", bp[0]);
+	printf("%s\n", bp[1]);
+	printf("%s\n", bp[2]);
+	printf("%0x\n", &bp);
+	//printf("%0x\n", &(bp+1));
+	//printf("%0x\n", &(bp+2));
+	printf("%0x\n", &bp[0]);
+	printf("%0x\n", &bp[1]);//为何两个地址差值为20；
+	printf("%0x\n", &bp[2]);
+	printf("%0x\n", &bp[3]);
+	printf("%0x\n", &bp[4]);
+	printf("%0x\n", &bp[5]);
 
 
 	printf("String a is: %s\nString b is: %s\n", a, b);
