@@ -12,6 +12,7 @@ void main()
 	printf("%s  %c\n",a,*a);//对于字符指针和数组的访问为何不能加*,可以，只是输出语句不对；
 	printf("%s  %c\n",b,*b);//*b取的只是单个字符；
 	printf("%0x  %0x\n", a, &a);//对于字符指针这两个值是不一样的；
+	printf("%c  %s\n", *a, *(&a));//当*a以%s接收时报错,第一个值是字符串的第一个字符I，第二个值是  
 	printf("%0x  %0x\n", b, &b);//对于数组和指针数值这两个值是相同的；
 	char aa[] = "I love code!";
 	char *bb = "You";
