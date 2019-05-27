@@ -1,4 +1,0 @@
-﻿  PointDemo.c
-d:\009c\learnc\everyday\thecprogramminglanguage\chapter5\chapter5\pointdemo.c(17): warning C4013: “system”未定义；假设外部返回 int
-d:\009c\learnc\everyday\thecprogramminglanguage\chapter5\chapter5\pointdemo.c(5): warning C4101: “z”: 未引用的局部变量
-  Chapter5.vcxproj -> D:\009C\LearnC\Everyday\TheCProgrammingLanguage\Chapter5\Debug\Chapter5.exe
