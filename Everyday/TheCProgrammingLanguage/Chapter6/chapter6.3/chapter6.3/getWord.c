@@ -3,9 +3,15 @@
 #include<string.h>
 
 #define MAXWORD 100
+#define NKEYS (sizeof keytab/sizeof(struct key))
 
-int getword(char*, int);
-int binsearch(char*, struct key*, int);
+struct key {
+	char *word;
+	int count;
+}keytab[] = { "auto",0,"break",0,"case",0,"char",0,"const",0,"continue",0,"default",0 };
+
+int getword(char *, int);
+int binsearch(char *, struct key *, int);
 
 /*conut c key words*/
 main()
@@ -14,8 +20,8 @@ main()
 	char word[MAXWORD];
 
 	while (getword(word, MAXWORD) != EOF)
-		if (isalpha(word[0]))
-			if ((n = binsearch(word,keytab,EYS)) >= 0)
+		if (isalpha(word[0]))//isalphaÊ¶±ð×ÖÄ¸£»
+			if ((n = binsearch(word,keytab,NKEYS)) >= 0)
 				keytab[n].count++;
 	for (n = 0; n < NKEYS; n++)
 		if (keytab[n].count > 0)
