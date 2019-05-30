@@ -25,7 +25,13 @@ struct point makepoint(int x, int y)
 	return temp;
 }
 
-
+/*addpoints: add two points*/
+//struct addpoint(struct point p1, truct point p2)
+//{
+//	p1.x += p2.x;
+//	p1.y += p2.y;
+//	return p1;
+//}
 
 
 main()
@@ -37,12 +43,12 @@ main()
 	screen.pt1 = makepoint(0, 0);
 	screen.pt2 = makepoint(XMAX, YMAX);
 
-	/*addpoints: add two points*/
-	struct addpoint(struct point p1, truct point p2)
-	{
-		p1.x += p2.x;
-		p1.y += p2.y;
-		return p1;
-	}
+	struct point pt = {320,200};
+	printf("%d, %d\n", pt.x, pt.y);
+
+	double dist, sqrt(double);
+	dist = sqrt((double)pt.x*pt.x + (double)pt.y*pt.y);
+
+	system("pause");
 
 }
