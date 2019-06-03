@@ -1,0 +1,29 @@
+char *string = "I love Fishc.com!";
+0040D718   mov         dword ptr [ebp-4],offset string "I love Fishc.com!" (00422020)
+
+
+**********************************************************
+
+
+char string[] = "I love Fishc.com!";
+0040D718   mov         eax,[string "I love Fishc.com!" (00422020)]
+0040D71D   mov         dword ptr [ebp-14h],eax
+0040D720   mov         ecx,dword ptr [string "I love Fishc.com!"+4 (00422024)]
+0040D726   mov         dword ptr [ebp-10h],ecx
+0040D729   mov         edx,dword ptr [string "I love Fishc.com!"+8 (00422028)]
+0040D72F   mov         dword ptr [ebp-0Ch],edx
+0040D732   mov         eax,[string "I love Fishc.com!"+0Ch (0042202c)]
+0040D737   mov         dword ptr [ebp-8],eax
+0040D73A   mov         cx,word ptr [string "I love Fishc.com!"+10h (00422030)]
+0040D741   mov         word ptr [ebp-4],cx
+
+
+***********************************************************
+
+char string[] = "I love Fishc.com!I love Fishc.com!";
+0040D718   mov         ecx,8
+0040D71D   mov         esi,offset string "I love Fishc.com!I love Fishc.co"... (00422fbc)
+0040D722   lea         edi,[ebp-24h]
+0040D725   rep movs    dword ptr [edi],dword ptr [esi]
+0040D727   movs        word ptr [edi],word ptr [esi]
+0040D729   movs        byte ptr [edi],byte ptr [esi]

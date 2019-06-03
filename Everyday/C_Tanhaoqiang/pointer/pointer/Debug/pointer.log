@@ -1,0 +1,4 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 example01.c 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 ..\..\第八章 指针（源代码）\041_指针01_源代码\example01.c, ..\..\第八章 指针（源代码）\042_指针02_源代码\example01.c。
+  example03.c
+Debug\example01.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  pointer.vcxproj -> D:\02ability\LearnC\Everyday\C_Tanhaoqiang\pointer\Debug\pointer.exe
