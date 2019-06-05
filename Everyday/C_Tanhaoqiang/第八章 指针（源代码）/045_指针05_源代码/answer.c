@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 void  main ( )
@@ -16,12 +17,15 @@ void  main ( )
       }
       printf("j = ");
       scanf("%d", &j);
-      while( j > 3 || i < 0 )
+      while( j > 3 || j < 0 )
       {
             printf("j = ");
             scanf("%d", &j);
       }
 
       printf("a[%d, %d] = %d\n", i, j, *(*(p+i)+j));
+
+	  getchar();
+	  getchar();
 
 }

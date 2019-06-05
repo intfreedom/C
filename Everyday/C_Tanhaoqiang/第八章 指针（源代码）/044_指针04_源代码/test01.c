@@ -27,6 +27,8 @@ void main()
             p++;
       }
       printf("\n");
+
+	  getchar();
       
 }
 

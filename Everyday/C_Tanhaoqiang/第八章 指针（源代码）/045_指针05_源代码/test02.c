@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main()
+void main045t2()
 {
       char a[] = "Fishc.com is a good web site!", b[40], *p1, *p2;
       int i;
@@ -22,4 +22,5 @@ void main()
       }
 
       printf("\n");
+	  getchar();
 }

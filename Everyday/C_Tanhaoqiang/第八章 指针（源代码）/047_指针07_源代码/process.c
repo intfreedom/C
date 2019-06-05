@@ -3,10 +3,10 @@
 /*  输入ａ和ｂ两个数，第一次调用process时找出ａ和ｂ中大者，*/
 /*  第二次找出其中小者，第三次求ａ与ｂ之和。               */
 /***********************************************************/
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void main()
+void main047p()
 {
       int max(int, int);            /* 函数声明 */
       int min(int, int);            /* 函数声明 */

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void  main()
+void  main046c()
 {
       void copy_string( char *from, char *to );
 

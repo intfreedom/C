@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void  main()
+void  main045t3()
 {
       void  copy_string(char from[], char to[]);
 
@@ -13,6 +13,8 @@ void  main()
       copy_string(a, b);
       
       printf("\nstring a = %s\nstring b = %s\n", a, b);
+
+	  getchar();
 }
 
 void  copy_string(char from[], char to[])

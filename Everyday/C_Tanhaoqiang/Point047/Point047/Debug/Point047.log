@@ -1,0 +1,34 @@
+﻿  下标形式引用指针变量.c
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(28): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(28): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(30): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(30): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char (*)[35]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(45): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[13]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(72): warning C4047: “=”:“int *”与“int”的间接级别不同
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(73): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(82): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(85): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(86): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(87): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(88): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(89): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(90): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(95): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(95): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char *(*)[3]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(101): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(102): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(103): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(104): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(105): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(106): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(115): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[3][20]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(118): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(119): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(120): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(121): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(122): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(123): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[20]”
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(76): warning C4047: “初始化”:“int *”与“int”的间接级别不同
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(71): warning C4101: “apintthree”: 未引用的局部变量
+d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c(71): warning C4101: “apinttwo”: 未引用的局部变量
+  Point047.vcxproj -> D:\02ability\LearnC\Everyday\C_Tanhaoqiang\Point047\Debug\Point047.exe
