@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\第八章 指针（源代码）\047_指针07_源代码\process.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\第八章 指针（源代码）\047_指针07_源代码\改变指针变量的值.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\第八章 指针（源代码）\047_指针07_源代码\指向函数的指针.c">
+    <ClCompile Include="..\..\第八章 指针（源代码）\048_指针08_源代码\score.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

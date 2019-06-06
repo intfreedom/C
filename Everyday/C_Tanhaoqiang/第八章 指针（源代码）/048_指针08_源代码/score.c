@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 void main()
@@ -20,13 +21,16 @@ void main()
       }
 
       printf("\n\n\n");
+
+	  getchar();
+	  getchar();
 }
 
 double *search(double (*pointer)[4], int n)
 {
       double *pt;
 
-      pt = *(pointer + n);
+      pt = *(pointer + n-1);
 
       return pt;
 }

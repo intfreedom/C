@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{6093D503-4382-43ED-B5A7-8B69B9609400}</ProjectGuid>
-    <RootNamespace>Point047</RootNamespace>
+    <ProjectGuid>{652DC764-4EF6-48E4-B417-48924D88261B}</ProjectGuid>
+    <RootNamespace>Point048</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,10 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\第八章 指针（源代码）\047_指针07_源代码\process.c" />
-    <ClCompile Include="..\..\第八章 指针（源代码）\047_指针07_源代码\下标形式引用指针变量.c" />
-    <ClCompile Include="..\..\第八章 指针（源代码）\047_指针07_源代码\指向函数的指针.c" />
-    <ClCompile Include="..\..\第八章 指针（源代码）\047_指针07_源代码\改变指针变量的值.c" />
+    <ClCompile Include="..\..\第八章 指针（源代码）\048_指针08_源代码\score.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

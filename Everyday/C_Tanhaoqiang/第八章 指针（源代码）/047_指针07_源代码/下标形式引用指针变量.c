@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main()
+void main047sub()
 {
 	char *ab = "I love Fishc.com!";
 	int i;
