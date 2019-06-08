@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void main()
+void main048s()
 {
       double score[][4] = {{60.0, 70.0, 80.5, 90.5}, {56.0, 89.0, 67.0, 88.0}, {34.2, 78.5, 90.5, 66.0}};
       double *search(double(*pointer)[4], int n);
