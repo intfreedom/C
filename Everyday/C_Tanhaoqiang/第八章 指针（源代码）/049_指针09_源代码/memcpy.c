@@ -12,7 +12,7 @@ char string2[60] = "The quick brown fox jumps over the lazy dog";
  *                  12345678901234567890123456789012345678901234567890
  */
 
-void main( void )
+void main049mem( void )
 {
    printf( "Function:\tmemcpy without overlap\n" );
    printf( "Source:\t\t%s\n", string1 + 40 );
@@ -37,5 +37,9 @@ void main( void )
    memcpy( string1 + 10, string1 + 4, 40 );
    printf( "Result:\t\t%s\n", string1 );
    printf( "Length:\t\t%d characters\n\n", strlen( string1 ) );
+
+
+   getchar();
 }
+
 

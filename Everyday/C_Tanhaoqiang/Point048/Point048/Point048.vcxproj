@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\第八章 指针（源代码）\048_指针08_源代码\array_p.c" />
+    <ClCompile Include="..\..\第八章 指针（源代码）\048_指针08_源代码\main.c" />
     <ClCompile Include="..\..\第八章 指针（源代码）\048_指针08_源代码\pointer2pointer.c" />
     <ClCompile Include="..\..\第八章 指针（源代码）\048_指针08_源代码\score.c" />
   </ItemGroup>

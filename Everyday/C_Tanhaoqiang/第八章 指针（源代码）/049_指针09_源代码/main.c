@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main (int argc, char *argv[])
+void main048m (int argc, char *argv[])
 {
       int i;
 
@@ -11,4 +11,6 @@ void main (int argc, char *argv[])
       {
             printf ("the string %d is : %s\n", i, argv[i]);
       }
+
+	  getchar();
 }
