@@ -7,7 +7,7 @@ void main(void)
       // 它指向一个字符型常量，初始化str为指向字符串
       // "Welcome to Fishc.com!\n\n"
       printf("\n\n%s", str);
-	  printf("%c\n", *str);
+	  printf("%c\n", *str);//取地址不一样
 	  printf("%c\n", *(str+1));
 	  printf("%c\n", *(str+2));
 	  char c = "X";
