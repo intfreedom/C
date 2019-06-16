@@ -7,7 +7,7 @@ char *lineptr[MAXLINES];/*pointers to text lines*/
 
 int readlines(char *lineptr[], int nlines);
 void writelines(char *lineptr[], int nlines);
-
+//其他函数如何连在一起
 void qsort(char *lineptr[], int left, int right);
 
 /*sort input lines*/
