@@ -11,7 +11,11 @@ void main()
 	printf("%c %c\n",*(aa+1),*(bb+1));// e e;
 
 	printf("%0x %0x\n", aa, aa + 1);//相差1；
+	//同样一个字符，按照不同的格式打印结果很不一样；
 	printf("%s\n%s\n", aa + 1, bb + 1);//从第二个单词开始打印字符串；
+	printf("%c\n%c\n", aa + 1, bb + 1);//结果为？A;bb+1每次结果都一样；？？？
+	printf("%0x\n%0x\n", aa + 1, bb + 1);//1afe9d    fa7b41地址值每次都不一样；
+
 	printf("%0x %0x\n", &aa, &aa+1);//相差aa的字符数+1，表示这个字符串结束了的下一数据；
 	printf("%s %s\n", *&aa, *(&aa + 1));//aa字符串内容----乱码；
 	printf("%0x %0x\n", bb, bb + 1);//相差1；

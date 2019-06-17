@@ -1,10 +1,14 @@
 ﻿  pointVsArray.c
 d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(13): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
 d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(13): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char *”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(15): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[17]”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(15): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char (*)[17]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(16): warning C4477: “printf”: 格式字符串“%c”需要类型“int”的参数，但可变参数 1 拥有了类型“char *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(16): warning C4477: “printf”: 格式字符串“%c”需要类型“int”的参数，但可变参数 2 拥有了类型“char *”
 d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(17): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
 d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(17): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char *”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(18): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(18): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(19): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char (*)[17]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(19): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char (*)[17]”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(21): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(21): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char *”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(22): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char **”
+d:\02ability\learnc\everyday\thecprogramminglanguage\chapter5.3\chapter5.3\pointvsarray.c(22): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“char **”
   Chapter5.3.vcxproj -> D:\02ability\LearnC\Everyday\TheCProgrammingLanguage\Chapter5.3\Debug\Chapter5.3.exe
