@@ -1,14 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
-
-int main1()
+/*关于字符变量与字符常量所占空间大小*/
+int main()
 {
 	
 
 	char c = 'a';//'a'为了兼容宽字符，占4个字节，当赋值给char时，占1个字节；
 	//当赋值给chw时，占2个字节；问题是如何装的下？？？把4字节的内容赋给2个字节；
 	wchar_t chw = 'a';
+	printf("%p   %p\n", &c,&chw);//这两个地址，不一样，但存的数据一样；
+	//可否这样解释，'a'是存在寄存器中(右值)，而c与chw存在内存中(左值)，根据情况赋值给相应的变量；
 	printf("%d %d %d\n",sizeof(c),sizeof(chw),sizeof('a'));//1,2,4;
 	//字符串以/0结束，汉字占两个字节；
 	printf("%d %d %d %d\n",sizeof('A'),sizeof('我'),sizeof("A"),sizeof("我"));//4,4,2,3
@@ -20,8 +22,8 @@ int main1()
 	
 	return 0;
 }
-
-void main()
+/*打印到字符串*/
+void main1()
 {
 	char str[100] = { 0 };
 	sprintf(str, "title %s can do it", "Intfreedom");//打印到字符串；
