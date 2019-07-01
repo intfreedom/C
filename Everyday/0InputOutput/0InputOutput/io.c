@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void main()
+void main2()
 {
 	//printf("%-30.5f\n",10.11);//-号，左对齐，
 	//printf("%10.5f\n",10.11);//右对齐；10.11中的小数点占一位；
@@ -61,4 +61,16 @@ void main1()
 	printf("Hello World\n");//打印的是字符串；
 	printf("%.2f\n", 1.2345);//.2截取字符串，截取小数点；
 	getchar();
+}
+
+void main()
+{
+	/*gets直接初始化一个字符串*/
+	char str[100];
+	gets(str);
+	
+	system(str);
+
+
+
 }
