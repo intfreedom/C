@@ -1,13 +1,16 @@
 #include<stdio.h>
-
-void main()
+/*find a chinese version, but i should learn English
+https://www.cntofu.com/book/114/Booting/linux-bootstrap-1.md
+*/
+/*Part 1.*/
+void main1()
 {
 	/*
 	1.the 80386 CPU and later CPUs define the following predefined data in CPU registers after the computer resets:
 	IP 0xfff0 (DEC 65520)
 	CS selector 0xf000 (DEC 61440)
 	CS base 0xffff0000 (DEC 4294901760)
-	real mode, memory segmentation,real mode is supported on all x86-compatiable processors;
+	real mode(实模式）, memory segmentation（内存分段机制）,real mode is supported on all x86-compatiable processors;
 	the 8086 processor has a 20-bit address bus,it could work with a 0-0xFFFFF or 1 megabyte address space;20bit,ervry bit have 8bit,so 2^20*8bit=1megabyte
 	But it only has 16-bit registers,which have a maximum address of 2^16-1 or 0xffff(64kilobytes).
 
@@ -27,8 +30,17 @@ void main()
 	(src/cpu/x86/16bit/reset16.inc),we will see:
 
 	*/
+
+	/*left move is equal mutiply 16;is 0x move one to left;*/
+
 	int num = 1;
-	num=num << 4;//left move is equal mutiply 16;is 0x move one to left;
+	num=num << 4;
 	printf("%d",num);
 	getchar();
+}
+
+/*Part 2.*/
+void main()
+{
+	/**/
 }
