@@ -63,14 +63,35 @@ void main1()
 	getchar();
 }
 
-void main()
+void main3()
 {
 	/*gets直接初始化一个字符串*/
 	char str[100];
 	gets(str);
 	
 	system(str);
+}
 
+void main4()
+{
+	/*for /l(char L) %%i in (1,1,%d) do %s    the two 1,1 is number one*/
+	int N;
+	char cmd[100];
+	scanf("%d%s",&N,cmd);
+	char strcmd[200] = {0};
+	sprintf(strcmd, "for /l %%i in (1,1,%d) do %s", N, cmd);
+	system(strcmd);
+	system("pause");
+}
 
+/*print the visable character!!!*/
+void main()
+{
+	/*32-126,*/
 
+	for (char ch = 32; ch < 127; ch++)
+	{
+		putchar(ch);
+	}
+	getchar();
 }
