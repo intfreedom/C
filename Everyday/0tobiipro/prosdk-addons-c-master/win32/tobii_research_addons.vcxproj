@@ -19,6 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\64\include\tobii_research.h" />
+    <ClInclude Include="..\64\include\tobii_research_calibration.h" />
+    <ClInclude Include="..\64\include\tobii_research_eyetracker.h" />
+    <ClInclude Include="..\64\include\tobii_research_streams.h" />
     <ClInclude Include="..\source\screen_based_calibration_validation.h" />
     <ClInclude Include="..\source\stopwatch.h" />
     <ClInclude Include="..\source\vectormath.h" />
@@ -28,12 +32,18 @@
     <ClCompile Include="..\source\stopwatch.c" />
     <ClCompile Include="..\source\vectormath.c" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\64\lib\tobii_research.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\64\lib\tobii_research.lib" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{606D43EB-CA63-4E61-B1FD-CA4E3014FAF1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>prosdkaddonsc</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
