@@ -1,0 +1,11 @@
+C:\Users\pc>cl D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\prosdk-addons-c-master\source\sample.c /D:\02ability\LearnC\Everyday\0tobiipro\TobiiPro.SDK.C_Binding.Windows_1.7.0.3\64\include D:\02ability\LearnC\Everyday\0tobiipro\TobiiPro.SDK.C_Binding.Windows_1.7.0.3\64\lib\tobii_research.lib
+用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27027.1 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+sample.c
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\prosdk-addons-c-master\source\sample.c(1): fatal error C1083: 无法打开包括文件: “stdio.h”: No such file or directory
+
+修改为以下
+cl D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\prosdk-addons-c-master\source\sample.c /I D:\02ability\LearnC\Everyday\0tobiipro\TobiiPro.SDK.C_Binding.Windows_1.7.0.3\64\include D:\02ability\LearnC\Everyday\0tobiipro\TobiiPro.SDK.C_Binding.Windows_1.7.0.3\64\lib\tobii_research.lib
+报错：sample.c
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\source\sample.c(1): fatal error C1083: 无法打开包括文件: “stdio.h”: No such file or directory
