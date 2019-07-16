@@ -20,3 +20,6 @@ cl simple_project.c / Ipath-to-includes path-to-libs \ tobii_research.lib
 用于开发分析应用程序的综合工具包
 Tobii Pro SDK是一个全面的工具包，可帮助研究人员和软件合作伙伴轻松构建用于研究的分析应用程序，使用Tobii的基于屏幕的眼动仪。 它专为开发分析注视数据的应用程序而设计。
 该套件支持Tobii Pro基于屏幕的眼动仪的整个产品组合。 查看支持的眼动仪的详细信息。（Tobii Pro的以下眼动仪默认与Pro SDK兼容：Tobii Pro Nano）
+一个SDK，许多应用程序
+Pro SDK提供多平台支持（Windows，Linux和Mac），针对多种编程语言（.NET，Python，Matlab / Octave和C）的API绑定以及3D引擎（Unity）的预制件。 
+这使得能够开发许多不同类型的分析应用 - 从用于科学研究的定制研究范例到商业应用。 Pro SDK建立在坚实的基础之上，可以在不同的平台和绑定上重用功能。
