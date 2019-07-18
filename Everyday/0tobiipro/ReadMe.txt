@@ -23,3 +23,40 @@ Tobii Pro SDKÊÇÒ»¸öÈ«ÃæµÄ¹¤¾ß°ü£¬¿É°ïÖúÑÐ¾¿ÈËÔ±ºÍÈí¼þºÏ×÷»ï°éÇáËÉ¹¹½¨ÓÃÓÚÑÐ¾¿µÄ·
 Ò»¸öSDK£¬Ðí¶àÓ¦ÓÃ³ÌÐò
 Pro SDKÌá¹©¶àÆ½Ì¨Ö§³Ö£¨Windows£¬LinuxºÍMac£©£¬Õë¶Ô¶àÖÖ±à³ÌÓïÑÔ£¨.NET£¬Python£¬Matlab / OctaveºÍC£©µÄAPI°ó¶¨ÒÔ¼°3DÒýÇæ£¨Unity£©µÄÔ¤ÖÆ¼þ¡£ 
 ÕâÊ¹µÃÄÜ¹»¿ª·¢Ðí¶à²»Í¬ÀàÐÍµÄ·ÖÎöÓ¦ÓÃ - ´ÓÓÃÓÚ¿ÆÑ§ÑÐ¾¿µÄ¶¨ÖÆÑÐ¾¿·¶Àýµ½ÉÌÒµÓ¦ÓÃ¡£ Pro SDK½¨Á¢ÔÚ¼áÊµµÄ»ù´¡Ö®ÉÏ£¬¿ÉÒÔÔÚ²»Í¬µÄÆ½Ì¨ºÍ°ó¶¨ÉÏÖØÓÃ¹¦ÄÜ¡£
+
+
+1.4Tobii Pro Eye Tracker Manager  Tobii ProÑÛ¶¯ÒÇ¹ÜÀíÆ÷£º
+Ãâ·ÑÈí¼þ£¬°ïÖú¹ÜÀí»ùÓÚÆÁÄ»µÄÑÛ¶¯ÒÇ¡£ ´ËÓ¦ÓÃ³ÌÐòÓÐÖúÓÚÉèÖÃ´ø»ò²»´øÆÁÄ»µÄÑÛ¶¯ÒÇ£¬ËüÓÐÖúÓÚÓÃ»§Ð£×¼ºÍ¹ÊÕÏÅÅ³ý¡£ ¸ù¾ÝÑÛ¶¯ÒÇÐÍºÅ£¬Äú»¹¿ÉÒÔÊ¹ÓÃËüÀ´¸ü¸ÄÉèÖÃºÍ¸üÐÂ¹Ì¼þ¡£
+¸ÅÊö£º¸ßÐ§µÄÅäÖÃºÍÉèÖÃ
+Tobii ProÑÛ¶¯ÒÇ¹ÜÀíÆ÷ÊÇÒ»¸öÐÂµÄÅäÖÃºÍÉèÖÃÊµÓÃ³ÌÐò£¬¿É°ïÖúÄú¹ÜÀíÁ¬½ÓµÄÑÛ¶¯ÒÇ¡£ËüÊÇÃâ·ÑÌá¹©µÄ£¬¿É´ó´óÌá¸ßTobii Pro SDK»òTobii Pro LabÓÃ»§µÄ¹¤×÷Ð§ÂÊ¡£
+Pro Eye Tracker ManagerÔÊÐíÑÐ¾¿ÈËÔ±ÔÚÓëÑÛ¾¦Ò»ÆðÊ¹ÓÃÊ±ÇáËÉÅäÖÃÑÛ¶¯ÒÇ¡£´ËÓ¦ÓÃ³ÌÐò»¹ÓÃÓÚÅäÖÃ³¡¾°ÉãÏñ»úÉèÖÃÖÐµÄÓ²¼þ£¬ÆäÖÐÎïÀí¶ÔÏóÓÃ×÷´Ì¼¤¡£
+¶ÔÓÚÒÆ¶¯Éè±¸Ö§¼ÜµÄÓÃ»§£¬Tobii ProÑÛ¶¯ÒÇ¹ÜÀíÆ÷Ìá¹©ÁËÒ»¸öÏòµ¼ºÍ¼ò»¯µÄÉèÖÃºÍÅäÖÃÑÛ¶¯ÒÇµÄ¹ý³Ì£¬ÓÃÓÚ²âÊÔÒÆ¶¯Éè±¸¡£
+Èç¹ûÄúµÄÑÛ¶¯ÒÇÖ§³Ö²»Í¬µÄ²ÉÑùÆµÂÊ»òÑÛ¶¯×·×ÙÄ£Ê½£¬Ôò¿ÉÒÔÊ¹ÓÃPro Eye Tracker Manager¸ü¸ÄÕâÐ©Ä£Ê½¡£Ä£Ê½ÊÊÓ¦ÑÛ¶¯ÒÇÊÕ¼¯ÄýÊÓÊý¾ÝµÄ·½Ê½¡£
+¶ÔÓÚTobii Pro SpectrumºÍTobii Pro Nano£¬Pro Eye Tracker ManagerÓÃÓÚ¸üÐÂÑÛ¶¯ÒÇ¹Ì¼þ¡£¶ÔÓÚÆäËûÑÛ¶¯ÒÇÄ£ÐÍ£¬Ê¹ÓÃÑÛ¶¯ÒÇä¯ÀÀÆ÷¹¤¾ß¸üÐÂ¹Ì¼þ¡£
+¿ìËÙ¿É¿¿µÄÓÃ»§Ð£×¼
+Pro Eye Tracker ManagerÎªPro SDKÓÃ»§Ìá¹©ÁËÒ»¸öÓÐÐ§µÄÑ¡Ïî£¬¿ÉÒÔ½øÐÐ¿ìËÙ¿É¿¿µÄÓÃ»§Ð£×¼¡£ ÔÚÐ£×¼Ö®Ç°£¬¹ìµÀ×´Ì¬Ãæ°åÖ¸Ê¾²ÎÓëÕßÑÛ¾¦ÔÚ¹ìµÀºÐÄÚµÄÎ»ÖÃ¡£
+Èç¹ûÎÒÃÇµÄ¼¼ÊõÖ§³ÖÍÅ¶ÓÒªÇó£¬¿ÉÒÔ´´½¨ºÍµ¼³öÕï¶ÏÊý¾ÝÎÄ¼þÒÔ½øÐÐ´óÁ¿¹ÊÕÏÅÅ³ý¡£
+Ê¹ÓÃTobii ProÑÛ¶¯ÒÇ¹ÜÀíÆ÷Ìá¸ßÐ§ÂÊ
+Pro SDKÓÉPro Eye Tracker Manager²¹³ä£¬ÕâÊÇÒ»¿îÃâ·ÑÈí¼þ£¬¿É°ïÖúÄú¹ÜÀíºÍÉèÖÃÑÛ¶¯ÒÇ¡£
+¸Ã¹¤¾ßÖ§³Ö·ÖÎöÑÛ¶¯×·×ÙÓ¦ÓÃ³ÌÐò¹¤×÷Á÷³ÌµÄ³£ÓÃ²¿·Ö£¬¸Ã¹¤¾ß¿ÉÒÔÊ¹ÓÃµ÷ÓÃ¹¦ÄÜÓëPro SDKÉÏ¹¹½¨µÄ·ÖÎöÓ¦ÓÃ³ÌÐòÎÞ·ì¼¯³É¡£ Õâ°üÀ¨ÅäÖÃÏÔÊ¾ÇøÓò£¬²é¿´¹ìµÀ×´Ì¬£¨Í·ÏäµÄ¿ÉÊÓ»¯£©ÒÔ¼°½øÐÐÓÃ»§Ð£×¼¡£
+¸ù¾ÝÑÛ¶¯ÒÇÄ£ÐÍ£¬Pro Eye Tracker Manager»¹ÔÊÐíÄú¸üÐÂ¹Ì¼þ²¢¸ü¸Ä²ÉÑùÆµÂÊ¡£
+Ò»¸öÓ¦ÓÃ³ÌÐò£¬Ö§³ÖÐí¶àÑÛ¶¯ÒÇºÍÆ½Ì¨
+Pro Eye Tracker Manager¿ÉÓÃÓÚTobii ProµÄËùÓÐ»ùÓÚÆÁÄ»µÄÑÛ¶¯ÒÇ£¬Òò´ËÏàÍ¬µÄÓ¦ÓÃ³ÌÐòÊÊÓÃÓÚÄú¿ÉÄÜÓÃÓÚÑÐ¾¿µÄ¸÷ÖÖÄ£ÐÍ¡£
+¸ÃÓ¦ÓÃ³ÌÐòÊÊÓÃÓÚWindows£¬LinuxºÍMacÏµÍ³¡£ Èç¹ûÄúÔÚMac»òLinuxÉÏÔËÐÐ£¬ÔòÖ§³ÖTobii Pro X3-120ÐèÒªEPU¡£
+ÓëÄúµÄÓ¦ÓÃ³ÌÐò¼¯³É
+Pro Eye Tracker Manager¿ÉÒÔÊ¹ÓÃµ÷ÓÃ¹¦ÄÜÓëPro SDKÉÏ¹¹½¨µÄ·ÖÎöÓ¦ÓÃ³ÌÐò¼¯³É¡£ Pro SDKÈÔ½«ÎªÑÐ¾¿ÈËÔ±Ìá¹©³ä·ÖµÄÁé»îÐÔ£¬µ«ÑÛ¶¯×·×ÙÈí¼þÓ¦ÓÃ³ÌÐòµÄ¹¤×÷Á÷³ÌµÄ³£¼û²¿·Ö£¬
+ÀýÈçÅäÖÃÏÔÊ¾ÇøÓò£¬²é¿´¹ìµÀ×´Ì¬£¨Í·ÏäµÄ¿ÉÊÓ»¯£©ÒÔ¼°½øÐÐÓÃ»§Ð£×¼£¬¿ÉÒÔÊÇ Ê¹ÓÃ´Ë¹¤¾ß¿ÉÇáËÉÍê³É£¬¼õÉÙËùÐèµÄ±àÂëÁ¿¡£ ÕâÖÖÎÞ·ì¼¯³ÉÊ¹ÑÐ¾¿ÈËÔ±ÄÜ¹»ÇáËÉ¸ßÐ§µØ´´½¨×Ô¼ºµÄÓ¦ÓÃ³ÌÐò¡£
+
+1.5¿ªÔ´¸½¼Ó×é¼þ
+ÎªÁËÊ¹Tobii Pro SDK¸üÒ×ÓÚÊ¹ÓÃ£¬Ò»Ð©¸ü³£¼ûµÄÓÃ»§³¡¾°ÒÑ×÷Îª¿ÉÑ¡¸½¼þÊµÏÖ£¬¿ÉÒÔÏÂÔØ»ò¸´ÖÆ²¢ÔÚ´úÂëÖÐÊ¹ÓÃ¡£ 
+ÕâÐ©¸½¼Ó×é¼þ¶¼ÊÇ¿ªÔ´µÄ£¬²¢ÔÚGitHubÉÏÍÐ¹Ü£¬Òò´Ë´úÂëÍêÕû¿ÉÓÃ£¬ÈÎºÎÈË¶¼¿ÉÒÔ×ÔÓÉµØÌá¹©½¨ÒéºÍ¸ü¸Ä¡£ 
+Ð£×¼ÑéÖ¤
+
+ÔÚÖ´ÐÐÑÛ¶¯×·×ÙÑÐ¾¿Ê±£¬ÔÚÐ£×¼ºóÖ´ÐÐ¹À¼ÆÐÔÄÜµÄÑéÖ¤·Ç³£ÓÐÓÃ¡£ ´Ë²½ÖèÍ¨³£³ÆÎªÐ£×¼ÑéÖ¤¡£ ½øÐÐÐ£×¼ÑéÖ¤µÄ³£ÓÃ³ÌÐòÊÇÎª²ÎÓëÕßÏÔÊ¾Ò»×éÐÂµÄ´Ì¼¤µã£¬ÔÚ´Ì¼¤³ÊÏÖÆÚ¼äÊÕ¼¯ÄýÊÓÊý¾Ý£¬²¢¸ù¾ÝÄýÊÓÊý¾ÝÏà¶ÔÓÚ´Ì¼¤µãµÄÎ»ÖÃ¼ÆËã×¼È·¶ÈºÍ¾«È·¶ÈµÄÖµ£¨ ²ÎÓëÕßÓ¦¸Ã¿´¿´£©¡£ 
+¸½¼Ó×é¼þ°üÀ¨ÊÕ¼¯×¢ÊÓÊý¾ÝºÍ¼ÆËãÐÔÄÜ½á¹ûËùÐèµÄËùÓÐ¹¦ÄÜ¡£ Î¨Ò»Áô¸øÄãµÄÊÇÌá³ö´Ì¼¤µã£¨ÕâÑù×öµÄ·½·¨ÔÚºÜ´ó³Ì¶ÈÉÏÈ¡¾öÓÚËùÊ¹ÓÃµÄ±íÊ¾¿ò¼Ü£©¡£
+
+1.5.1¶ÔÓÚWindows
+½«Tobii Pro SDK´æµµ½âÑ¹Ëõµ½addonsÎÄ¼þ¼Ð¸ùÄ¿Â¼ÖÐµÄÐÂÄ¿Â¼sdk¡£
+´ò¿ªVisual Studio²¢ÔÚwin32Ä¿Â¼ÖÐ¼ÓÔØ½â¾ö·½°¸¡£
+¹¹½¨ËùÐèµÄÅäÖÃ£¨¼´Debug / ReleaseºÍx86 / x64£©¡£
+ÒªÊ¹ÓÃ¸Ã¿â£¬ÄúÐèÒªÔÚÔ´»òÁ´½ÓÖÐÊÖ¶¯¼ÓÔØÁ½¸öDLL£¨tobii_research_addons.dllºÍtobii_research.dll£©ÓëÆä¸÷×ÔµÄlibÎÄ¼þ¡£ ²Î¼ûÊ¾ÀýÏîÄ¿¡£
