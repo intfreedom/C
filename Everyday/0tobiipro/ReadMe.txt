@@ -60,3 +60,4 @@ Pro Eye Tracker Manager可以使用调用功能与Pro SDK上构建的分析应用程序集成。 Pro S
 打开Visual Studio并在win32目录中加载解决方案。
 构建所需的配置（即Debug / Release和x86 / x64）。
 要使用该库，您需要在源或链接中手动加载两个DLL（tobii_research_addons.dll和tobii_research.dll）与其各自的lib文件。 参见示例项目。
+

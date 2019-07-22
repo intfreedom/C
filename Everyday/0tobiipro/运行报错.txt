@@ -9,3 +9,15 @@ D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\prosdk-addons-c-ma
 cl D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\prosdk-addons-c-master\source\sample.c /I D:\02ability\LearnC\Everyday\0tobiipro\TobiiPro.SDK.C_Binding.Windows_1.7.0.3\64\include D:\02ability\LearnC\Everyday\0tobiipro\TobiiPro.SDK.C_Binding.Windows_1.7.0.3\64\lib\tobii_research.lib
 报错：sample.c
 D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\source\sample.c(1): fatal error C1083: 无法打开包括文件: “stdio.h”: No such file or directory
+
+
+1.1.1直接不配置这一步，In order to use the library you need to manually load two DLLs (tobii_research_addons.dll and tobii_research.dll) in your source or link against their respective lib file. See sample project.
+出现以下报错；
+无法启动程序D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\win32\Output\Win32\Debug\tobii_research_addons.dll
+
+1.1.2http://developer.tobiipro.com/c/c-getting-started.html这里手动配置头文件；
+
+刚才我和戴去装猴笼门，有以下几个问题：
+1.门栓长了，装不进去，需要切割下，明天无法按时安装了；
+2.动物房需要我们确认，用几个猴子做实验，做多长时间，并且猴笼门的数量要两倍，以便更换；
+3.现在的门是小笼子的，动物房的小笼数量比较少，他们希望可以用大笼做实验，以后再改的话，就在大笼门上修改；
