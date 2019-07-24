@@ -75,7 +75,7 @@ struct rect canonrect(struct rect r)
 	return temp;
 }
 
-void main()
+void main2()
 {
 	int XMAX = 1000, YMAX = 2000;
 	struct rect screen;
@@ -106,3 +106,4 @@ void main()
 	getchar();
 	
 }
+
