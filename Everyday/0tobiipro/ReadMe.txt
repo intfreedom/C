@@ -5,7 +5,8 @@
 1.1.1使用tobii_research构建
 Tobii Pro SDK使用Microsoft的Windows 8.1 SDK构建。 在下面的示例中，假设tobii_research头文件安装在path-to-includes，并假定tobii_research库安装在path-to-libs。 
 因此，如果您的项目包含一个使用Tobii Pro SDK的simple_project.c文件，那么可以通过键入以下内容来编译和链接：
-cl simple_project.c / Ipath-to-includes path-to-libs \ tobii_research.lib
+cl simple_project.c /I path-to-includes path-to-libs \ tobii_research.lib
+备注：cl命令，cl /I <dir>是把目录加入include搜录路径中
 1.1.2运行使用tobii_research构建的应用程序
 要使用Tobii Pro SDK运行应用程序，例如上一节中构建的simple_project，您需要添加path-to-libs作为应用程序的搜索路径。 一种方法是将path-to-libs添加到环境变量PATH。
 
@@ -61,3 +62,11 @@ Pro Eye Tracker Manager可以使用调用功能与Pro SDK上构建的分析应用程序集成。 Pro S
 构建所需的配置（即Debug / Release和x86 / x64）。
 要使用该库，您需要在源或链接中手动加载两个DLL（tobii_research_addons.dll和tobii_research.dll）与其各自的lib文件。 参见示例项目。
 
+1.5.1.1
+cl sample.c /I D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\include D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\lib\tobii_research.lib
+还是报错；
+sample.c
+sample.c(1): fatal error C1083: 无法打开包括文件: “stdio.h”: No such file or directory
+1.5.1.2 cl命令的作用：（备注：cl命令，cl /I <dir>是把目录加入include搜录路径中）所以是编译和链接（link)的缩写吗？
+编译(compilation , compile) 1、利用编译程序从源语言编写的源程序产生目标程序的过程。 2、用编译程序产生目标程序的动作。 
+动态库又称动态链接库英文为DLL，是Dynamic Link Library 的缩写形式，DLL是一个包含可由多个程序同时使用的代码和数据的库，DLL不是可执行文件
