@@ -70,3 +70,5 @@ sample.c(1): fatal error C1083: 无法打开包括文件: “stdio.h”: No such file or d
 1.5.1.2 cl命令的作用：（备注：cl命令，cl /I <dir>是把目录加入include搜录路径中）所以是编译和链接（link)的缩写吗？
 编译(compilation , compile) 1、利用编译程序从源语言编写的源程序产生目标程序的过程。 2、用编译程序产生目标程序的动作。 
 动态库又称动态链接库英文为DLL，是Dynamic Link Library 的缩写形式，DLL是一个包含可由多个程序同时使用的代码和数据的库，DLL不是可执行文件
+1.5.1.2.1即使切换到sample.c所在目录也不行
+cl sample.c /I D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\include D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\lib\tobii_research.dll
