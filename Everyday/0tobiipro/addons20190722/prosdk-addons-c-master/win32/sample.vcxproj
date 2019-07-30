@@ -82,6 +82,9 @@
     <LinkIncremental>true</LinkIncremental>
     <IntDir>$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)\Output\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>D:\Windows Kits\10\Include\10.0.16299.0\ucrt;D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\include;D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\64\include;D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\source;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\lib;D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\64\lib;$(LibraryPath)</LibraryPath>
+    <ReferencePath>D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\source;$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>

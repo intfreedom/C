@@ -72,3 +72,27 @@ sample.c(1): fatal error C1083: 无法打开包括文件: “stdio.h”: No such file or d
 动态库又称动态链接库英文为DLL，是Dynamic Link Library 的缩写形式，DLL是一个包含可由多个程序同时使用的代码和数据的库，DLL不是可执行文件
 1.5.1.2.1即使切换到sample.c所在目录也不行
 cl sample.c /I D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\include D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\lib\tobii_research.dll
+1.5.1.3
+用VS 2017的开发人员命令提示符，打开，少了fatal error C1083: 无法打开包括文件: “stdio.h”: No such file or directory这个报错；
+出现：cl: 命令行 warning D9024 :无法识别的源文件类型“D:\02ability\LearnC\Everyday\0tobiipro\addons20190722\prosdk-addons-c-master\sdk\32\lib\tobii_research.dll”， 假定为对象文件
+
+
+1.5.1.4
+以上错把tobii_resrearch.lib,文件写为dll，修改为tobii_resrearch.lib之后出现的报错：sample.exe : fatal error LNK1120: 7 个无法解析的外部命令；
+
+1.5.1.5
+把tobii_research_addons属性页，项目默认值---配置类型 改为（应用程序(.exe))，这个报错：不是有效的Win32应用程序；消失；
+
+Visual Studio开发中引用第三方的库时，可能会遇到Error LNK 2019，这是由于库引用不正确导致的。本文针对引用.h 头文件和.lib库文件遇到error LNK2019 的情况。
+
+这样设置后会改变一些东西；但是还是不成功；明天换linux试试，大爷的；
+第一步，添加.h到项目的包含目录。
+右键点击开发项目->属性->VC++目录->包含目录， 将.h文件所在目录添加到包含目录最后，目录之间用';' 分隔。
+
+第二步，添加lib到项目的库目录。
+库目录同包含目录在同一个界面中，操作同第一步相同。
+
+第三步，添加lib到附加依赖项。
+第二步的操作只是告诉项目在需要依赖的库在哪些目录中，但并没有告知项目需要依赖的库。和包含目录不同的是，包含目录的引用是通过include实现的，库目录依赖配置实现的。
+
+同样在项目的属性页中，链接器->输入->附加依赖项，把依赖lib的文件名加到最后。
