@@ -1,0 +1,35 @@
+1.1.1
+https://github.com/tobiipro/prosdk-addons-c/
+1.1.2
+包含sdk的才需要被编译,vectormath.h,screen_based_calibration_validation.h,
+这两个文件包含sdk中的文件；
+1.1.3使用github上的方法，当想要使用 -ltobii_research 时出现这种报错:
+cogp3@cog3:~/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/source$ gcc -o sample ~/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/source/sample.c -ltobii_research -ltobii_research_addons
+In file included from /home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/source/sample.c:4:
+/home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/source/screen_based_calibration_validation.h:26:10: fatal error: tobii_research.h: No such file or directory
+ #include "tobii_research.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+注意linux中使用的反 ` `  倒引号机制：执行它所包含的内容
+使用网页,http://developer.tobiipro.com/c/c-getting-started.html上的方法：
+cogp3@cog3:~/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/sdk$ gcc ../source/sample.c `pkg-config --cflags --libs tobii_research` -o sample
+/usr/bin/ld: skipping incompatible /usr/local/lib/tobii_research/libtobii_research.so when searching for -ltobii_research
+/usr/bin/ld: cannot find -ltobii_research
+/usr/bin/ld: cannot find -lavahi-client
+/usr/bin/ld: cannot find -lavahi-common
+collect2: error: ld returned 1 exit status
+
+1.1.3.1
+http://developer.tobiipro.com/c/c-getting-started.html按照这个方法里的，sudo make install
+To install the 64-bit tobii_research.只配置64位，就少一个报错，/usr/bin/ld: cannot find -ltobii_research
+变为：cogp3@cog3:~/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731No32/prosdk-addons-c-master/sdk$ gcc ../source/sample.c `pkg-config --cflags --libs tobii_research` -o sample
+/usr/bin/ld: cannot find -lavahi-client
+/usr/bin/ld: cannot find -lavahi-common
+collect2: error: ld returned 1 exit status
+
+把sample.c改为vectormath.h,screen_based_calibration_validation.h,或者.c都不行；
+
+
+
+
