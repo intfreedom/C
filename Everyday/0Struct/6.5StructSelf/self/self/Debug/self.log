@@ -1,0 +1,12 @@
+﻿  selfStruct.c
+d:\02ability\learnc\everyday\0struct\6.5structself\self\self\selfstruct.c(36): warning C4028: 形参 1 与声明不同
+d:\02ability\learnc\everyday\0struct\6.5structself\self\self\selfstruct.c(36): warning C4273: “strdup”: dll 链接不一致
+  d:\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的前一个定义
+d:\02ability\learnc\everyday\0struct\6.5structself\self\self\selfstruct.c(38): error C2371: “addtree”: 重定义；不同的基类型
+  d:\02ability\learnc\everyday\0struct\6.5structself\self\self\selfstruct.c(8): note: 参见“addtree”的声明
+d:\02ability\learnc\everyday\0struct\6.5structself\self\self\selfstruct.c(43): warning C4047: “=”:“tnode *”与“tnode *(__cdecl *)(void)”的间接级别不同
+d:\02ability\learnc\everyday\0struct\6.5structself\self\self\selfstruct.c(54): warning C4133: “return”: 从“tnode *”到“treenode *”的类型不兼容
+d:\02ability\learnc\everyday\0struct\6.5structself\self\self\selfstruct.c(44): error C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: 参见“strdup”的声明
+d:\02ability\learnc\everyday\0struct\6.5structself\self\self\selfstruct.c(78): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 参见“strcpy”的声明
