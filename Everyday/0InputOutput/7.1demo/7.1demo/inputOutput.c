@@ -1,5 +1,6 @@
 #include<stdarg.h>
 #include<stdio.h>
+#include<ctype.h>
 
 /* minprintf: minimal printf with variable argument list */
 void minprintf(char *fmt, ...)
@@ -39,7 +40,15 @@ void minprintf(char *fmt, ...)
 
 main()
 {
+	int c;
+	
+	while ((c = getchar()) != EOF)
+		putchar(tolower(c));
+	
+
+
 	minprintf("%s\n", "string");
 	getchar();
 
+	return 0;
 }

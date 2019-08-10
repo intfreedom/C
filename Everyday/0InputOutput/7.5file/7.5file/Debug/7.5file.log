@@ -1,0 +1,5 @@
+﻿  cat.c
+d:\009c\learnc\everyday\0inputoutput\7.5file\7.5file\cat.c(15): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+  d:\009c\learnc\everyday\0inputoutput\7.5file\7.5file\cat.c(15): note: 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+  d:\009c\learnc\everyday\0inputoutput\7.5file\7.5file\cat.c(15): note: 缺失的可变参数 1 为格式字符串“%s”所需
+  7.5file.vcxproj -> D:\009C\LearnC\Everyday\0InputOutput\7.5file\Debug\7.5file.exe
