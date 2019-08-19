@@ -14,6 +14,7 @@ cl simple_project.c /I path-to-includes path-to-libs \ tobii_research.lib
 
 1.3 SDK主页面：https://www.tobiipro.com/product-listing/tobii-pro-sdk/
 对应的中文网站：https://www.tobiipro.com/zh/product-listing/tobii-pro-sdk/#%25E6%258A%2580%25E6%259C%25AF%25E8%25A7%2584%25E6%25A0%25BC
+github上的示例https://github.com/tobiipro/prosdk-addons-c/
 
 1.3.1Tobii Pro SDK
 免费软件开发套件，用于构建分析应用程序，以与Tobii Pro的眼动仪配合使用。 为多种编程语言和3D引擎预制件提供多平台支持。
