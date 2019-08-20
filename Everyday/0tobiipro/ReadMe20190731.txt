@@ -130,7 +130,8 @@ Visual Studio开发中引用第三方的库时，可能会遇到Error LNK 2019�
 
 同样在项目的属性页中，链接器->输入->附加依赖项，把依赖lib的文件名加到最后。
 
-1.5.1.6按照这个https://blog.csdn.net/qq_34097715/article/details/79540933里方法有进步；但还是出现
+1.5.1.6
+按照这个https://blog.csdn.net/qq_34097715/article/details/79540933里方法有进步；但还是出现
 不是有效的Win32应用程序；
 
 1.5.1.7
@@ -139,6 +140,17 @@ Visual Studio开发中引用第三方的库时，可能会遇到Error LNK 2019�
 D:\02ability\LearnC\Everyday\0tobiipro\addonsLinux20190731\prosdk-addons-c-master\win32\MSVCRTD.lib(exe_winmain.obj)	1	
 
 1.5.1.8  无法解析的外部符号 _WinMain@16。。。。。。。。
+在左边栏中依次选择：Configuration Properties->C/C++->Preprocessor,然后在右边栏的Preprocessor Definitions对应的项中删除_WINDOWS, 添加_CONSOLE.
+使用上述这种方法，还是不行；
 把这个替换出去_WINDOWS    _CONSOLE这两个换来换去，报错依旧：
 为何sample里会又一个tobii_research_addons.lib，去掉之后，错误更多；想着添加 一个sample.lib
 
+修改为_CONSOLE后，
+报错状态变为LNK2019  无法解析的外部符号 _main，该符号在函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中被引用	tobii_research_addons	
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\win32\MSVCRTD.lib(exe_main.obj)	1
+
+1.5.2
+注意到一个问题，为何有好几个.h文件，只有一个对应的.lib文件；是不是把另外几个都编译下；sdk中的源文件，应该没有问题；
+还有再必应中，用这个作为关键词搜索，MSVCRTD.lib(exe_main.obj)
+
+或者再github中问问，开发者；

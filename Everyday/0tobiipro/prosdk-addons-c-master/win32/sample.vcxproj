@@ -82,6 +82,8 @@
     <LinkIncremental>true</LinkIncremental>
     <IntDir>$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)\Output\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\sdk\32\include;D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\source;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\sdk\32\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
