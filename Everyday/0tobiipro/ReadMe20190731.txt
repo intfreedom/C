@@ -216,3 +216,17 @@ C/C++ ---- 预处理器里都是控制台 _CONSOLE
 一，关键就是开发人员可能选择一个新的Win32应用程序项目，但创建的入口点函数是main,生成应用程序时，会报告一个链接器错误；
 把配置属性-链接器-系统-子系统中改为，/SUBSYSTEM:CONSOLE
 二，会报告无法启动程序   .dll不是有效的Win32应用程序，这个错误，一个原因是没有选择合适的启动项目，应把生成.exe的项目的作为启动项目；
+三，选择Debug x64，可能和计算机系统有关；
+
+1.5.6
+Usage: sample <eyetracker address>
+Couldn't find eyetracker with address (null)!
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master-x64\win32\\Output\x64\Debug\sample.exe (进程 19164)已退出 ，返回代码为: 1。
+若要在调试停止时自动关闭控制台，请启用“工具”->“选项”->“调试”->“调试停止时自动关闭控制台”。
+按任意键关闭此窗口...
+以为要在sdk的机器上运行；
+
+研究以下页面；C - SDK reference guide call_eyetracker_manager_windows.c
+http://developer.tobiipro.com/c/c-sdk-reference-guide.html
+研究如何连接到tobii上http://developer.tobiipro.com/c/c-oldmigrationsdk.html；
+
