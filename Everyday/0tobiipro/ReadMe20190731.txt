@@ -230,3 +230,9 @@ D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master-x64\win32\\Output\
 http://developer.tobiipro.com/c/c-sdk-reference-guide.html
 研究如何连接到tobii上http://developer.tobiipro.com/c/c-oldmigrationsdk.html；
 
+1.5.6.1注意是否可以用EyeTrackerManager给出Spectrum的地址？？？
+也可能不是ETM软件给出的地址，因为sdk支持Linux，而ETM，只支持Windows和Mac系统。
+高效的Eye Tracker Manager应用
+Eye Tracker Manager是SDK的组件之一，可帮助您管理眼动仪 (例如，更改采样率和固件升级)并在需要将屏幕移除，作为独立的眼动仪模块使用的场合中设置眼动仪。  
+此组件目前仅适用于Tobii Pro Spectrum眼动仪，支持 Windows和Mac系统。
+this web can be right: http://developer.tobiipro.com/tobiiprosdk/addons.html
