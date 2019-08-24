@@ -236,3 +236,5 @@ http://developer.tobiipro.com/c/c-sdk-reference-guide.html
 Eye Tracker Manager是SDK的组件之一，可帮助您管理眼动仪 (例如，更改采样率和固件升级)并在需要将屏幕移除，作为独立的眼动仪模块使用的场合中设置眼动仪。  
 此组件目前仅适用于Tobii Pro Spectrum眼动仪，支持 Windows和Mac系统。
 this web can be right: http://developer.tobiipro.com/tobiiprosdk/addons.html
+
+spectrum依靠网线连接的，是不是可以通过ipconfig获得其地址；
