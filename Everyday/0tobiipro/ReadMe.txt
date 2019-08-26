@@ -1,5 +1,38 @@
-1.1ÔÚWindowsÉÏ°²×°ºÍ¹¹½¨Pro SDK
+1.1ÔÚLinuxÉÏ°²×°ºÍ¹¹½¨Pro SDK
+1.1.1
+https://github.com/tobiipro/prosdk-addons-c/
+1.1.2
+°üº¬sdkµÄ²ÅĞèÒª±»±àÒë,vectormath.h,screen_based_calibration_validation.h,
+ÕâÁ½¸öÎÄ¼ş°üº¬sdkÖĞµÄÎÄ¼ş£»
+1.1.3Ê¹ÓÃgithubÉÏµÄ·½·¨£¬µ±ÏëÒªÊ¹ÓÃ -ltobii_research Ê±³öÏÖÕâÖÖ±¨´í:
+cogp3@cog3:~/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/source$ gcc -o sample ~/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/source/sample.c -ltobii_research -ltobii_research_addons
+In file included from /home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/source/sample.c:4:
+/home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/source/screen_based_calibration_validation.h:26:10: fatal error: tobii_research.h: No such file or directory
+ #include "tobii_research.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
 
+×¢ÒâlinuxÖĞÊ¹ÓÃµÄ·´ ` `  µ¹ÒıºÅ»úÖÆ£ºÖ´ĞĞËüËù°üº¬µÄÄÚÈİ
+Ê¹ÓÃÍøÒ³,http://developer.tobiipro.com/c/c-getting-started.htmlÉÏµÄ·½·¨£º
+cogp3@cog3:~/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731/prosdk-addons-c-master/sdk$ gcc ../source/sample.c `pkg-config --cflags --libs tobii_research` -o sample
+/usr/bin/ld: skipping incompatible /usr/local/lib/tobii_research/libtobii_research.so when searching for -ltobii_research
+/usr/bin/ld: cannot find -ltobii_research
+/usr/bin/ld: cannot find -lavahi-client
+/usr/bin/ld: cannot find -lavahi-common
+collect2: error: ld returned 1 exit status
+
+1.1.3.1
+http://developer.tobiipro.com/c/c-getting-started.html°´ÕÕÕâ¸ö·½·¨ÀïµÄ£¬sudo make install
+To install the 64-bit tobii_research.Ö»ÅäÖÃ64Î»£¬¾ÍÉÙÒ»¸ö±¨´í£¬/usr/bin/ld: cannot find -ltobii_research
+±äÎª£ºcogp3@cog3:~/intfreedom/LearnC/Everyday/0tobiipro/addonsLinux20190731No32/prosdk-addons-c-master/sdk$ gcc ../source/sample.c `pkg-config --cflags --libs tobii_research` -o sample
+/usr/bin/ld: cannot find -lavahi-client
+/usr/bin/ld: cannot find -lavahi-common
+collect2: error: ld returned 1 exit status
+
+°Ñsample.c¸ÄÎªvectormath.h,screen_based_calibration_validation.h,»òÕß.c¶¼²»ĞĞ£»
+
+
+1.2ÔÚWindowsÉÏ°²×°ºÍ¹¹½¨Pro SDK
 ÏÂÔØ×îĞÂ°æ±¾µÄTobii Pro SDK C Binding¡£ 
 ¸ÃÈí¼ş°ü°üÀ¨¿ª·¢ÓëTobii ProÑÛ¶¯ÒÇÍ¨ĞÅµÄÓ¦ÓÃ³ÌĞòËùĞèµÄËùÓĞÎÄ¼ş¡£ ÌáÈ¡ÎÄ¼ş²¢½«ËüÃÇ·ÅÔÚ±£´æ¿ª·¢ÎÄ¼şµÄÎ»ÖÃ¡£
 1.1.1Ê¹ÓÃtobii_research¹¹½¨
@@ -10,9 +43,8 @@ cl simple_project.c /I path-to-includes path-to-libs \ tobii_research.lib
 1.1.2ÔËĞĞÊ¹ÓÃtobii_research¹¹½¨µÄÓ¦ÓÃ³ÌĞò
 ÒªÊ¹ÓÃTobii Pro SDKÔËĞĞÓ¦ÓÃ³ÌĞò£¬ÀıÈçÉÏÒ»½ÚÖĞ¹¹½¨µÄsimple_project£¬ÄúĞèÒªÌí¼Ópath-to-libs×÷ÎªÓ¦ÓÃ³ÌĞòµÄËÑË÷Â·¾¶¡£ Ò»ÖÖ·½·¨ÊÇ½«path-to-libsÌí¼Óµ½»·¾³±äÁ¿PATH¡£
 
-1.2²»¹ÜÈÎºÎÓïÑÔµÄÍ¨ÓÃ¸ÅÄî£ºhttp://developer.tobiipro.com/commonconcepts.html
-
 1.3 SDKÖ÷Ò³Ãæ£ºhttps://www.tobiipro.com/product-listing/tobii-pro-sdk/
+²»¹ÜÈÎºÎÓïÑÔµÄÍ¨ÓÃ¸ÅÄî£ºhttp://developer.tobiipro.com/commonconcepts.html
 ¶ÔÓ¦µÄÖĞÎÄÍøÕ¾£ºhttps://www.tobiipro.com/zh/product-listing/tobii-pro-sdk/#%25E6%258A%2580%25E6%259C%25AF%25E8%25A7%2584%25E6%25A0%25BC
 githubÉÏµÄÊ¾Àıhttps://github.com/tobiipro/prosdk-addons-c/
 
@@ -98,7 +130,8 @@ Visual Studio¿ª·¢ÖĞÒıÓÃµÚÈı·½µÄ¿âÊ±£¬¿ÉÄÜ»áÓöµ½Error LNK 2019£¬ÕâÊÇÓÉÓÚ¿âÒıÓÃ²»Õ
 
 Í¬ÑùÔÚÏîÄ¿µÄÊôĞÔÒ³ÖĞ£¬Á´½ÓÆ÷->ÊäÈë->¸½¼ÓÒÀÀµÏî£¬°ÑÒÀÀµlibµÄÎÄ¼şÃû¼Óµ½×îºó¡£
 
-1.5.1.6°´ÕÕÕâ¸öhttps://blog.csdn.net/qq_34097715/article/details/79540933Àï·½·¨ÓĞ½ø²½£»µ«»¹ÊÇ³öÏÖ
+1.5.1.6
+°´ÕÕÕâ¸öhttps://blog.csdn.net/qq_34097715/article/details/79540933Àï·½·¨ÓĞ½ø²½£»µ«»¹ÊÇ³öÏÖ
 ²»ÊÇÓĞĞ§µÄWin32Ó¦ÓÃ³ÌĞò£»
 
 1.5.1.7
@@ -107,5 +140,123 @@ Visual Studio¿ª·¢ÖĞÒıÓÃµÚÈı·½µÄ¿âÊ±£¬¿ÉÄÜ»áÓöµ½Error LNK 2019£¬ÕâÊÇÓÉÓÚ¿âÒıÓÃ²»Õ
 D:\02ability\LearnC\Everyday\0tobiipro\addonsLinux20190731\prosdk-addons-c-master\win32\MSVCRTD.lib(exe_winmain.obj)	1	
 
 1.5.1.8  ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ _WinMain@16¡£¡£¡£¡£¡£¡£¡£¡£
+ÔÚ×ó±ßÀ¸ÖĞÒÀ´ÎÑ¡Ôñ£ºConfiguration Properties->C/C++->Preprocessor,È»ºóÔÚÓÒ±ßÀ¸µÄPreprocessor Definitions¶ÔÓ¦µÄÏîÖĞÉ¾³ı_WINDOWS, Ìí¼Ó_CONSOLE.
+Ê¹ÓÃÉÏÊöÕâÖÖ·½·¨£¬»¹ÊÇ²»ĞĞ£»
 °ÑÕâ¸öÌæ»»³öÈ¥_WINDOWS    _CONSOLEÕâÁ½¸ö»»À´»»È¥£¬±¨´íÒÀ¾É£º
 ÎªºÎsampleÀï»áÓÖÒ»¸ötobii_research_addons.lib£¬È¥µôÖ®ºó£¬´íÎó¸ü¶à£»Ïë×ÅÌí¼Ó Ò»¸ösample.lib
+
+ĞŞ¸ÄÎª_CONSOLEºó£¬
+±¨´í×´Ì¬±äÎªLNK2019  ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ _main£¬¸Ã·ûºÅÔÚº¯Êı "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) ÖĞ±»ÒıÓÃ	tobii_research_addons	
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\win32\MSVCRTD.lib(exe_main.obj)	1
+
+1.5.2
+×¢Òâµ½Ò»¸öÎÊÌâ£¬ÎªºÎÓĞºÃ¼¸¸ö.hÎÄ¼ş£¬Ö»ÓĞÒ»¸ö¶ÔÓ¦µÄ.libÎÄ¼ş£»ÊÇ²»ÊÇ°ÑÁíÍâ¼¸¸ö¶¼±àÒëÏÂ£»sdkÖĞµÄÔ´ÎÄ¼ş£¬Ó¦¸ÃÃ»ÓĞÎÊÌâ£»
+»¹ÓĞÔÙ±ØÓ¦ÖĞ£¬ÓÃÕâ¸ö×÷Îª¹Ø¼ü´ÊËÑË÷£¬MSVCRTD.lib(exe_main.obj)
+
+»òÕßÔÙgithubÖĞÎÊÎÊ£¬¿ª·¢Õß£»»òÕßÊ¹ÓÃ¹È¸èËÑË÷ÏÂ£»
+
+1.5.3×ÛºÏÒ»ÏÂ£¬ÎÊÌâ»¹ÊÇ³öÔÚclÃüÁîÕâÀï£»
+cl sample.c /I D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\sdk\32\include D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\sdk\32\lib\tobii_research.lib
+/out:sample.exe
+sample.obj
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master\sdk\32\lib\tobii_research.lib
+sample.obj : error LNK2019: ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ __imp__tobii_research_screen_based_calibration_validation_init_default£¬¸Ã·ûºÅÔÚº¯Êı _main ÖĞ±»ÒıÓÃ
+sample.obj : error LNK2019: ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ __imp__tobii_research_screen_based_calibration_validation_destroy£¬¸Ã·ûºÅÔÚº¯Êı _main ÖĞ±»ÒıÓÃ
+sample.obj : error LNK2019: ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ __imp__tobii_research_screen_based_calibration_validation_enter_validation_mode£¬¸Ã·ûºÅÔÚº¯Êı _main ÖĞ ±»ÒıÓÃ
+sample.obj : error LNK2019: ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ __imp__tobii_research_screen_based_calibration_validation_start_collecting_data£¬¸Ã·ûºÅÔÚº¯Êı _main ÖĞ ±»ÒıÓÃ
+sample.obj : error LNK2019: ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ __imp__tobii_research_screen_based_calibration_validation_compute£¬¸Ã·ûºÅÔÚº¯Êı _main ÖĞ±»ÒıÓÃ
+sample.obj : error LNK2019: ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ __imp__tobii_research_screen_based_calibration_validation_destroy_result£¬¸Ã·ûºÅÔÚº¯Êı _main ÖĞ±»ÒıÓÃ
+sample.obj : error LNK2019: ÎŞ·¨½âÎöµÄÍâ²¿·ûºÅ __imp__tobii_research_screen_based_calibration_validation_is_collecting_data£¬¸Ã·ûºÅÔÚº¯Êı _main ÖĞ±»ÒıÓÃ
+sample.exe : fatal error LNK1120: 7 ¸öÎŞ·¨½âÎöµÄÍâ²¿ÃüÁî
+
+ËÆºõ±ÈÒÔÇ°ÓĞ½ø²½£»
+
+1.5.4
+°ÑËùÓĞµÄ·Å½øx64ÊÔÒ»ÊÔ£»
+For Windows
+
+    Unzip the Tobii Pro SDK archive to a new directory sdk in root of the addons folder.
+    Open Visual Studio and load the solution in the win32 directory.
+    Build for the desired configuration (i.e. Debug/Release and x86/x64).
+    µ½ÕâÀï£¬Ñ¡ÔñDebug x64Ã»ÓĞ±¨´í£»
+³¢ÊÔÊÖ¶¯¼ÓÔØ£º
+ÒªÊ¹ÓÃ¸Ã¿â£¬ÄúĞèÒªÔÚÔ´»òÁ´½ÓÖĞÊÖ¶¯¼ÓÔØÁ½¸öDLL£¨tobii_research_addons.dllºÍtobii_research.dll£©ÓëÆä¸÷×ÔµÄlibÎÄ¼ş¡£ ²Î¼ûÊ¾ÀıÏîÄ¿¡£
+
+ÔËĞĞÕâÒ»²½ºó£¬·´¶ø³öÏÖ
+ÎŞ·¨Æô¶¯³ÌĞò   .dll²»ÊÇÓĞĞ§µÄWin32Ó¦ÓÃ³ÌĞò£»
+
+ÖØĞÂÉú³É½â¾ö·½°¸³É¹¦£¬µ«±¾µØWindowsµ÷ÊÔÆ÷²»¿ÉÓÃ£»
+
+¼ÓÁËÕâÁ½¾äÒ²²»ĞĞ£»getchar();
+	system("pause");
+Ä¬ÈÏµÄ£¬ÅäÖÃÊôĞÔ-Á´½ÓÆ÷-ÏµÍ³-×ÓÏµÍ³----sampleÊôĞÔÒ³ÀïÊÇ¿ØÖÆÌ¨ _CONSOLE£¬¶øtobii_research_addonsÀïÎª_WINDOWS
+ÏÈĞŞ¸Ä¹ıÀ´ÊÔÊÔ£»
+
+1.5.5£¬Ä¿Ç°ÊÇĞŞ¸ÄÁË£¬°Ñsample×÷ÎªÆô¶¯ÏîÄ¿£»
+
+ÏÖÔÚ¿ÉÒÔ³öÀ´£»
+Usage: sample <eyetracker address>
+Couldn't find eyetracker with address (null)!
+
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master-x64\win32\\Output\x64\Debug\sample.exe (½ø³Ì 3696)ÒÑÍË³ö£¬·µ»Ø´úÂëÎª: 1¡£
+ÈôÒªÔÚµ÷ÊÔÍ£Ö¹Ê±×Ô¶¯¹Ø±Õ¿ØÖÆÌ¨£¬ÇëÆôÓÃ¡°¹¤¾ß¡±->¡°Ñ¡Ïî¡±->¡°µ÷ÊÔ¡±->¡°µ÷ÊÔÍ£Ö¹Ê±×Ô¶¯¹Ø±Õ¿ØÖÆÌ¨¡±¡£
+°´ÈÎÒâ¼ü¹Ø±Õ´Ë´°¿Ú...
+
+1.5.5.1Ä¿Ç°×öµÄ¸Ä±ä¼ÇÂ¼ÏÂÀ´£»
+°´ÕÕ²½ÖèUnzip the Tobii Pro SDK archive to a new directory sdk in root of the addons folder.
+    Open Visual Studio and load the solution in the win32 directory.
+È»ºóÑ¡ÔñDebug x64,²¢Éú³É½â¾ö·½°¸£¬Ã»ÓĞ±¨´í£»
+
+ÊôĞÔ->VC++Ä¿Â¼->°üº¬Ä¿Â¼£¬¿âÄ¿Â¼£¬ĞŞ¸ÄÏÂ£»Á½¸öÏîÄ¿¶¼ĞŞ¸ÄÁË
+ÅäÖÃÊôĞÔ-Á´½ÓÆ÷-ÏµÍ³-×ÓÏµÍ³----Á½¸öÏîÄ¿ÊôĞÔÒ³Àï¶¼ÊÇ¿ØÖÆÌ¨ _CONSOLE
+C/C++ ---- Ô¤´¦ÀíÆ÷Àï¶¼ÊÇ¿ØÖÆÌ¨ _CONSOLE
+ÏîÄ¿ÊôĞÔ--ÏîÄ¿Ä¬ÈÏÖµ--ÅäÖÃÀàĞÍ£¬ÉèÖÃÎªÓ¦ÓÃ³ÌĞò(.exe)£¬sampleµÄÎª.exe£»°Ñtobii_research_addonsÊôĞÔÒ³£¬¶ÔÓ¦µÄÉèÖÃÎª.dllºÍ.exe¾ù¿É£»
+
+×Ü½áÒ»ÏÂ£º
+Ò»£¬¹Ø¼ü¾ÍÊÇ¿ª·¢ÈËÔ±¿ÉÄÜÑ¡ÔñÒ»¸öĞÂµÄWin32Ó¦ÓÃ³ÌĞòÏîÄ¿£¬µ«´´½¨µÄÈë¿Úµãº¯ÊıÊÇmain,Éú³ÉÓ¦ÓÃ³ÌĞòÊ±£¬»á±¨¸æÒ»¸öÁ´½ÓÆ÷´íÎó£»
+°ÑÅäÖÃÊôĞÔ-Á´½ÓÆ÷-ÏµÍ³-×ÓÏµÍ³ÖĞ¸ÄÎª£¬/SUBSYSTEM:CONSOLE
+¶ş£¬»á±¨¸æÎŞ·¨Æô¶¯³ÌĞò   .dll²»ÊÇÓĞĞ§µÄWin32Ó¦ÓÃ³ÌĞò£¬Õâ¸ö´íÎó£¬Ò»¸öÔ­ÒòÊÇÃ»ÓĞÑ¡ÔñºÏÊÊµÄÆô¶¯ÏîÄ¿£¬Ó¦°ÑÉú³É.exeµÄÏîÄ¿µÄ×÷ÎªÆô¶¯ÏîÄ¿£»
+Èı£¬Ñ¡ÔñDebug x64£¬¿ÉÄÜºÍ¼ÆËã»úÏµÍ³ÓĞ¹Ø£»
+
+1.5.6
+Usage: sample <eyetracker address>
+Couldn't find eyetracker with address (null)!
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master-x64\win32\\Output\x64\Debug\sample.exe (½ø³Ì 19164)ÒÑÍË³ö £¬·µ»Ø´úÂëÎª: 1¡£
+ÈôÒªÔÚµ÷ÊÔÍ£Ö¹Ê±×Ô¶¯¹Ø±Õ¿ØÖÆÌ¨£¬ÇëÆôÓÃ¡°¹¤¾ß¡±->¡°Ñ¡Ïî¡±->¡°µ÷ÊÔ¡±->¡°µ÷ÊÔÍ£Ö¹Ê±×Ô¶¯¹Ø±Õ¿ØÖÆÌ¨¡±¡£
+°´ÈÎÒâ¼ü¹Ø±Õ´Ë´°¿Ú...
+ÒÔÎªÒªÔÚsdkµÄ»úÆ÷ÉÏÔËĞĞ£»
+
+ÑĞ¾¿ÒÔÏÂÒ³Ãæ£»C - SDK reference guide call_eyetracker_manager_windows.c
+http://developer.tobiipro.com/c/c-sdk-reference-guide.html
+ÑĞ¾¿ÈçºÎÁ¬½Óµ½tobiiÉÏhttp://developer.tobiipro.com/c/c-oldmigrationsdk.html£»
+
+
+1.5.6.1×¢ÒâÊÇ·ñ¿ÉÒÔÓÃEyeTrackerManager¸ø³öSpectrumµÄµØÖ·£¿£¿£¿
+Ò²¿ÉÄÜ²»ÊÇETMÈí¼ş¸ø³öµÄµØÖ·£¬ÒòÎªsdkÖ§³ÖLinux£¬¶øETM£¬Ö»Ö§³ÖWindowsºÍMacÏµÍ³¡£
+¸ßĞ§µÄEye Tracker ManagerÓ¦ÓÃ
+Eye Tracker ManagerÊÇSDKµÄ×é¼şÖ®Ò»£¬¿É°ïÖúÄú¹ÜÀíÑÛ¶¯ÒÇ (ÀıÈç£¬¸ü¸Ä²ÉÑùÂÊºÍ¹Ì¼şÉı¼¶)²¢ÔÚĞèÒª½«ÆÁÄ»ÒÆ³ı£¬×÷Îª¶ÀÁ¢µÄÑÛ¶¯ÒÇÄ£¿éÊ¹ÓÃµÄ³¡ºÏÖĞÉèÖÃÑÛ¶¯ÒÇ¡£  
+´Ë×é¼şÄ¿Ç°½öÊÊÓÃÓÚTobii Pro SpectrumÑÛ¶¯ÒÇ£¬Ö§³Ö WindowsºÍMacÏµÍ³¡£
+this web can be right: http://developer.tobiipro.com/tobiiprosdk/addons.html
+
+spectrumÒÀ¿¿ÍøÏßÁ¬½ÓµÄ£¬ÊÇ²»ÊÇ¿ÉÒÔÍ¨¹ıipconfig»ñµÃÆäµØÖ·£»
+
+<<<<<<< HEAD
+1.6.1
+ÏÖÔÚ¿ÉÒÔ´ò¿ªÁË£¬µ«ÎŞ·¨find eyetracker
+ÑĞ¾¿sample.c
+int main(int argc, char *argv[])ÕâÀï£¬argcÎªÃüÁîĞĞÊäÈëÊ±µÄ²ÎÊı¸öÊı£¬argv[]ÊÇargc¸ö²ÎÊı£¬ÆäÖĞµÚ0¸ö²ÎÊıÊÇ³ÌĞòµÄÈ«Ãû£¬ÒÔºóµÄ²ÎÊı¡£ÃüÁîĞĞºóÃæ¸úµÄÓÃ»§ÊäÈëµÄ²ÎÊı¡£
+
+
+ÇĞ»»µ½Éú³Ésample.exeµÄÄ¿Â¼£¬Ö´ĞĞ»á³öÏÖ
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master-x64\win32\Output\x64\Debug>sample.exe
+Usage: sample <eyetracker address>
+Couldn't find eyetracker with address (null)!
+
+ÕâÀïargc[0]ÊÇsample.exe£¬argc[1]Ó¦¸ÃÎªeyetracker address£¬¿ÉÒÔÊÔÊÔeye tracker managerµÄ°²×°µÄµØÖ·£»
+
+C:\Users\pc\AppData\Local\TobiiProEyeTrackerManager\Update.exe --processStart "TobiiProEyeTrackerManager.exe"
+C:\Users\pc\AppData\Local\TobiiProEyeTrackerManager\Update.exe
+=======
+
+
+>>>>>>> 77ad4368185af1540379e5e9b03e054a3e443698
