@@ -216,7 +216,8 @@ C/C++ ---- 预处理器里都是控制台 _CONSOLE
 一，关键就是开发人员可能选择一个新的Win32应用程序项目，但创建的入口点函数是main,生成应用程序时，会报告一个链接器错误；
 把配置属性-链接器-系统-子系统中改为，/SUBSYSTEM:CONSOLE
 二，会报告无法启动程序   .dll不是有效的Win32应用程序，这个错误，一个原因是没有选择合适的启动项目，应把生成.exe的项目的作为启动项目；
-三，选择Debug x64，可能和计算机系统有关；
+也就是把sample作为启动项目；
+三，选择Debug x64，可能和计算机系统有关；然后手动加载.lib以及.dll文件到属性->VC++目录->包含目录，库目录
 
 1.5.6
 Usage: sample <eyetracker address>
@@ -230,3 +231,18 @@ D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master-x64\win32\\Output\
 http://developer.tobiipro.com/c/c-sdk-reference-guide.html
 研究如何连接到tobii上http://developer.tobiipro.com/c/c-oldmigrationsdk.html；
 
+1.6.1
+现在可以打开了，但无法find eyetracker
+研究sample.c
+int main(int argc, char *argv[])这里，argc为命令行输入时的参数个数，argv[]是argc个参数，其中第0个参数是程序的全名，以后的参数。命令行后面跟的用户输入的参数。
+
+
+切换到生成sample.exe的目录，执行会出现
+D:\02ability\LearnC\Everyday\0tobiipro\prosdk-addons-c-master-x64\win32\Output\x64\Debug>sample.exe
+Usage: sample <eyetracker address>
+Couldn't find eyetracker with address (null)!
+
+这里argc[0]是sample.exe，argc[1]应该为eyetracker address，可以试试eye tracker manager的安装的地址；
+
+C:\Users\pc\AppData\Local\TobiiProEyeTrackerManager\Update.exe --processStart "TobiiProEyeTrackerManager.exe"
+C:\Users\pc\AppData\Local\TobiiProEyeTrackerManager\Update.exe
