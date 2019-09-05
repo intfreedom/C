@@ -1,0 +1,8 @@
+﻿  functionOverloading.cpp
+d:\009c\learnc\c++\20190905\20190905\functionoverloading.cpp(25): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
+d:\009c\learnc\c++\20190905\20190905\functionoverloading.cpp(25): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“char *”
+d:\009c\learnc\c++\20190905\20190905\functionoverloading.cpp(25): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+  d:\009c\learnc\c++\20190905\20190905\functionoverloading.cpp(25): note: 占位符和其参数预计 3 可变参数，但提供的却是 2 参数
+  d:\009c\learnc\c++\20190905\20190905\functionoverloading.cpp(25): note: 缺失的可变参数 3 为格式字符串“%s”所需
+d:\009c\learnc\c++\20190905\20190905\functionoverloading.cpp(28): warning C4715: “writetofile_int”: 不是所有的控件路径都返回值
+  20190905.vcxproj -> D:\009C\LearnC\C++\20190905\Debug\20190905.exe
