@@ -1,0 +1,2 @@
+﻿  ClassArray.cpp
+d:\02ability\learnc\c++\20190906\20190906\classarray.cpp(40): error C4700: 使用了未初始化的局部变量“Girltest”
