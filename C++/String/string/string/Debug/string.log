@@ -1,0 +1,4 @@
+﻿  string.cpp
+d:\009c\learnc\c++\string\string\string\string.cpp(19): warning C4018: “<”: 有符号/无符号不匹配
+d:\009c\learnc\c++\string\string\string\string.cpp(26): warning C4018: “<”: 有符号/无符号不匹配
+  string.vcxproj -> D:\009C\LearnC\C++\String\string\Debug\string.exe
