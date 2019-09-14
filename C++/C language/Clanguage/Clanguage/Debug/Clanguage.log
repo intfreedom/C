@@ -1,0 +1,2 @@
+﻿  address.c
+d:\009c\learnc\c++\c language\clanguage\clanguage\address.c(11): error C2297: “*”: 非法，右操作数包含“int *”类型
