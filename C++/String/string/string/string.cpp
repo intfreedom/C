@@ -3,6 +3,7 @@
 #include<vector>	
 #include<algorithm>
 
+/*
 int main()
 {
 	int height = 0;
@@ -30,7 +31,7 @@ int main()
 
 	system("pause");
 }
-
+*/
 
 
 
