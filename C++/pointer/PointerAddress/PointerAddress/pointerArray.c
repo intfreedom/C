@@ -3,6 +3,96 @@
 #include<string.h>
 
 /*
+main函数的形参；
+*/
+//argv[]:它是数组，数组每个元素都是char *,每个元素都是字符地址
+//argc: argv[]元素的个数
+//main()函数参数，需要用户传递
+int main(int argc, char *argv[])
+{
+	int i = 0;
+	for (i = 0; i < argc; i++)
+	{
+		printf("test = %s\n", argv[i]);
+	}
+
+	getchar();
+	return 0;
+}
+
+//这个地方写：
+//void print_array3(char **p,int n)和void print_array3(char *p[100],int n)都是一样的；
+void print_array3(char *p[], int n)
+{
+	int i = 0;
+	for (i = 0; i < n; i++)
+	{
+		printf("%s\n", p[i]);
+	}
+}
+
+int main18()
+{
+	int a[10];
+	//fun(a);
+
+	char *p[] = {"hello","abc","mike"};
+	int n = sizeof(p) / sizeof(*p);
+	print_array3(p, n);
+}
+
+int main17(int argc, char *argv[])
+{
+	char *p1 = "hello";
+	char *p2 = "abc";
+	char *p3 = "mike";
+
+	char *p[] = {"hello","abc","mike"};
+	int n = sizeof(p) / sizeof(*p);
+	int i = 0;
+	for (i = 0; i < n; i++)
+	{
+		printf("p[%d] = %s ", i, p[i]);
+	}
+	printf("\n");
+	getchar();
+	return 0;
+}
+
+int main16(int argc, char *argv[1])
+{
+	//1.p指针保存了"hello"的地址
+	//2.指针所指向的内存不能修改
+	char *p = "hello";
+
+	//1.把"hello"一个一个字符放在buf数组中
+	//2.数组的元素可以修改
+	char buf[] = "hello";
+
+	getchar();
+	return 0;
+}
+
+void fun11(char *tmp)
+{
+	*tmp = 'a';	//error
+}
+
+int main15(int argc, char *argv)
+{
+	char *p = NULL;	//p是变量；
+	"hello mike";	//字符串常量，首元素地址
+
+	p = "hello mike";	//p指向字符串
+	p = NULL;	//ok
+	p = "hello";	//ok
+
+	char *p2 = "abc";
+	//fun11(p2);	//p2的值，是"abc"的首地址，由于指向文字常量区，无法修改；
+
+	return 0;
+}
+/*
 字符串常量；
 */
 void function()
@@ -10,7 +100,7 @@ void function()
 	printf("fun s2 = %p\n", "hello mike");
 }
 
-int main()
+int main14()
 {
 	//1.字符串常量就是此字符串的首元素地址；
 	printf("s1 = %p\n", "hello mike");
