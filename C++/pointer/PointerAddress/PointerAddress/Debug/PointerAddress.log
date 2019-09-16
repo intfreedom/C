@@ -1,0 +1,4 @@
+﻿  pointerArray.c
+d:\02ability\learnc\c++\pointer\pointeraddress\pointeraddress\pointerarray.c(310): warning C4013: “system”未定义；假设外部返回 int
+d:\02ability\learnc\c++\pointer\pointeraddress\pointeraddress\pointerarray.c(186): warning C4172: 返回局部变量或临时变量的地址: a
+  PointerAddress.vcxproj -> D:\02ability\LearnC\C++\pointer\PointerAddress\Debug\PointerAddress.exe
