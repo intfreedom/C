@@ -1,0 +1,3 @@
+﻿  test.c
+D:\009C\LearnC\C++\Memory\MemoryZero\MemoryZero\test.c(165,57): warning C4305:  “函数”: 从“__int64”到“size_t”截断
+  MemoryZero.vcxproj -> D:\009C\LearnC\C++\Memory\MemoryZero\Debug\MemoryZero.exe
