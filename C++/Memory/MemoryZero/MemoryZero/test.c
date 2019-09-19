@@ -3,14 +3,32 @@
 #include<stdlib.h>
 #include<string.h>
 
-int main(int argc, char* argv[])
+/*堆区越界*/
+int main09(int argc, char* argv[])
+{
+	char* p = NULL;
+	p = (char*)malloc(0);
+	if (p == NULL)
+	{
+		printf("F\n");
+		return 0;
+	}
+
+	strcpy(p, "mike");
+	printf("%s\n", p);
+
+	system("pause");
+	return 0;
+}
+
+int main08(int argc, char* argv[])
 {
 	int* p;
 	p = (int*)malloc(sizeof(int));
 	if (p == NULL)
 	{
 		printf("Failure!!!\n");
-		//return -1;	//为何此处加了这一句，下面的*p=10;就不能有下划线
+		return -1;	//为何此处加了这一句，下面的*p=10;就不能有下划线
 	}
 
 	*p = (int)10;

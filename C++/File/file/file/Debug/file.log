@@ -1,0 +1,5 @@
+﻿  fileDemo.c
+D:\02ability\LearnC\C++\File\file\file\fileDemo.c(20,8): warning C4013:  “system”未定义；假设外部返回 int
+D:\02ability\LearnC\C++\File\file\file\fileDemo.c(40,18): warning C4013:  “malloc”未定义；假设外部返回 int
+D:\02ability\LearnC\C++\File\file\file\fileDemo.c(53,7): warning C4013:  “free”未定义；假设外部返回 int
+  file.vcxproj -> D:\02ability\LearnC\C++\File\file\Debug\file.exe
