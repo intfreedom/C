@@ -1,3 +1,4 @@
-﻿  test.c
-D:\02ability\LearnC\C++\Memory\MemoryZero\MemoryZero\test.c(182,57): warning C4305:  “函数”: 从“__int64”到“size_t”截断
-  MemoryZero.vcxproj -> D:\02ability\LearnC\C++\Memory\MemoryZero\Debug\MemoryZero.exe
+﻿  testMemory.c
+D:\009C\LearnC\C++\Memory\MemoryZero\MemoryZero\testMemory.c(24,8): warning C4013:  “system”未定义；假设外部返回 int
+D:\009C\LearnC\C++\Memory\MemoryZero\MemoryZero\testMemory.c(33,23): warning C4013:  “malloc”未定义；假设外部返回 int
+  MemoryZero.vcxproj -> D:\009C\LearnC\C++\Memory\MemoryZero\Debug\MemoryZero.exe
