@@ -1,8 +1,0 @@
-[200~cogp3@cog3:~/intfreedom/LearnC$ git push -u origin master
-Connection reset by 52.74.223.119 port 22
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-cogp3@cog3:~/intfreedom/LearnC$ git push -u origin master
-

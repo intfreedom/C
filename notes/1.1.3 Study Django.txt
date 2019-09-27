@@ -1,34 +1,34 @@
-1. Django´´½¨ÏîÄ¿
-1.1 ÔÚ´´½¨Ä¿Â¼ÏÂ£¬django-admin startproject project
-1.2 ÅäÖÃÊı¾İ¿â
-1.2.1 Æô¶¯Êı¾İ¿â·şÎñ£ºnet start mysql80    #80ÎªÊı¾İ¿â°æ±¾£¬Æô¶¯Ê±ÒÔ¹ÜÀíÔ±Éí·İÔËĞĞcmd
-1.2.2 ´ò¿ªÊı¾İ¿â£ºmysql -u root -p
-1.2.3 ÔÚ.project/project/settings.pyÀïÅäÖÃÊı¾İ¿â
-1.3 ÅäÖÃÓ¦ÓÃ
-1.3.1 cmdÖĞÇĞ»»µ½¹¤×÷Ä¿Â¼£¬.project£¬python manage.py startapp myApp    #myAppÎªÓ¦ÓÃÃû£¬¿ÉĞŞ¸Ä
-1.3.2 ÔÚ.project/project/settings.pyÀïINSTALLED_APPSÖĞ¼¤»îmyAppÓ¦ÓÃ
-1.4 ¶¨ÒåÄ£ĞÍ
-1.4.1 ÔÚ.project/myApp/models.pyÖĞ¶¨ÒåÄ£ĞÍ£¬Êı¾İ¿âÖĞµÄÒ»ÕÅ±í¾Í¶ÔÓ¦Ò»¸öÄ£ĞÍ
-1.5 ÔÚÊı¾İ¿âÖĞÉú³ÉÊı¾İ±í
-1.5.1 Éú³ÉÇ¨ÒÆÎÄ¼ş£¬ÔÚcmdÖĞ.projectÄ¿Â¼ÏÂÖ´ĞĞ£ºpython manage.py makemigrations    #ÔÚmigrationsÄ¿Â¼ÏÂÉú³ÉÇ¨ÒÆÎÄ¼ş£¬´ËÊ±Êı¾İ¿âÎŞ±í
-1.5.2 Ö´ĞĞÇ¨ÒÆÎÄ¼ş£¬python manage.py migrate    #Ïàµ±ÓÚÖ´ĞĞmysqlÓï¾ä´´½¨Êı¾İ±í
-1.5.3 ²âÊÔÊı¾İ²Ù×÷
-1.5.3.1 ½øÈëµ½python shell£¬Ö´ĞĞpython manage.py shell
-1.5.3.2 ÒıÈë°ü£¬from myApp.models import Grades, Students    #Ö®Ç°´´½¨µÄ
+ï»¿1. Djangoåˆ›å»ºé¡¹ç›®
+1.1 åœ¨åˆ›å»ºç›®å½•ä¸‹ï¼Œdjango-admin startproject project
+1.2 é…ç½®æ•°æ®åº“
+1.2.1 å¯åŠ¨æ•°æ®åº“æœåŠ¡ï¼šnet start mysql80    #80ä¸ºæ•°æ®åº“ç‰ˆæœ¬ï¼Œå¯åŠ¨æ—¶ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œcmd
+1.2.2 æ‰“å¼€æ•°æ®åº“ï¼šmysql -u root -p
+1.2.3 åœ¨.project/project/settings.pyé‡Œé…ç½®æ•°æ®åº“
+1.3 é…ç½®åº”ç”¨
+1.3.1 cmdä¸­åˆ‡æ¢åˆ°å·¥ä½œç›®å½•ï¼Œ.projectï¼Œpython manage.py startapp myApp    #myAppä¸ºåº”ç”¨åï¼Œå¯ä¿®æ”¹
+1.3.2 åœ¨.project/project/settings.pyé‡ŒINSTALLED_APPSä¸­æ¿€æ´»myAppåº”ç”¨
+1.4 å®šä¹‰æ¨¡å‹
+1.4.1 åœ¨.project/myApp/models.pyä¸­å®šä¹‰æ¨¡å‹ï¼Œæ•°æ®åº“ä¸­çš„ä¸€å¼ è¡¨å°±å¯¹åº”ä¸€ä¸ªæ¨¡å‹
+1.5 åœ¨æ•°æ®åº“ä¸­ç”Ÿæˆæ•°æ®è¡¨
+1.5.1 ç”Ÿæˆè¿ç§»æ–‡ä»¶ï¼Œåœ¨cmdä¸­.projectç›®å½•ä¸‹æ‰§è¡Œï¼špython manage.py makemigrations    #åœ¨migrationsç›®å½•ä¸‹ç”Ÿæˆè¿ç§»æ–‡ä»¶ï¼Œæ­¤æ—¶æ•°æ®åº“æ— è¡¨
+1.5.2 æ‰§è¡Œè¿ç§»æ–‡ä»¶ï¼Œpython manage.py migrate    #ç›¸å½“äºæ‰§è¡Œmysqlè¯­å¥åˆ›å»ºæ•°æ®è¡¨
+1.5.3 æµ‹è¯•æ•°æ®æ“ä½œ
+1.5.3.1 è¿›å…¥åˆ°python shellï¼Œæ‰§è¡Œpython manage.py shell
+1.5.3.2 å¼•å…¥åŒ…ï¼Œfrom myApp.models import Grades, Students    #ä¹‹å‰åˆ›å»ºçš„
                 from django.utils  import timezone
                 from datetime import *
-1.5.3.3 Ìí¼ÓÊı¾İ£¬±¾ÖÊ£º´´½¨Ò»¸öÄ£ĞÍÀàµÄ¶ÔÏóÊµÀı
-1.5.3.4 ²é¿´Ä³¸ö¶ÔÏó£¬ÀàÃû£ºobjects.get(pk=2)£¬Grades.objects.get(pk=2)
-1.5.3.5 ĞŞ¸ÄÊı¾İ£¬ÊôĞÔ=ĞÂÖµ£¬grade2.gboynum = 20
+1.5.3.3 æ·»åŠ æ•°æ®ï¼Œæœ¬è´¨ï¼šåˆ›å»ºä¸€ä¸ªæ¨¡å‹ç±»çš„å¯¹è±¡å®ä¾‹
+1.5.3.4 æŸ¥çœ‹æŸä¸ªå¯¹è±¡ï¼Œç±»åï¼šobjects.get(pk=2)ï¼ŒGrades.objects.get(pk=2)
+1.5.3.5 ä¿®æ”¹æ•°æ®ï¼Œå±æ€§=æ–°å€¼ï¼Œgrade2.gboynum = 20
                              grade2.save()
-1.5.3.6 É¾³ıÊı¾İ
-1.5.3.7 ¹ØÁªÊı¾İ
-1.6 Æô¶¯·şÎñÆ÷
-1.6.1 ÔÚcmdµÄ.projectÄ¿Â¼ÏÂ£ºpython manage.py runserver ip:port£¬IP¿ÉÒÔ²»Ğ´£¬Ä¬ÈÏÊÇ±¾»úIP£¬¶Ë¿ÚÄ¬ÈÏ8000
-1.6.2 ÕâÊÇÒ»¸ö´¿pythonĞ´µÄÇáÁ¿¼¶web·şÎñÆ÷£¬½ö½ö¿ª·¢²âÊÔÓÃ
-1.7 AdminÕ¾µã¹ÜÀí£º
-1.7.1 ÄÚÈİ·¢²¼£¬¹«¸æ·ÃÎÊ
-1.7.2 ÅäÖÃAdminÓ¦ÓÃ£¬ÔÚsettings.pyµÄINSTALLED_APPSÖĞÌí¼Ó django.contrib.admin
-1.7.3 ´´½¨¹ÜÀíÔ±ÓÃ»§,ÔÚcmdµÄ.projectÄ¿Â¼ÏÂ£ºpython manage.py createsuperuser
-1.7.4 ºº»¯£¬ĞŞ¸Äsettings.py LANGUAGE_CODE='zh-Hans'
-1.7.5 ×Ô¶¨Òå¹ÜÀíÒ³Ãæ£¨Ñ§µ½301¼¯£¬Íü¼Ç¹ÜÀíÔ±ÕË»§£©
+1.5.3.6 åˆ é™¤æ•°æ®
+1.5.3.7 å…³è”æ•°æ®
+1.6 å¯åŠ¨æœåŠ¡å™¨
+1.6.1 åœ¨cmdçš„.projectç›®å½•ä¸‹ï¼špython manage.py runserver ip:portï¼ŒIPå¯ä»¥ä¸å†™ï¼Œé»˜è®¤æ˜¯æœ¬æœºIPï¼Œç«¯å£é»˜è®¤8000
+1.6.2 è¿™æ˜¯ä¸€ä¸ªçº¯pythonå†™çš„è½»é‡çº§webæœåŠ¡å™¨ï¼Œä»…ä»…å¼€å‘æµ‹è¯•ç”¨
+1.7 Adminç«™ç‚¹ç®¡ç†ï¼š
+1.7.1 å†…å®¹å‘å¸ƒï¼Œå…¬å‘Šè®¿é—®
+1.7.2 é…ç½®Adminåº”ç”¨ï¼Œåœ¨settings.pyçš„INSTALLED_APPSä¸­æ·»åŠ  django.contrib.admin
+1.7.3 åˆ›å»ºç®¡ç†å‘˜ç”¨æˆ·,åœ¨cmdçš„.projectç›®å½•ä¸‹ï¼špython manage.py createsuperuser
+1.7.4 æ±‰åŒ–ï¼Œä¿®æ”¹settings.py LANGUAGE_CODE='zh-Hans'
+1.7.5 è‡ªå®šä¹‰ç®¡ç†é¡µé¢ï¼ˆå­¦åˆ°301é›†ï¼Œå¿˜è®°ç®¡ç†å‘˜è´¦æˆ·ï¼‰

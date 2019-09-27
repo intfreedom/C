@@ -1,20 +1,20 @@
-1.1.1
-ÏÖÔÚÂÖµ½°²×°mysql
+ï»¿1.1.1
+çŽ°åœ¨è½®åˆ°å®‰è£…mysql
 https://blog.csdn.net/rbpicsdn/article/details/81150426
 1.1.2
-ÕâÓÐÒ»¸öÍêÕû°²×°°æ¿É²Î¿¼£¬¶Ô±ÈÒÔÉÏ°²×°ÄÄÒ»¸ö£¿
+è¿™æœ‰ä¸€ä¸ªå®Œæ•´å®‰è£…ç‰ˆå¯å‚è€ƒï¼Œå¯¹æ¯”ä»¥ä¸Šå®‰è£…å“ªä¸€ä¸ªï¼Ÿ
 https://blog.csdn.net/qq_36582604/article/details/80526287
 1.1.3
-CentOS7°²×°mysql80£»
-1.1.3.1Æô¶¯MySQL·þÎñ ( Starting the MySQL Server )
+CentOS7å®‰è£…mysql80ï¼›
+1.1.3.1å¯åŠ¨MySQLæœåŠ¡ ( Starting the MySQL Server )
 
-ÓÃÒÔÏÂÃüÁîÆô¶¯MySQL·þÎñÆ÷£º ( Start the MySQL server with the following command: )
+ç”¨ä»¥ä¸‹å‘½ä»¤å¯åŠ¨MySQLæœåŠ¡å™¨ï¼š ( Start the MySQL server with the following command: )
 
 
 shell> sudo systemctl start mysqld.service
 
 
-¼ì²éMySQL·þÎñÆ÷µÄ×´Ì¬£º
+æ£€æŸ¥MySQLæœåŠ¡å™¨çš„çŠ¶æ€ï¼š
 ( You can check the status of the MySQL server with the following command: )
 
 
@@ -22,33 +22,33 @@ shell> sudo systemctl status mysqld.service
  
 
 
-1.1.3.2°²×°µÄÊ±ºòÒÑ¾­´´½¨ÁË³¬¼¶ÓÃ»§ÕÊ»§¡°root¡±@¡°localhost¡±¡£
+1.1.3.2å®‰è£…çš„æ—¶å€™å·²ç»åˆ›å»ºäº†è¶…çº§ç”¨æˆ·å¸æˆ·â€œrootâ€@â€œlocalhostâ€ã€‚
 
-ÓÃÕâ¸öÃüÁî¿ÉÒÔ²é¿´³õÊ¼ÃÜÂë
+ç”¨è¿™ä¸ªå‘½ä»¤å¯ä»¥æŸ¥çœ‹åˆå§‹å¯†ç 
 sudo grep 'temporary password' /var/log/mysqld.log
  
 
-1.1.3.3ÉèÖÃ³¬¼¶ÓÃ»§µÄÃÜÂë²¢½«Æä´æ´¢ÔÚ´íÎóÈÕÖ¾ÎÄ¼þÖÐ¡£ÒªÏÔÊ¾Ëü£¬ÇëÊ¹ÓÃÒÔÏÂÃüÁî£º
+1.1.3.3è®¾ç½®è¶…çº§ç”¨æˆ·çš„å¯†ç å¹¶å°†å…¶å­˜å‚¨åœ¨é”™è¯¯æ—¥å¿—æ–‡ä»¶ä¸­ã€‚è¦æ˜¾ç¤ºå®ƒï¼Œè¯·ä½¿ç”¨ä»¥ä¸‹å‘½ä»¤ï¼š
 
 
 shell> mysql -uroot -p
 
 
-Í¨¹ýÊ¹ÓÃÉú³ÉµÄÁÙÊ±ÃÜÂëµÇÂ¼²¢Îª³¬¼¶ÓÃ»§ÕÊ»§ÉèÖÃ×Ô¶¨ÒåÃÜÂë£¬
-¾¡¿ì¸ü¸ÄrootÃÜÂë£º
+é€šè¿‡ä½¿ç”¨ç”Ÿæˆçš„ä¸´æ—¶å¯†ç ç™»å½•å¹¶ä¸ºè¶…çº§ç”¨æˆ·å¸æˆ·è®¾ç½®è‡ªå®šä¹‰å¯†ç ï¼Œ
+å°½å¿«æ›´æ”¹rootå¯†ç ï¼š
 
 mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
 
 
-ÕâÃÜÂë°üº¬ÖÁÉÙÒ»¸ö´óÐ´×ÖÄ¸£¬Ò»¸öÐ¡Ð´×ÖÄ¸£¬Ò»¸öÊý×ÖºÍÒ»¸öÌØÊâ×Ö·û£¬²¢ÇÒÃÜÂë×Ü³¤¶ÈÖÁÉÙÎª8¸ö×Ö·û¡£
-ÐÂÃÜÂëÎª£ºLj@20091217
-ÍË³ömysql: exit;
-½øÈëmysql: mysql -uroot -p£¬°´enterºóÌáÊ¾ÊäÈëÃÜÂë£»
-rootÎªÓÃ»§Ãû£¬¿É±ä¸ü£»
+è¿™å¯†ç åŒ…å«è‡³å°‘ä¸€ä¸ªå¤§å†™å­—æ¯ï¼Œä¸€ä¸ªå°å†™å­—æ¯ï¼Œä¸€ä¸ªæ•°å­—å’Œä¸€ä¸ªç‰¹æ®Šå­—ç¬¦ï¼Œå¹¶ä¸”å¯†ç æ€»é•¿åº¦è‡³å°‘ä¸º8ä¸ªå­—ç¬¦ã€‚
+æ–°å¯†ç ä¸ºï¼šLj@20091217
+é€€å‡ºmysql: exit;
+è¿›å…¥mysql: mysql -uroot -pï¼ŒæŒ‰enteråŽæç¤ºè¾“å…¥å¯†ç ï¼›
+rootä¸ºç”¨æˆ·åï¼Œå¯å˜æ›´ï¼›
 --------------------- 
-×÷Õß£ºRBPi 
-À´Ô´£ºCSDN 
-Ô­ÎÄ£ºhttps://blog.csdn.net/rbpicsdn/article/details/81150426 
-°æÈ¨ÉùÃ÷£º±¾ÎÄÎª²©Ö÷Ô­´´ÎÄÕÂ£¬×ªÔØÇë¸½ÉÏ²©ÎÄÁ´½Ó£¡
+ä½œè€…ï¼šRBPi 
+æ¥æºï¼šCSDN 
+åŽŸæ–‡ï¼šhttps://blog.csdn.net/rbpicsdn/article/details/81150426 
+ç‰ˆæƒå£°æ˜Žï¼šæœ¬æ–‡ä¸ºåšä¸»åŽŸåˆ›æ–‡ç« ï¼Œè½¬è½½è¯·é™„ä¸Šåšæ–‡é“¾æŽ¥ï¼
 
 

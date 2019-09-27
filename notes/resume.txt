@@ -1,25 +1,25 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>¸öÈË¼òÀú</title>
+  <title>ä¸ªäººç®€åŽ†</title>
   <link rel="stylesheet" href="resume.css">
 </head>
 
 <body>
   <header>
     <div class="base-div">
-      <span class="name">ÁõÏþÁÁ</span>
-      <span class="direction">ÇóÖ°ÒâÏò£ºXXXXX</span>
+      <span class="name">åˆ˜æ™“äº®</span>
+      <span class="direction">æ±‚èŒæ„å‘ï¼šXXXXX</span>
     </div>
 
     <div class="detailed-div">
       <ul class="detailed-ul">
-        <li>ÄêÁä£º0Ëê</li>
-        <li>¼®¹á£ºµØÇò</li>
-        <li>µç»°£º1234567890</li>
-        <li>ÓÊÏä£ºXXXX@xxx.com</li>
+        <li>å¹´é¾„ï¼š0å²</li>
+        <li>ç±è´¯ï¼šåœ°çƒ</li>
+        <li>ç”µè¯ï¼š1234567890</li>
+        <li>é‚®ç®±ï¼šXXXX@xxx.com</li>
       </ul>
     </div>
 
@@ -31,53 +31,53 @@
   <main>
     <div class="education-div">
       <div class="img-education-div">
-        <span class="text-education-span">½ÌÓý±³¾°</span>
+        <span class="text-education-span">æ•™è‚²èƒŒæ™¯</span>
       </div>
       <span class="education-time-span">2014.09-2018.07</span>
       <br/>
       <br/>
-      <span class="education-school-span"> XXXXX´óÑ§        ±¾¿Æ        XXX×¨Òµ</span>
+      <span class="education-school-span"> XXXXXå¤§å­¦        æœ¬ç§‘        XXXä¸“ä¸š</span>
     </div>
     <hr/>
     <div class="skll-div">
       <div class="img_circle-skill-div">
-        <span class="text-education-span">Ö°Òµ¼¼ÄÜ</span>
+        <span class="text-education-span">èŒä¸šæŠ€èƒ½</span>
         <div class="img_line-skil-div"></div>
       </div>
       <div class="skill-list-div">
         <ol>
-            <li><p><b>ÊìÁ·ÕÆÎÕJAVAÓïÑÔ,¾ß±¸ÔúÊµµÄJAVAÃæÏò¶ÔÏó±à³Ì»ù´¡,ÓÐÁ¼ºÃµÄ±àÂëÏ°¹ß;</b></p></li>
-            <li><p><b>ÊìÁ·ÕÆÎÕHtml,ÁË½âJavaScript¡¢CSS;</b></p></li>
-            <li><p><b>ÊìÁ·ÕÆÎÕOracle¡¢ÁË½âMySQL¡¢SQLServerµÈ³£ÓÃÊý¾Ý¿âµÄÊ¹ÓÃ;</b></p></li>
-            <li><p><b>ÊìÁ·Ê¹ÓÃEclipse,Android StudioµÈ¿ª·¢¹¤¾ß;</p></li>
-            <li><p><b>ÊìÏ¤Java Api¡¢Á¼ºÃµÄÎÄµµÔÄ¶ÁÀí½âÄÜÁ¦;</b></p></li>
-            <li><p><b>ÁË½âÊý¾Ý½á¹¹;</b></p></li>
-            <li><p><b>ÁË½âC++ÓïÑÔ,»á»ù±¾µÄC++±à³Ì;</b></p></li>
-            <li><p><b>ÁË½âHTML¡¢JSON¼°XML¼°Æä½âÎö¡£</b></p></li>
+            <li><p><b>ç†Ÿç»ƒæŽŒæ¡JAVAè¯­è¨€,å…·å¤‡æ‰Žå®žçš„JAVAé¢å‘å¯¹è±¡ç¼–ç¨‹åŸºç¡€,æœ‰è‰¯å¥½çš„ç¼–ç ä¹ æƒ¯;</b></p></li>
+            <li><p><b>ç†Ÿç»ƒæŽŒæ¡Html,äº†è§£JavaScriptã€CSS;</b></p></li>
+            <li><p><b>ç†Ÿç»ƒæŽŒæ¡Oracleã€äº†è§£MySQLã€SQLServerç­‰å¸¸ç”¨æ•°æ®åº“çš„ä½¿ç”¨;</b></p></li>
+            <li><p><b>ç†Ÿç»ƒä½¿ç”¨Eclipse,Android Studioç­‰å¼€å‘å·¥å…·;</p></li>
+            <li><p><b>ç†Ÿæ‚‰Java Apiã€è‰¯å¥½çš„æ–‡æ¡£é˜…è¯»ç†è§£èƒ½åŠ›;</b></p></li>
+            <li><p><b>äº†è§£æ•°æ®ç»“æž„;</b></p></li>
+            <li><p><b>äº†è§£C++è¯­è¨€,ä¼šåŸºæœ¬çš„C++ç¼–ç¨‹;</b></p></li>
+            <li><p><b>äº†è§£HTMLã€JSONåŠXMLåŠå…¶è§£æžã€‚</b></p></li>
         </ol>
       </div>
     </div>
     <hr>
     <div class="experience-div">
       <div class="img-experience-div">
-        <span class="text-experience-span">ÏîÄ¿¾­Ñé</span>
+        <span class="text-experience-span">é¡¹ç›®ç»éªŒ</span>
       </div>
       <div class="img_line-experience-div"></div>
       <div class="experience1-div">
-        <b>ÏîÄ¿Ò»£º´óÊý¼ÆËãÆ÷</b>
+        <b>é¡¹ç›®ä¸€ï¼šå¤§æ•°è®¡ç®—å™¨</b>
         <div class="div-p">
-          <p>¶ÀÁ¢Éè¼ÆÊµÏÖ;</p>
-          <p>ÔËÓÃSwingÊµÏÖ½çÃæÉè¼Æ;</p>
-          <p>Ê¹ÓÃ¶àÏß³Ì¡¢Êý¾Ý¿âÊµÏÖ»úÆ±¹ÜÀí²Ù×÷¡£</p>
+          <p>ç‹¬ç«‹è®¾è®¡å®žçŽ°;</p>
+          <p>è¿ç”¨Swingå®žçŽ°ç•Œé¢è®¾è®¡;</p>
+          <p>ä½¿ç”¨å¤šçº¿ç¨‹ã€æ•°æ®åº“å®žçŽ°æœºç¥¨ç®¡ç†æ“ä½œã€‚</p>
         </div>
       </div>
       <br/>
       <div class="experience2-div">
-        <b>ÏîÄ¿¶þ:AndroidÆ½Ì¨ÌìÆøÔ¤±¨¿Í»§¶Ë</b>
+        <b>é¡¹ç›®äºŒ:Androidå¹³å°å¤©æ°”é¢„æŠ¥å®¢æˆ·ç«¯</b>
         <div class="div-p">
-          <p>¶ÀÁ¢Éè¼ÆÊµÏÖ</p>
-          <p>ÔËÓÃ¼¼Êõ:</p>
-          <p>ÍøÂçÍ¨ÐÅ jsonÊý¾Ý½âÎö ×Ô¶¨ÒåÊÓÍ¼ ±¾µØÊý¾Ý´æ´¢</p>
+          <p>ç‹¬ç«‹è®¾è®¡å®žçŽ°</p>
+          <p>è¿ç”¨æŠ€æœ¯:</p>
+          <p>ç½‘ç»œé€šä¿¡ jsonæ•°æ®è§£æž è‡ªå®šä¹‰è§†å›¾ æœ¬åœ°æ•°æ®å­˜å‚¨</p>
         </div>
       </div>
     </div>

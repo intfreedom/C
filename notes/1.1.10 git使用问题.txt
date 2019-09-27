@@ -1,14 +1,14 @@
-1.1.1
-´´½¨gitµÄÄ¿Â¼ÎªD:\002Python\Programming Challenge
-Linux¶ÔÓ¦µÄgitÏîÄ¿£¬/home/intfreedom/.ssh
-ÒÔÏÂ¿ÉÒÔÈÃ²»Í¬µÄ±¾µØ¿âÁ¬½ÓÍ¬Ò»GitHubÔ¶³Ì¿â£¬
+ï»¿1.1.1
+åˆ›å»ºgitçš„ç›®å½•ä¸ºD:\002Python\Programming Challenge
+Linuxå¯¹åº”çš„gité¡¹ç›®ï¼Œ/home/intfreedom/.ssh
+ä»¥ä¸‹å¯ä»¥è®©ä¸åŒçš„æœ¬åœ°åº“è¿æ¥åŒä¸€GitHubè¿œç¨‹åº“ï¼Œ
 https://blog.csdn.net/u014028063/article/details/80395510
-git add .  #git add .°Ñ¸ÃÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼şÌí¼Óµ½²Ö¿â
+git add .  #git add .æŠŠè¯¥ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æ·»åŠ åˆ°ä»“åº“
 git commit -m " comment" 
-git push origin master  ÊµÏÖÉÏ´«
+git push origin master  å®ç°ä¸Šä¼ 
 1.1.1.1
-°ÑÔ¶³Ì¿â¸²¸Ç±¾µØ£»
-gitÇ¿ÖÆ¸²¸Ç£º
+æŠŠè¿œç¨‹åº“è¦†ç›–æœ¬åœ°ï¼›
+gitå¼ºåˆ¶è¦†ç›–ï¼š
 ?? ?
 git fetch --all
 ?? ?
@@ -16,17 +16,17 @@ git reset --hard origin/master
 ?? ?
 git pull
 
-gitÇ¿ÖÆ¸²¸Ç±¾µØÃüÁî£¨µ¥ÌõÖ´ĞĞ£©£º
+gitå¼ºåˆ¶è¦†ç›–æœ¬åœ°å‘½ä»¤ï¼ˆå•æ¡æ‰§è¡Œï¼‰ï¼š
 ?? ?
 git fetch --all &&?git reset --hard origin/master &&?git pull
 
 1.1.2
-×öÈÎºÎÌá½»£¬¶¼Òª½øÈëµ½gitµÄ¶ÔÓ¦ĞŞ¸ÄÎÄ¼şµÄ±¾µØÄ¿Â¼£¿£¿£¿
-cd /d/002stud   ¿ÉÔÚgitÀïÇĞ»»Ä¿Â¼
+åšä»»ä½•æäº¤ï¼Œéƒ½è¦è¿›å…¥åˆ°gitçš„å¯¹åº”ä¿®æ”¹æ–‡ä»¶çš„æœ¬åœ°ç›®å½•ï¼Ÿï¼Ÿï¼Ÿ
+cd /d/002stud   å¯åœ¨gité‡Œåˆ‡æ¢ç›®å½•
 
 git init
 
-ÈçºÎ½â¾öfailed to push some refs to git
+å¦‚ä½•è§£å†³failed to push some refs to git
 
 
 error: Cannot pull with rebase: You have unstaged changes.?
@@ -34,20 +34,20 @@ error: Cannot pull with rebase: You have unstaged changes.?
 error: Additionally, your index contains uncommitted changes.?
 
 
-Ô­Òò£ºÈç¹ûÓĞÎ´Ìá½»µÄ¸ü¸Ä£¬ÊÇ²»ÄÜgit pullµÄ
+åŸå› ï¼šå¦‚æœæœ‰æœªæäº¤çš„æ›´æ”¹ï¼Œæ˜¯ä¸èƒ½git pullçš„
 
-½â¾ö£º?
-ÏÈÖ´ĞĞ git stash?
+è§£å†³ï¼š?
+å…ˆæ‰§è¡Œ git stash?
 
-ÔÙÖ´ĞĞ git pull --rebase origin master?
+å†æ‰§è¡Œ git pull --rebase origin master?
 
 
-×îºóÔÙÖ´ĞĞ? git push -u origin maste
+æœ€åå†æ‰§è¡Œ? git push -u origin maste
 
 
 1.1.3
-ĞÂ½¨Ò»¸öÒ²±¨´í£¬ÓÃÒÔÏÂ·½·¨¾Í¿ÉÒÔÁË
-git add .  #git add .°Ñ¸ÃÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼şÌí¼Óµ½²Ö¿â
-git commit -m "²âÊÔ" //ÕâÊ±ºòÓ¦¸Ã¾Í¿ÉÒÔÁË
+æ–°å»ºä¸€ä¸ªä¹ŸæŠ¥é”™ï¼Œç”¨ä»¥ä¸‹æ–¹æ³•å°±å¯ä»¥äº†
+git add .  #git add .æŠŠè¯¥ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æ·»åŠ åˆ°ä»“åº“
+git commit -m "æµ‹è¯•" //è¿™æ—¶å€™åº”è¯¥å°±å¯ä»¥äº†
 
 git push -u origin master
