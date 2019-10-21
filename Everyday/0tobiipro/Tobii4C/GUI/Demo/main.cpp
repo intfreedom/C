@@ -3,7 +3,9 @@
 #include <stdio.h>
 #include <assert.h>
 #include <cstring>
+#include "mainwindow.h"
 
+#include <QApplication>
 
 void gaze_point_callback(tobii_gaze_point_t const *gaze_point, void *user_data) {
     if (gaze_point->validity == TOBII_VALIDITY_VALID)
@@ -20,7 +22,12 @@ static void url_receiver(char const *url, void *user_data) {
         strcpy(buffer, url);
 }
 
-int main() {
+int main(int argc, char *argv[]) {
+
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+
     tobii_api_t *api;
     tobii_error_t error = tobii_api_create(&api, NULL, NULL);
     assert(error == TOBII_ERROR_NO_ERROR);
@@ -53,5 +60,7 @@ int main() {
 
     error = tobii_api_destroy(api);
     assert(error == TOBII_ERROR_NO_ERROR);
-    return 0;
+
+    return a.exec();
+    //return 0;
 }
