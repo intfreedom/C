@@ -17,11 +17,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    main1.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    tobii/tobii.h \
+    tobii/tobii_advanced.h \
+    tobii/tobii_config.h \
+    tobii/tobii_licensing.h \
+    tobii/tobii_streams.h \
+    tobii/tobii_wearable.h
 
 FORMS += \
     mainwindow.ui
@@ -30,3 +35,8 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+unix:!macx: LIBS += -L$$PWD/x64/ -ltobii_stream_engine
+
+INCLUDEPATH += $$PWD/x64
+DEPENDPATH += $$PWD/x64

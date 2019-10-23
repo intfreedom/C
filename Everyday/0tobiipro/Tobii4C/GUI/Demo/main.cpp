@@ -6,6 +6,7 @@
 #include "mainwindow.h"
 
 #include <QApplication>
+#include <QLabel>
 
 void gaze_point_callback(tobii_gaze_point_t const *gaze_point, void *user_data) {
     if (gaze_point->validity == TOBII_VALIDITY_VALID)
@@ -27,6 +28,8 @@ int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
+    //QLabel label("HelloWorld");
+    //label.show();
 
     tobii_api_t *api;
     tobii_error_t error = tobii_api_create(&api, NULL, NULL);
