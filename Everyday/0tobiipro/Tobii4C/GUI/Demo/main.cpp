@@ -7,6 +7,21 @@
 
 #include <QApplication>
 #include <QLabel>
+#include "myemit.h"
+
+MyEmit::MyEmit(QObject *parent):QObject(parent)
+{
+
+}
+
+void MyEmit::send_emit()
+{
+    int a = 100;
+    QString b = "hello";
+
+    emit start_emit(a,b);
+}
+
 
 void gaze_point_callback(tobii_gaze_point_t const *gaze_point, void *user_data) {
     if (gaze_point->validity == TOBII_VALIDITY_VALID)

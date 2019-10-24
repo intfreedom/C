@@ -21,6 +21,7 @@ SOURCES += \
 
 HEADERS += \
     mainwindow.h \
+    myemit.h \
     tobii/tobii.h \
     tobii/tobii_advanced.h \
     tobii/tobii_config.h \

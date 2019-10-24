@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "myemit.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,6 +15,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+/* For output*/
+private slots:
+    void on_pushButton_clicked();
+    void read_emit(int a, QString b);
+/* For output*/
 
 private:
     Ui::MainWindow *ui;

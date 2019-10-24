@@ -73,3 +73,6 @@ fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
 cogp3@cog3:~/intfreedom/LearnC$ git push -u origin master
+
+1.1.14
+关于QT的使用，右击project, Add library, 只能选择External library,

@@ -53,10 +53,12 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../Demo/main.cpp \
-		../Demo/mainwindow.cpp moc_mainwindow.cpp
+		../Demo/mainwindow.cpp moc_mainwindow.cpp \
+		moc_myemit.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
-		moc_mainwindow.o
+		moc_mainwindow.o \
+		moc_myemit.o
 DIST          = /opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/common/unix.conf \
 		/opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/common/linux.conf \
@@ -254,6 +256,7 @@ DIST          = /opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/features/yacc.prf \
 		/opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/features/lex.prf \
 		../Demo/Demo.pro ../Demo/mainwindow.h \
+		../Demo/myemit.h \
 		../Demo/tobii/tobii.h \
 		../Demo/tobii/tobii_advanced.h \
 		../Demo/tobii/tobii_config.h \
@@ -682,7 +685,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../Demo/mainwindow.h ../Demo/tobii/tobii.h ../Demo/tobii/tobii_advanced.h ../Demo/tobii/tobii_config.h ../Demo/tobii/tobii_licensing.h ../Demo/tobii/tobii_streams.h ../Demo/tobii/tobii_wearable.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../Demo/mainwindow.h ../Demo/myemit.h ../Demo/tobii/tobii.h ../Demo/tobii/tobii_advanced.h ../Demo/tobii/tobii_config.h ../Demo/tobii/tobii_licensing.h ../Demo/tobii/tobii_streams.h ../Demo/tobii/tobii_wearable.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../Demo/main.cpp ../Demo/mainwindow.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../Demo/mainwindow.ui $(DISTDIR)/
 
@@ -716,9 +719,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/features/data/dummy.cpp
 	g++ -pipe -g -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h /opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_myemit.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_myemit.cpp
 moc_mainwindow.cpp: ../Demo/mainwindow.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QMainWindow \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qmainwindow.h \
@@ -826,9 +829,68 @@ moc_mainwindow.cpp: ../Demo/mainwindow.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qicon.h \
+		../Demo/myemit.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/QObject \
 		moc_predefs.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/bin/moc
 	/opt/Qt5.13.1/5.13.1/gcc_64/bin/moc $(DEFINES) --include /home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/Tobii4C/GUI/build-Demo-Desktop_Qt_5_13_1_GCC_64bit-Debug/moc_predefs.h -I/opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/linux-g++ -I/home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/Tobii4C/GUI/Demo -I/home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/Tobii4C/GUI/Demo/x64 -I/opt/Qt5.13.1/5.13.1/gcc_64/include -I/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets -I/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui -I/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore -I. -I/usr/include/c++/8 -I/usr/include/x86_64-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/x86_64-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../Demo/mainwindow.h -o moc_mainwindow.cpp
+
+moc_myemit.cpp: ../Demo/myemit.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/QObject \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qobjectdefs.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qnamespace.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qglobal.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qconfig.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qtcore-config.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qsystemdetection.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qprocessordetection.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qcompilerdetection.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qtypeinfo.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qsysinfo.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qlogging.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qflags.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qatomic.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qbasicatomic.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qgenericatomic.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qatomic_msvc.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qglobalstatic.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qmutex.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qnumeric.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qversiontagging.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qstring.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qchar.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qbytearray.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qrefcount.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qarraydata.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qstringliteral.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qstringalgorithms.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qstringview.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qstringbuilder.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qlist.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qalgorithms.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qiterator.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qhashfunctions.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qpair.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qvector.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qpoint.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qbytearraylist.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qstringlist.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qregexp.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qstringmatcher.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qcoreevent.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qscopedpointer.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qmetatype.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qvarlengtharray.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qcontainerfwd.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qobject_impl.h \
+		moc_predefs.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/bin/moc
+	/opt/Qt5.13.1/5.13.1/gcc_64/bin/moc $(DEFINES) --include /home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/Tobii4C/GUI/build-Demo-Desktop_Qt_5_13_1_GCC_64bit-Debug/moc_predefs.h -I/opt/Qt5.13.1/5.13.1/gcc_64/mkspecs/linux-g++ -I/home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/Tobii4C/GUI/Demo -I/home/cogp3/intfreedom/LearnC/Everyday/0tobiipro/Tobii4C/GUI/Demo/x64 -I/opt/Qt5.13.1/5.13.1/gcc_64/include -I/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets -I/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui -I/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore -I. -I/usr/include/c++/8 -I/usr/include/x86_64-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/x86_64-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../Demo/myemit.h -o moc_myemit.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -960,6 +1022,8 @@ main.o: ../Demo/main.cpp ../Demo/tobii/tobii.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qicon.h \
+		../Demo/myemit.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/QObject \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QApplication \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/qcoreapplication.h \
@@ -1079,6 +1143,8 @@ mainwindow.o: ../Demo/mainwindow.cpp ../Demo/mainwindow.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qicon.h \
+		../Demo/myemit.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/QObject \
 		ui_mainwindow.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/QVariant \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QApplication \
@@ -1088,20 +1154,32 @@ mainwindow.o: ../Demo/mainwindow.cpp ../Demo/mainwindow.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qguiapplication.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qinputmethod.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QLineEdit \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qframe.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QMenuBar \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qmenubar.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qmenu.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qaction.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qactiongroup.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QPushButton \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qabstractbutton.h \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QStatusBar \
 		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qstatusbar.h \
-		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QToolBar \
-		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/qtoolbar.h \
-		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QWidget
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtWidgets/QWidget \
+		/opt/Qt5.13.1/5.13.1/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../Demo/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
+
+moc_myemit.o: moc_myemit.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_myemit.o moc_myemit.cpp
 
 ####### Install
 
