@@ -58,7 +58,7 @@ static const uint qt_meta_data_MyEmit[] = {
        1,    2,   19,    2, 0x06 /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::Int, QMetaType::QString,    2,    2,
+    QMetaType::Void, QMetaType::Float, QMetaType::Int,    2,    2,
 
        0        // eod
 };
@@ -69,13 +69,13 @@ void MyEmit::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         auto *_t = static_cast<MyEmit *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->start_emit((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 0: _t->start_emit((*reinterpret_cast< float(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (MyEmit::*)(int , QString );
+            using _t = void (MyEmit::*)(float , int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&MyEmit::start_emit)) {
                 *result = 0;
                 return;
@@ -125,7 +125,7 @@ int MyEmit::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void MyEmit::start_emit(int _t1, QString _t2)
+void MyEmit::start_emit(float _t1, int _t2)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

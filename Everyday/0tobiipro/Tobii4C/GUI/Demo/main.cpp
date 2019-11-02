@@ -9,6 +9,9 @@
 #include <QLabel>
 #include "myemit.h"
 
+float X=0.0;
+float Y=0.0;
+
 MyEmit::MyEmit(QObject *parent):QObject(parent)
 {
 
@@ -16,18 +19,23 @@ MyEmit::MyEmit(QObject *parent):QObject(parent)
 
 void MyEmit::send_emit()
 {
-    int a = 100;
-    QString b = "hello";
+    float a = X;
+    //QString b = "hello";
+    int b=1;
 
     emit start_emit(a,b);
 }
 
 
+
 void gaze_point_callback(tobii_gaze_point_t const *gaze_point, void *user_data) {
-    if (gaze_point->validity == TOBII_VALIDITY_VALID)
+    if (gaze_point->validity == TOBII_VALIDITY_VALID){
         printf("Gaze point: %f, %f\n",
                gaze_point->position_xy[0],
                gaze_point->position_xy[1]);
+        X=gaze_point->position_xy[0];
+        Y=gaze_point->position_xy[1];
+    }
 }
 
 static void url_receiver(char const *url, void *user_data) {
@@ -46,6 +54,7 @@ int main(int argc, char *argv[]) {
     //QLabel label("HelloWorld");
     //label.show();
 
+
     tobii_api_t *api;
     tobii_error_t error = tobii_api_create(&api, NULL, NULL);
     assert(error == TOBII_ERROR_NO_ERROR);
@@ -61,7 +70,7 @@ int main(int argc, char *argv[]) {
     error = tobii_gaze_point_subscribe(device, gaze_point_callback, 0);
     assert(error == TOBII_ERROR_NO_ERROR);
 
-    int is_running = 1000; // in this sample, exit after some iterations
+    int is_running = 1000; // in this sample, exit after some iterations  1000 to 100 to 10
     while (--is_running > 0) {
         error = tobii_wait_for_callbacks(1, &device);
         assert(error == TOBII_ERROR_NO_ERROR || error == TOBII_ERROR_TIMED_OUT);
@@ -78,6 +87,7 @@ int main(int argc, char *argv[]) {
 
     error = tobii_api_destroy(api);
     assert(error == TOBII_ERROR_NO_ERROR);
+
 
     return a.exec();
     //return 0;

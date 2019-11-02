@@ -2,6 +2,7 @@
 #define MYEMIT_H
 
 #include<QObject>
+extern float X, Y;
 
 class MyEmit:public QObject
 {
@@ -10,7 +11,7 @@ public:
     explicit MyEmit(QObject *parent = nullptr);
     void send_emit();
 signals:
-    void start_emit(int, QString);
+    void start_emit(float, int);
 public slots:
 };
 

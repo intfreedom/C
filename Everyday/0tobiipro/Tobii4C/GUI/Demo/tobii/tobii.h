@@ -33,6 +33,8 @@ extern "C" {
     #endif /* TOBII_STATIC_LIB */
 #elif __GNUC__ >= 4
     #define TOBII_API __attribute__((visibility("default")))
+    // 编写大型程序时，可用-fvisibility=hidden设置符号默认隐藏，
+    //针对特定变量和函数，在代码中使用__attribute__ ((visibility("default")))使该符号外部可见，这种方法可用有效避免so之间的符号冲突。
     #define TOBII_CALL
 #else
     #define TOBII_API
@@ -1123,7 +1125,7 @@ tobii_wait_for_callbacks
 ### Function
 
 Puts the calling thread to sleep until there are new callbacks available to process.
-
+使调用线程进入休眠状态，直到有新的回调可处理。
 
 ### Syntax
 
@@ -1135,17 +1137,22 @@ Puts the calling thread to sleep until there are new callbacks available to proc
 
 Stream engine does not use any threads to do processing or receive data. Instead, the functions
 tobii_device_process_callbacks() and tobii_device_process_callbacks() have to be called regularly, to receive data 
-from the device, and process it. 
+from the device, and process it. 流引擎不使用任何线程来处理或接收数据。相反，必须定期调用函数tobii_device_process_callbacks（）
+和tobii_device_process_callbacks（），以从设备接收数据并进行处理。
 
 The typical use case is to implement your own thread to call tobii_device_process_callbacks from, and to avoid 
 busy-waiting for data to become available, tobii_wait_for_callbacks can be called before each call to 
 tobii_device_process_callbacks. It will sleep the calling thread until new data is available to process, after which 
-tobii_device_process_callbacks should be called to process it.
+tobii_device_process_callbacks should be called to process it.典型的用例是实现自己的线程以从中调用tobii_device_process_callbacks，并避免繁忙等待数据可用，
+可以在每次调用tobii_device_process_callbacks之前调用tobii_wait_for_callbacks。
+它将使调用线程休眠，直到可以处理新数据为止，然后应调用tobii_device_process_callbacks进行处理。
 
 tobii_wait_for_callbacks will not wait indefinitely. There is a timeout of some hundred milliseconds, after which 
 tobii_wait_for_callbacks will return **TOBII_ERROR_TIMED_OUT**. This does not indicate a failure - it is given as an 
 opportunity for the calling thread to perform its own internal housekeeping (like checking for exit conditions and the 
-like). It is valid to immediately call tobii_wait_for_callbacks again to resume waiting.
+like). It is valid to immediately call tobii_wait_for_callbacks again to resume waiting.tobii_wait_for_callbacks不会无限期等待。
+超时时间为几百毫秒，在此之后，tobii_wait_for_callbacks将返回** TOBII_ERROR_TIMED_OUT **。
+这并不表示失败-调用线程有机会执行其自己的内部整理（例如检查退出条件等）。 立即再次调用tobii_wait_for_callbacks以恢复等待是有效的。
 
 *device_count* must be the number of devices in the array passed in the *devices* parameter.
 
@@ -1247,7 +1254,7 @@ tobii_device_process_callbacks
 ### Function
 
 Receives data packages from the device, and sends the data through any registered callbacks.
-
+从设备接收数据包，并通过任何已注册的回调发送数据。
 
 ### Syntax
 
@@ -1260,21 +1267,29 @@ Receives data packages from the device, and sends the data through any registere
 Stream engine does not do any kind of background processing, it doesn't start any threads. It doesn't use any
 asynchronous callbacks. This means that in order to receive data from the device, the application needs to manually
 request the callbacks to happen synchronously, and this is done by calling tobii_device_process_callbacks.
-
+流引擎不执行任何类型的后台处理，它不启动任何线程。 它不使用任何异步回调。
+这意味着，为了从设备接收数据，应用程序需要手动请求回调同步进行，这可以通过调用tobii_device_process_callbacks来完成。
 tobii_device_process_callbacks will receive any data packages that are incoming from the device, process them and call any
 subscribed callbacks with the data. No callbacks will be called outside of tobii_device_process_callbacks, so the application
 have full control over when to receive callbacks.
+tobii_device_process_callbacks将接收从设备传入的所有数据包，对其进行处理，
+并使用该数据调用所有订阅的回调。在tobii_device_process_callbacks之外不会调用任何回调，因此应用程序可以完全控制何时接收回调。
 
 tobii_device_process_callbacks will not wait for data, and will early-out if there's nothing to process. In order to maintain
 the connection to the device, tobii_device_process_callbacks should be called at least 10 times per second.
+tobii_device_process_callbacks将不等待数据，并且如果没有要处理的内容将提早处理。
+为了维持与设备的连接，应每秒至少调用10次tobii_device_process_callbacks。
 
-The recommended way to use tobii_device_process_callbacks, is to start a dedicated thread, and alternately call
+The recommended way to use tobii_device_process_callbacks, is to start a dedicated专用的 thread, and alternately交替地 call
 tobii_wait_for_callbacks and tobii_device_process_callbacks. See tobii_wait_for_callbacks() for more details.
 
-If there is already a suitable thread to regularly run tobii_device_process_callbacks from (possibly interleaved with
+If there is already a suitable thread to regularly run tobii_device_process_callbacks from (possibly interleaved交叉存取 with
 application specific operations), it is possible to do this without calling tobii_wait_for_callbacks(). In this
 scenario, time synchronization needs to be handled manually or the timestamps will start drifting. See 
 tobii_update_timesync() for more details.
+如果已经有合适的线程定期运行tobii_device_process_callbacks（可能与特定于应用程序的操作交错运行），
+则可以在不调用tobii_wait_for_callbacks（）的情况下执行此操作。_is underscore
+在这种情况下，需要手动处理时间同步，否则时间戳将开始漂移。有关更多详细信息，请参见tobii_update_timesync（）。
 
 *device* must be a pointer to a valid tobii_device_t instance as created by calling tobii_device_create or 
 tobii_device_create_ex.

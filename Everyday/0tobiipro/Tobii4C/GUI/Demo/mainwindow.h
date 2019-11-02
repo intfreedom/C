@@ -19,7 +19,7 @@ public:
 /* For output*/
 private slots:
     void on_pushButton_clicked();
-    void read_emit(int a, QString b);
+    void read_emit(float a, int b);
 /* For output*/
 
 private:

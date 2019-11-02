@@ -174,13 +174,16 @@ tobii_streams.h
 
 The tobii_streams.h header file is used for managing data stream subscriptions. There are several types of data streams
 in the API, and tobii_streams.h contains functions to subscribe to and unsubscribe from these streams, as well as data
-structures describing the data packages.
+structures describing the data packages.tobii_streams.h头文件用于管理数据流订阅。 有几种类型的数据流
+在API中，并且tobii_streams.h包含用于订阅和取消订阅这些流的函数，以及描述数据包的数据结构。
 
 Please note that there can only be one callback registered to a stream at a time. To register a new callback, first
-unsubscribe from the stream, then resubscribe with the new callback function.
+unsubscribe from the stream, then resubscribe with the new callback function.请注意，一次只能在流中注册一个回调。要注册新的回调，请先
+取消订阅流，然后使用新的回调函数重新订阅。
 
 Do NOT call StreamEngine API functions from within the callback functions, due to risk of internal deadlocks. Generally
-one should finish the callback functions as quickly as possible and not make any blocking calls.
+one should finish the callback functions as quickly as possible and not make any blocking calls.由于内部死锁的风险，请勿从回调函数中调用StreamEngine API函数。 通常
+应该尽快完成回调函数，并且不要进行任何阻塞调用。
 
 */
 
@@ -206,7 +209,7 @@ Start listening for gaze point data; the position on the screen that the user is
 ### Remarks
 
 This subscription is for receiving the point on the screen, in normalized (0 to 1) coordinates, that the user is
-currently looking at. The data is lightly filtered for stability.
+currently looking at. The data is lightly filtered for stability.此订阅用于接收用户当前正在查看的，以标准化（0至1）坐标表示的屏幕上的点。 数据经过轻微过滤以确保稳定性。
 
 *device* must be a pointer to a valid tobii_device_t instance as created by calling tobii_device_create.
 
@@ -224,14 +227,15 @@ This function will be called when there is new gaze data available. It is called
         Timestamp value for when the gaze point was captured, measured in microseconds (us). The epoch is undefined,
         so these timestamps are only useful for calculating the time elapsed between a pair of values. The function
         tobii_system_clock() can be used to retrieve a timestamp using the same clock and same relative values as this
-        timestamp.
+        timestamp.捕获凝视点的时间戳记值（以微秒（us）为单位）。 纪元是不确定的，因此这些时间戳仅用于计算一对值之间经过的时间。
+函数tobii_system_clock（）可用于使用与该时间戳相同的时钟和相同的相对值来检索时间戳。
 
     -   *validity*
-        **TOBII_VALIDITY_VALID** if the gaze point is valid, **TOBII_VALIDITY_INVALID** if it is not. The value of
-        the *position_xy* field is unspecified unless *validity* is **TOBII_VALIDITY_VALID**.
+        **TOBII_VALIDITY_VALID** if the gaze point is valid有效的, **TOBII_VALIDITY_INVALID** if it is not. The value of
+        the *position_xy* field is unspecified未指明的 unless *validity* is **TOBII_VALIDITY_VALID**.
 
     -   *position_xy*
-        An array of two floats, for the horizontal (x) and vertical (y) screen coordinate of the gaze point. The left 
+        An array of two floats, for the horizontal水平的 (x) and vertical垂直的 (y) screen coordinate of the gaze point. The left
         edge of the screen is 0.0, and the right edge is 1.0. The top edge of the screen is 0.0, and the bottom edge is 
         1.0. Note that the value might be outside the 0.0 to 1.0 range, if the user looks outside the screen.
 
