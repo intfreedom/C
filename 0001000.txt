@@ -76,3 +76,8 @@ cogp3@cog3:~/intfreedom/LearnC$ git push -u origin master
 
 1.1.14
 关于QT的使用，右击project, Add library, 只能选择External library,
+
+1.1.15
+关于Tobii 4C的思路，
+一，先把按钮在屏幕的坐标找到；二，比较坐标与获得的凝视数据比较；
+三，
