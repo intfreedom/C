@@ -40,12 +40,12 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     MyEmit myemit;
-    connect(&myemit,SIGNAL(start_emit(float, int)),this,SLOT(read_emit(float,int)));
+    connect(&myemit,SIGNAL(start_emit(double, int)),this,SLOT(read_emit(double,int)));
     myemit.send_emit();
 }
-void MainWindow::read_emit(float a, int b)
+void MainWindow::read_emit(double a, int b)
 {
-    QString aa = QString("%1").arg(a);
+    QString aa = QString("%1").arg(a);  //把double a，相关的改为float a，就会出现警告" implicit conversion increases floating-point precision: 'float' to 'double' ".
     QString bb = QString::number(b,10);
     ui->lineEdit->setText(aa);
     ui->lineEdit_2->setText(bb);

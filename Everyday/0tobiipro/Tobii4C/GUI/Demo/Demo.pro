@@ -1,6 +1,6 @@
-QT       += core gui
+QT       += core gui #//QT包含的模块；
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets #//大于4版本以上，加入widgets模块；
 
 CONFIG += c++11
 

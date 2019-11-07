@@ -5,12 +5,12 @@
 #include <cstring>
 #include "mainwindow.h"
 
-#include <QApplication>
+#include <QApplication> //应用程序类
 #include <QLabel>
 #include "myemit.h"
 
-float X=0.0;
-float Y=0.0;
+double X=0.0;
+double Y=0.0;
 
 MyEmit::MyEmit(QObject *parent):QObject(parent)
 {
@@ -19,7 +19,7 @@ MyEmit::MyEmit(QObject *parent):QObject(parent)
 
 void MyEmit::send_emit()
 {
-    float a = X;
+    double a = X;
     //QString b = "hello";
     int b=1;
 
@@ -48,8 +48,8 @@ static void url_receiver(char const *url, void *user_data) {
 
 int main(int argc, char *argv[]) {
 
-    QApplication a(argc, argv);
-    MainWindow w;
+    QApplication a(argc, argv); //a应用程序对象，QT中有且仅有一个应用程序对象；
+    MainWindow w;   //创建一个自定义窗口；
     w.show();
     //QLabel label("HelloWorld");
     //label.show();
@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
     error = tobii_gaze_point_subscribe(device, gaze_point_callback, 0);
     assert(error == TOBII_ERROR_NO_ERROR);
 
-    int is_running = 1000; // in this sample, exit after some iterations  1000 to 100 to 10
+    int is_running = 100; // in this sample, exit after some iterations  1000 to 100 to 10
     while (--is_running > 0) {
         error = tobii_wait_for_callbacks(1, &device);
         assert(error == TOBII_ERROR_NO_ERROR || error == TOBII_ERROR_TIMED_OUT);
@@ -89,6 +89,6 @@ int main(int argc, char *argv[]) {
     assert(error == TOBII_ERROR_NO_ERROR);
 
 
-    return a.exec();
+    return a.exec();    //a.exec()进入消息循环机制
     //return 0;
 }
