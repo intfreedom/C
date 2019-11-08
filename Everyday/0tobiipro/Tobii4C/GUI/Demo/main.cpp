@@ -9,6 +9,7 @@
 #include <QLabel>
 #include "myemit.h"
 
+int getPoint(); //获得凝视数据
 double X=0.0;
 double Y=0.0;
 
@@ -19,13 +20,13 @@ MyEmit::MyEmit(QObject *parent):QObject(parent)
 
 void MyEmit::send_emit()
 {
+    getPoint();
     double a = X;
     //QString b = "hello";
     int b=1;
 
     emit start_emit(a,b);
 }
-
 
 
 void gaze_point_callback(tobii_gaze_point_t const *gaze_point, void *user_data) {
@@ -46,15 +47,7 @@ static void url_receiver(char const *url, void *user_data) {
         strcpy(buffer, url);
 }
 
-int main(int argc, char *argv[]) {
-
-    QApplication a(argc, argv); //a应用程序对象，QT中有且仅有一个应用程序对象；
-    MainWindow w;   //创建一个自定义窗口；
-    w.show();
-    //QLabel label("HelloWorld");
-    //label.show();
-
-
+int getPoint(){
     tobii_api_t *api;
     tobii_error_t error = tobii_api_create(&api, NULL, NULL);
     assert(error == TOBII_ERROR_NO_ERROR);
@@ -88,7 +81,15 @@ int main(int argc, char *argv[]) {
     error = tobii_api_destroy(api);
     assert(error == TOBII_ERROR_NO_ERROR);
 
+    return 0;
+}
 
+int main(int argc, char *argv[]) {
+
+    QApplication a(argc, argv); //a应用程序对象，QT中有且仅有一个应用程序对象；
+    MainWindow w;   //创建一个自定义窗口；
+    w.show();
+    //QLabel label("HelloWorld");
+    //label.show();
     return a.exec();    //a.exec()进入消息循环机制
-    //return 0;
 }
