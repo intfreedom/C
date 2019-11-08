@@ -15,7 +15,8 @@ int main()
 	//landOwner1.TouchCard(100);
 
 	//LandOwnerV3 landOwner3();
-	Student stu1();
+	Student stu1;
+	stu1.GetName();
 	//Student stu2("ma", "pu");
 
 	return 0;

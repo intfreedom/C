@@ -26,6 +26,7 @@ void MyEmit::send_emit()
     int b=1;
 
     emit start_emit(a,b);
+
 }
 
 

@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QPushButton>
 #include <QDebug>
+#include <QMenuBar>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -29,6 +30,14 @@ MainWindow::MainWindow(QWidget *parent)
     resize(2000,1500);//set windows size;
     //QLabel->setText(QString::number(a));
     //ui->MainWindow->insertItem(0,new QListMainWindowItem(QString::number((unsigned int)&a,16)))
+
+    //菜单栏，只有一个
+    QMenuBar *bar = menuBar();
+    setMenuBar(bar);
+
+    //setting 菜单
+    QMenu * fileMenu = bar->addMenu("File");
+    QAction * newAction = fileMenu->addAction("New");
 }
 
 MainWindow::~MainWindow()
