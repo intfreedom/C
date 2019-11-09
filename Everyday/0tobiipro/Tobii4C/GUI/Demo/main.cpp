@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <cstring>
+#include <QDebug>
 #include "mainwindow.h"
 
 #include <QApplication> //应用程序类
@@ -64,7 +65,7 @@ int getPoint(){
     error = tobii_gaze_point_subscribe(device, gaze_point_callback, 0);
     assert(error == TOBII_ERROR_NO_ERROR);
 
-    int is_running = 100; // in this sample, exit after some iterations  1000 to 100 to 10
+    int is_running = 10; // in this sample, exit after some iterations  1000 to 100 to 10
     while (--is_running > 0) {
         error = tobii_wait_for_callbacks(1, &device);
         assert(error == TOBII_ERROR_NO_ERROR || error == TOBII_ERROR_TIMED_OUT);
@@ -81,7 +82,6 @@ int getPoint(){
 
     error = tobii_api_destroy(api);
     assert(error == TOBII_ERROR_NO_ERROR);
-
     return 0;
 }
 
@@ -90,6 +90,18 @@ int main(int argc, char *argv[]) {
     QApplication a(argc, argv); //a应用程序对象，QT中有且仅有一个应用程序对象；
     MainWindow w;   //创建一个自定义窗口；
     w.show();
+
+    qDebug() <<"-------------";
+    qDebug() <<"Print QWidget:geometry().x.() = "<<w.geometry().x();
+    qDebug() <<"Print QWidget:geometry().y.() = "<<w.geometry().y();
+    qDebug() <<"Print QWidget:geometry().x.() = "<<w.x();
+    qDebug() <<"Print QWidget:geometry().y.() = "<<w.y();
+    qDebug() <<"Print QWidget:geometry().x.() = "<<w.width();
+    qDebug() <<"Print QWidget:geometry().y.() = "<<w.height();
+    qDebug() <<"Print QWidget:geometry().x.() = "<<w.frameGeometry().x();
+    qDebug() <<"Print QWidget:geometry().y.() = "<<w.frameGeometry().y();
+
+    getPoint();
     //QLabel label("HelloWorld");
     //label.show();
     return a.exec();    //a.exec()进入消息循环机制

@@ -34,7 +34,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1074, 734);
+        MainWindow->resize(1174, 630);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         pushButton = new QPushButton(centralwidget);
@@ -45,14 +45,14 @@ public:
         lineEdit->setGeometry(QRect(440, 110, 231, 50));
         lineEdit_2 = new QLineEdit(centralwidget);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(440, 240, 231, 50));
+        lineEdit_2->setGeometry(QRect(80, 120, 231, 50));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1074, 47));
+        menuBar->setGeometry(QRect(0, 0, 1174, 47));
         MainWindow->setMenuBar(menuBar);
 
         retranslateUi(MainWindow);
