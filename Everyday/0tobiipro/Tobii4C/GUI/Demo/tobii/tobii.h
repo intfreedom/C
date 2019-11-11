@@ -315,7 +315,7 @@ tobii.h头文件收集流引擎的核心API函数。 它包含用于初始化API
 The API documentation includes example code snippets that shows the use of each function, they don't necessarily
 describe the best practice in which to use the api. For a more in-depth example of the best practices, see the samples
 that are supplied together with the stream engine library.
-API文档包括示例代码片段，这些代码片段显示了每个函数的用法，它们不一定描述使用api的最佳实践。 有关最佳做法的更深入的示例，请参阅与流引擎库一起提供的示例。
+API文档包括示例代码片段，这些代码片段显示了每个函数的用法，它们不一定描述使用api的最佳实践。有关最佳做法的更深入的示例，请参阅与流引擎库一起提供的示例。
 
 ### Thread safety
 
@@ -564,7 +564,9 @@ tobii_api_create returns one of the following:
     one or more of its function pointers was NULL. If a custom allocator is provided, both functions (malloc_func and 
     free_func) must be specified. Or the *custom_log* parameter was provided (it was not NULL), but the function pointer 
     log_func was NULL. If a custom log i provided, log_func must be specified.
-
+* api *参数以NULL形式传入，或提供了* custom_alloc *参数（非NULL），但其一个或多个函数指针为NULL。
+* 如果提供了自定义分配器，则必须指定两个函数（malloc_func和free_func）。
+* 或者提供了* custom_log *参数（它不是NULL），但是函数指针log_func是NULL。 如果提供了自定义日志，则必须指定log_func。
 -   **TOBII_ERROR_ALLOCATION_FAILED**
 
     The internal call to malloc or to the custom memory allocator (if used) returned NULL, so api creation failed.
@@ -1828,13 +1830,13 @@ Retrieves 3d coordinates of the track box frustum, given in millimeters from the
 ### Remarks
 
 The track box is a volume in front of the tracker within which the user can be tracked.
-
+跟踪框是跟踪器前面的一个空间，可以在其中跟踪用户。
 *device* must be a pointer to a valid tobii_device_t instance as created by calling tobii_device_create or 
 tobii_device_create_ex.
-
+* device *必须是指向通过调用tobii_device_create或tobii_device_create_ex创建的有效tobii_device_t实例的指针。
 *track_box* is a pointer to a tobii_track_box_t variable to receive the result. It contains the following
 fields, all being arrays of three floating point values, describing the track box frustum:
-
+* track_box *是指向tobii_track_box_t变量的指针，以接收结果。 它包含以下字段，所有字段都是由三个浮点值组成的数组，描述了跟踪框的截锥体：
 -   *front_upper_right_xyz*, *front_upper_left_xyz*, *front_lower_left_xyz*, *front_lower_right_xyz*
 
     The four points on the frustum plane closest to the device.
