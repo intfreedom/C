@@ -10,6 +10,8 @@ class MyEmit:public QObject
 public:
     explicit MyEmit(QObject *parent = nullptr);
     void send_emit();
+    void timerEvent(QTimerEvent *event) override;
+
 signals:
     void start_emit(double, int);
 public slots:

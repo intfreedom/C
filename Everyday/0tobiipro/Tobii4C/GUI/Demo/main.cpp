@@ -19,9 +19,21 @@ MyEmit::MyEmit(QObject *parent):QObject(parent)
 
 }
 
+void MyEmit::timerEvent(QTimerEvent *event)
+{
+    int num=10;
+    getPoint();
+//    while(num++>0){//为啥只运行一次；
+//        getPoint();
+//    }
+
+    //把这个定时器换到，on_pushButton_clicked()这里是可行的；
+}
+
 void MyEmit::send_emit()
 {
-    getPoint();
+    startTimer(1000);
+    startTimer(2000);
     double a = X;
     //QString b = "hello";
     int b=1;
@@ -67,7 +79,7 @@ int getPoint(){
 
     int is_running = 10; // in this sample, exit after some iterations  1000 to 100 to 10
     while (--is_running > 0) {
-        error = tobii_wait_for_callbacks(1, &device);
+        error = tobii_wait_for_callbacks(1, &device);//这里注释之后，4C启动之后，就闪一下停止；
         assert(error == TOBII_ERROR_NO_ERROR || error == TOBII_ERROR_TIMED_OUT);
 
         error = tobii_device_process_callbacks(device);

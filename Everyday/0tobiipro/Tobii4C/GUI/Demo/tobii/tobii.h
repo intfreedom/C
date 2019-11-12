@@ -1139,20 +1139,23 @@ Puts the calling thread to sleep until there are new callbacks available to proc
 
 Stream engine does not use any threads to do processing or receive data. Instead, the functions
 tobii_device_process_callbacks() and tobii_device_process_callbacks() have to be called regularly, to receive data 
-from the device, and process it. 流引擎不使用任何线程来处理或接收数据。相反，必须定期调用函数tobii_device_process_callbacks（）
+from the device, and process it.
+流引擎不使用任何线程来处理或接收数据。相反，必须定期调用函数tobii_device_process_callbacks（）
 和tobii_device_process_callbacks（），以从设备接收数据并进行处理。
 
 The typical use case is to implement your own thread to call tobii_device_process_callbacks from, and to avoid 
 busy-waiting for data to become available, tobii_wait_for_callbacks can be called before each call to 
 tobii_device_process_callbacks. It will sleep the calling thread until new data is available to process, after which 
-tobii_device_process_callbacks should be called to process it.典型的用例是实现自己的线程以从中调用tobii_device_process_callbacks，并避免繁忙等待数据可用，
+tobii_device_process_callbacks should be called to process it.
+典型的用例是实现自己的线程以从中调用tobii_device_process_callbacks，并避免繁忙等待数据可用，
 可以在每次调用tobii_device_process_callbacks之前调用tobii_wait_for_callbacks。
 它将使调用线程休眠，直到可以处理新数据为止，然后应调用tobii_device_process_callbacks进行处理。
 
 tobii_wait_for_callbacks will not wait indefinitely. There is a timeout of some hundred milliseconds, after which 
 tobii_wait_for_callbacks will return **TOBII_ERROR_TIMED_OUT**. This does not indicate a failure - it is given as an 
 opportunity for the calling thread to perform its own internal housekeeping (like checking for exit conditions and the 
-like). It is valid to immediately call tobii_wait_for_callbacks again to resume waiting.tobii_wait_for_callbacks不会无限期等待。
+like). It is valid to immediately call tobii_wait_for_callbacks again to resume waiting.
+tobii_wait_for_callbacks不会无限期等待。
 超时时间为几百毫秒，在此之后，tobii_wait_for_callbacks将返回** TOBII_ERROR_TIMED_OUT **。
 这并不表示失败-调用线程有机会执行其自己的内部整理（例如检查退出条件等）。 立即再次调用tobii_wait_for_callbacks以恢复等待是有效的。
 
@@ -1161,7 +1164,6 @@ like). It is valid to immediately call tobii_wait_for_callbacks again to resume 
 *devices* should be an array of pointers to valid tobii_device_t instances as created by calling tobii_device_create or 
 tobii_device_create_ex. It can be NULL if there are no tobii_device_t instances to process. In this case, *device_count*
 must be 0.
-
 
 ### Return value
 
@@ -1224,7 +1226,7 @@ tobii_device_process_callbacks()
         error = tobii_device_create( api, url, &device );
         assert( error == TOBII_ERROR_NO_ERROR );
 
-        int is_running = 1000; // in this sample, exit after some iterations
+        int is_running = 1000; // in this sample, exit after some iterations在此示例中，经过一些迭代后退出
         while( --is_running > 0 )
         {
             error = tobii_wait_for_callbacks( NULL, 1, &device );
@@ -1308,7 +1310,7 @@ tobii_device_process_callbacks returns one of the following:
 
 -   **TOBII_ERROR_ALLOCATION_FAILED**
 
-    The internal call to malloc or to the custom memory allocator (if used) returned NULL, so device creation failed.
+    The internal call to malloc or to the custom memory allocator自定义内存分配器 (if used) returned NULL, so device creation failed.
 
 -   **TOBII_ERROR_CONNECTION_FAILED**
 
@@ -1365,7 +1367,7 @@ tobii_wait_for_callbacks(), tobii_device_clear_callback_buffers(), tobii_device_
         int is_running = 1000; // in this sample, exit after some iterations
         while( --is_running > 0 )
         {
-            // other parts of main loop would be executed here
+            // other parts of main loop would be executed here主循环的其他部分将在这里执行
 
             error = tobii_device_process_callbacks( device );
             assert( error == TOBII_ERROR_NO_ERROR );
