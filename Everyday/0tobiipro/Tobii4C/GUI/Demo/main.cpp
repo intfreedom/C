@@ -10,7 +10,6 @@
 #include <QLabel>
 #include "myemit.h"
 
-int getPoint(); //获得凝视数据
 double X=0.0;
 double Y=0.0;
 
@@ -19,21 +18,10 @@ MyEmit::MyEmit(QObject *parent):QObject(parent)
 
 }
 
-void MyEmit::timerEvent(QTimerEvent *event)
-{
-    int num=10;
-    getPoint();
-//    while(num++>0){//为啥只运行一次；
-//        getPoint();
-//    }
-
-    //把这个定时器换到，on_pushButton_clicked()这里是可行的；
-}
-
 void MyEmit::send_emit()
 {
-    startTimer(1000);
-    startTimer(2000);
+
+    getPoint();
     double a = X;
     //QString b = "hello";
     int b=1;
@@ -113,8 +101,5 @@ int main(int argc, char *argv[]) {
     qDebug() <<"Print QWidget:geometry().x.() = "<<w.frameGeometry().x();
     qDebug() <<"Print QWidget:geometry().y.() = "<<w.frameGeometry().y();
 
-    getPoint();
-    //QLabel label("HelloWorld");
-    //label.show();
     return a.exec();    //a.exec()进入消息循环机制
 }
