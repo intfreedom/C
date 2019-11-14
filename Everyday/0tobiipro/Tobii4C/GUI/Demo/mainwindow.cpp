@@ -17,11 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     btn->setParent(this);
     btn->resize(300,100);
     btn->move(100,750);
-//    btn->move(0,0);
-
-    QString aa = QString::number(a,10);
-    btn->setText(aa);
-
+    btn->setText(QString::number(a,10));
 
     QPushButton *btn2 = new QPushButton(tr("%1").arg(b,10), this);
     btn2->resize(300,100);
@@ -37,37 +33,32 @@ MainWindow::MainWindow(QWidget *parent)
 
     resize(2000,1500);//set windows size;
 
-//    startTimer(500);
-
-    //菜单栏，只有一个
-    QMenuBar *bar = menuBar();
+    QMenuBar *bar = menuBar();//菜单栏，只有一个
     setMenuBar(bar);
 
-    //setting 菜单
-    QMenu * fileMenu = bar->addMenu("File");
+    QMenu * fileMenu = bar->addMenu("File");//setting 菜单
     QAction * newAction = fileMenu->addAction("New");
 }
 
 void MainWindow::timerEvent(QTimerEvent *event){
 
-    int W = 0;
     getPoint();
+
+    int W = 0;
     if(X>0.5){
         W=2;
     }
     else{
         W=1;
     }
-    ui->lineEdit->setText(QString::number(X));
+
+    ui->lineEdit->setText(QString("(%1, %2)").arg(X).arg(Y));
     ui->lineEdit_2->setText(QString::number(W));
 }
 
 void MainWindow::useShellSlot()
 {
-//    QProcess *process = new QProcess();
-//    process->start("/opt/TobiiProEyeTrackerManager/TobiiProEyeTrackerManager");
     startTimer(500);
-
 }
 
 MainWindow::~MainWindow()
@@ -76,13 +67,11 @@ MainWindow::~MainWindow()
 }
 
 /* For output*/
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButtonCalibration_clicked()
 {
 //    MyEmit myemit;
     QProcess *process = new QProcess();
     process->start("/opt/TobiiProEyeTrackerManager/TobiiProEyeTrackerManager");
-
-
 //    connect(&myemit,SIGNAL(start_emit(double, int)),this,SLOT(read_emit(double,int)));
 //    myemit.send_emit();
 }
@@ -94,13 +83,17 @@ void MainWindow::read_emit(double a, int b)
 //    QString bb = QString("%1").arg(QString::number(ui->lineEdit_2->mapFromGlobal(QCursor::pos()).x()));//鼠标点击在标签上的位置；
 //    QString bb = QString("%1 %2").arg(QString::number(ui->lineEdit_2->mapFromGlobal(QWidget::pos()).x())).arg(QString::number(ui->lineEdit_2->mapFromGlobal(QWidget::pos()).y()));
     QString bb = QString("%1 %2").arg(ui->lineEdit_2->QWidget::pos().QPoint::x()).arg(ui->lineEdit_2->QWidget::pos().QPoint::ry());
-    //只能获得这个对应当前应用的坐标，如果全屏的话，就相当于屏幕坐标了
-    //弄清几大控件之间的关系；然后试着获取全局坐标；
-    //同时启动多线程，眼动仪，一直工作，然后随时读取数据并记录；
-
-    //1.1弄清楚为何on_pushButton_clicked直接和Button按钮链接的？？？
-    //1.2各个坐标的位置控制
     ui->lineEdit->setText(aa);
     ui->lineEdit_2->setText(bb);
+    //只能获得这个对应当前应用的坐标，如果全屏的话，就相当于屏幕坐标了
+    //弄清几大控件之间的关系；然后试着获取全局坐标；1.2各个坐标的位置控制
+    //同时启动多线程，眼动仪，一直工作，然后随时读取数据并记录；
+    /*
+     关于QT中，为何直接指定一个on_pushButton_clicked就可以与UI中拖拽的控件连接，并可以进行点击响应
+     这是因为在UI里创建的这个按钮，objectName为: pushButton;若改为pushButtonA，则同理on_pushButtonA_clicked；
+     注意，UI里以这种方式创建的需要，双击鼠标，以上用代码创建的,以connect连接的，单击鼠标，以实现按钮的功能；
+     以代码创建的控件以connect()方式连接，不能以on_pushButton_clicked方式连接
+    */
+
 }
 /* For output*/

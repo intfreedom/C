@@ -23,8 +23,7 @@ public:
 signals:
 
 private slots:
-    void on_pushButton_clicked();
-//    void on_pushButton_clickedShell();
+    void on_pushButtonCalibration_clicked();
     void read_emit(double a, int b);
     void useShellSlot();
 

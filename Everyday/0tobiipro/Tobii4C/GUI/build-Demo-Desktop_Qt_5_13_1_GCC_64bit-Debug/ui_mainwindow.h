@@ -24,7 +24,7 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *pushButton;
+    QPushButton *pushButtonCalibration;
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
     QStatusBar *statusbar;
@@ -37,12 +37,12 @@ public:
         MainWindow->resize(1174, 630);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(390, 430, 216, 59));
+        pushButtonCalibration = new QPushButton(centralwidget);
+        pushButtonCalibration->setObjectName(QString::fromUtf8("pushButtonCalibration"));
+        pushButtonCalibration->setGeometry(QRect(390, 430, 216, 59));
         lineEdit = new QLineEdit(centralwidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(520, 100, 231, 50));
+        lineEdit->setGeometry(QRect(520, 100, 451, 50));
         lineEdit_2 = new QLineEdit(centralwidget);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
         lineEdit_2->setGeometry(QRect(100, 100, 231, 50));
@@ -63,7 +63,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Calibration", nullptr));
+        pushButtonCalibration->setText(QCoreApplication::translate("MainWindow", "Calibration", nullptr));
     } // retranslateUi
 
 };
