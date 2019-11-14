@@ -87,12 +87,12 @@ void MainWindow::read_emit(double a, int b)
     ui->lineEdit_2->setText(bb);
     //只能获得这个对应当前应用的坐标，如果全屏的话，就相当于屏幕坐标了
     //弄清几大控件之间的关系；然后试着获取全局坐标；1.2各个坐标的位置控制
-    //同时启动多线程，眼动仪，一直工作，然后随时读取数据并记录；
+    //布局坐标，如何达到全屏状态，如何记录按钮等控件相对屏幕的全局坐标；
     /*
-     关于QT中，为何直接指定一个on_pushButton_clicked就可以与UI中拖拽的控件连接，并可以进行点击响应
+     关于QT中，为何直接指定一个on_pushButton_clicked就可以与UI中拖拽的控件连接，并可以进行点击响应;
      这是因为在UI里创建的这个按钮，objectName为: pushButton;若改为pushButtonA，则同理on_pushButtonA_clicked；
      注意，UI里以这种方式创建的需要，双击鼠标，以上用代码创建的,以connect连接的，单击鼠标，以实现按钮的功能；
-     以代码创建的控件以connect()方式连接，不能以on_pushButton_clicked方式连接
+     以代码创建的控件以connect()方式连接，不能以on_pushButton_clicked方式连接;
     */
 
 }
