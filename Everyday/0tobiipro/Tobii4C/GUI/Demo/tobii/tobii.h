@@ -875,7 +875,7 @@ Note that PRP generation devices are always enumerated, and only the tobii-prp U
 for which there exists both a tobii-ttp and a tobii-prp URL.
 
 
-### Return value
+### Return v    alue
 
 If the enumeration is successful, tobii_enumerate_local_device_urls_ex returns **TOBII_ERROR_NO_ERROR**. If the call 
 fails, tobii_enumerate_local_device_urls_ex returns one of the following:

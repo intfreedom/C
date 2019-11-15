@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     QPushButton *myButton = new QPushButton;
     myButton->setParent(this);
-    myButton->resize(200,100);
+    myButton->resize(280,100);
     myButton->move(1600,300);
     myButton->setText("start");
     connect(myButton,&QPushButton::clicked, this, &MainWindow::useShellSlot);
