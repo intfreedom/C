@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{FD7F413E-78B9-4562-BEE5-94A42B5BEF81}</ProjectGuid>
+    <ProjectGuid>{B23CBA29-E96F-4E04-8BD5-E3D99E46EEFA}</ProjectGuid>
     <RootNamespace>BSD</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -123,6 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="device.h" />
+    <ClInclude Include="if.h" />
+    <ClInclude Include="if_ether.h" />
+    <ClInclude Include="mbuf.h" />
+    <ClInclude Include="socket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="if_le.c" />
+    <ClCompile Include="init_main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

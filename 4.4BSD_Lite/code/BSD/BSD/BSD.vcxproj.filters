@@ -14,4 +14,29 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="socket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="if.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mbuf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="device.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="if_ether.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="init_main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="if_le.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
