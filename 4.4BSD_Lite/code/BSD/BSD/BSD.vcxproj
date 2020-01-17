@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="if_le.c" />
     <ClCompile Include="init_main.c" />
+    <ClCompile Include="training.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

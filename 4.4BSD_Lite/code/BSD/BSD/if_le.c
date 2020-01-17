@@ -42,4 +42,4 @@ struct hp_device* hd;
 	bpfattach(&ifp->if_bpf, ifp, DLT_EN10MB, sizeof(struct ether_header));
 	if_attach(ifp);
 	return(1);
-}															/* line 162 */
+}															/* line 162   */
