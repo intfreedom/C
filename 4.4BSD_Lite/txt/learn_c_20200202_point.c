@@ -2,7 +2,120 @@
 
 const int MAX = 4;
 
+int strlen1(char* s)
+{
+	int n;
+	for (n = 0; *s != '\0';s++)
+		n++;
+	return n;
+}
+
 int main()
+{
+	int a[10] = {0,1,2,3,4,5,6,7,8,9};
+	int* pa;
+	pa = &a[0];
+	printf("++pa is %p\n", ++pa);
+	//printf("++a is %p\n", ++a);
+	char sa[] = {'a','b','\0'};
+	char *sp = "ab";
+	char sab[] = "ab";
+	printf("sa[] is %d\n",strlen1(sa));
+	printf("*sp is %d\n",strlen1(sp));
+	printf("sab is %d\n",strlen1(sab));
+	printf("sa[] is %d\n", strlen1(sa+1));
+	printf("*sp is %d\n", strlen1(++sp));
+	printf("sab is %d\n", strlen1(sab+1));
+	printf("sa[] is %d\n", strlen1(&sa[1]));
+	printf("*sp is %d\n", strlen1(++sp));
+	printf("sab is %d\n", strlen1(&sab[1]));
+}
+ 
+int main11()
+{
+	int a[10] = {0,1,2,3,4,5};
+	int* pa;
+	//I think that is error, a is const,a[i] can be change;
+	//const can have address, I am wrong; the two above value is same;
+	printf("the address of a[0] is %p\n", &a[0]);
+	printf("the address of a is %p\n", &a);
+	pa = &a[0];
+	int x;
+	x = *pa;
+	printf("the value of a is %p\n", a);
+	printf("the value of a is %d\n", a);
+	printf("the value of a[0] is %d\n", a[0]);
+	printf("the value of a[1] is %d\n", a[1]);
+	printf("the value of a[1] is %d\n", *(pa+1));
+	printf("the value of a[0] is %d\n", *(pa++));
+	printf("the value of a[2] is %d\n", *(++pa));
+	printf("the value of a[3] is %d\n", *++pa);
+	int k = *(pa++);
+	printf("the value of a[3] is %d\n", k);
+
+	//printf("the value of a[1] is %d\n", a++);
+
+}
+
+void swap(int x, int y)
+{
+	int temp;
+
+	temp = x;
+	x = y;
+	y = temp;
+}
+
+void swap1(int * px, int * py)
+{
+	int temp;
+	temp = *px;
+	*px = *py;
+	*py = temp;
+}
+
+int main10()
+{
+	
+	int a, b;
+	a = 1;
+	b = 2;
+	swap(a, b);
+	printf("swap a, b is %d, %d\n", a, b);
+	swap1(&a, &b);
+	printf("swap1 a, b is %d, %d\n", a, b);
+
+}
+
+
+
+int main9()
+{
+	int x = 1, y = 2, z[10];
+	int* ip = NULL;
+	ip = &x;
+	y = *ip;
+	*ip = 0;
+	ip = &z[0];
+
+	char amessage[5] = "now";
+	char* pmessage = "NOW";
+
+	char a = 'x';
+	char* p = NULL;
+	char* q = NULL;
+	char* m = NULL;
+	char* n = NULL;
+
+	p = &a;
+	printf("the address of a is %p\n", &a);
+	printf("the value of p is %p, the address of p is %p\n", p, &p);
+	printf("the address of q is %p\n", q);
+	printf("the address of m is %p\n", m);
+	printf("the address of n is %p\n", n);
+}
+
+int main8()
 {
 	printf("HelloWorld\n");	
 	char amessage[15] = "nw is the time";
