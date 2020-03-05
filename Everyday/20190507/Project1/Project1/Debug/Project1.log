@@ -1,3 +1,0 @@
-﻿  demo.c
-d:\009c\learnc\everyday\20190507\project1\project1\demo.c(11): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-  Project1.vcxproj -> D:\009C\LearnC\Everyday\20190507\Project1\Debug\Project1.exe

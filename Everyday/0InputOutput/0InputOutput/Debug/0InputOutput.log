@@ -1,4 +1,0 @@
-﻿  io.c
-d:\009c\learnc\everyday\0inputoutput\0inputoutput\io.c(16): warning C4305: “初始化”: 从“int”到“unsigned short”截断
-d:\009c\learnc\everyday\0inputoutput\0inputoutput\io.c(70): warning C4013: “gets”未定义；假设外部返回 int
-  0InputOutput.vcxproj -> D:\009C\LearnC\Everyday\0InputOutput\Debug\0InputOutput.exe

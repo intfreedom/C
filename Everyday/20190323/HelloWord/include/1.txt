@@ -1,6 +1,0 @@
-#include<stdlib.h>
-
-void main()
-{
-	system("echo hello123");
-}

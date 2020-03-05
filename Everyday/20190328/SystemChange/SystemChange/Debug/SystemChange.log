@@ -1,4 +1,0 @@
-﻿  changeAdress.c
-d:\009c\learnc\everyday\20190328\systemchange\systemchange\changeadress.c(14): warning C4477: “printf”: 格式字符串“%f”需要类型“double”的参数，但可变参数 1 拥有了类型“int”
-d:\009c\learnc\everyday\20190328\systemchange\systemchange\changeadress.c(19): warning C4307: “+”: 整型常量溢出
-  SystemChange.vcxproj -> D:\009C\LearnC\Everyday\20190328\SystemChange\Debug\SystemChange.exe

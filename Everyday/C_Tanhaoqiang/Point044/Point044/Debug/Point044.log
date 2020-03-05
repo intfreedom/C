@@ -1,8 +1,0 @@
-﻿  example02.c
-d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\044_指针04_源代码\example02.c(14): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int (*)[4]”
-d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\044_指针04_源代码\example02.c(17): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int (*)[4]”
-d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\044_指针04_源代码\example02.c(17): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“int (*)[4]”
-d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\044_指针04_源代码\example02.c(18): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
-d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\044_指针04_源代码\example02.c(18): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“int *”
-d:\02ability\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\044_指针04_源代码\example02.c(36): warning C4477: “printf”: 格式字符串“%2d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
-  Point044.vcxproj -> D:\02ability\LearnC\Everyday\C_Tanhaoqiang\Point044\Debug\Point044.exe

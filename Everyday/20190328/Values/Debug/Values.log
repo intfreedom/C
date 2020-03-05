@@ -1,4 +1,0 @@
-﻿  Values.c
-d:\009c\learnc\everyday\20190328\values\values.c(16): warning C4013: “system”未定义；假设外部返回 int
-d:\009c\learnc\everyday\20190328\values\values.c(25): warning C4098: “main”:“void”函数返回值
-  Values.vcxproj -> D:\009C\LearnC\Everyday\20190328\define\Debug\Values.exe

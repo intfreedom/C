@@ -1,4 +1,0 @@
-﻿  test.c
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter4.10\chapter4.10\test.c(34): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
-d:\02ability\learnc\everyday\thecprogramminglanguage\chapter4.10\chapter4.10\test.c(34): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“int *”
-  Chapter4.10.vcxproj -> D:\02ability\LearnC\Everyday\TheCProgrammingLanguage\Chapter4.10\Debug\Chapter4.10.exe

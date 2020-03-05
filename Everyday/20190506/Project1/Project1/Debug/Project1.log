@@ -1,6 +1,0 @@
-﻿  P41.c
-d:\02ability\learnc\everyday\20190506\project1\project1\p41.c(13): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
-d:\02ability\learnc\everyday\20190506\project1\project1\p41.c(14): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
-d:\02ability\learnc\everyday\20190506\project1\project1\p41.c(15): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int **”
-d:\02ability\learnc\everyday\20190506\project1\project1\p41.c(17): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int *”
-  Project1.vcxproj -> D:\02ability\LearnC\Everyday\20190506\Project1\Debug\Project1.exe

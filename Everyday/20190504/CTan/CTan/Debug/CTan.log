@@ -1,4 +1,0 @@
-﻿  PointDemo.c
-d:\009c\learnc\everyday\20190504\ctan\ctan\pointdemo.c(12): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
-d:\009c\learnc\everyday\20190504\ctan\ctan\pointdemo.c(13): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
-  CTan.vcxproj -> D:\009C\LearnC\Everyday\20190504\CTan\Debug\CTan.exe

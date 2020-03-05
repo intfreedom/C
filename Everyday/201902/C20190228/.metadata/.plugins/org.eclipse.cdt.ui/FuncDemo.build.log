@@ -1,5 +1,0 @@
-09:46:35 **** Clean-only build of configuration Debug for project FuncDemo ****
-rm -rf Func.d Func.o FuncDemo.exe 
-
-09:46:36 Build Finished. 0 errors, 0 warnings. (took 141ms)
-

@@ -1,4 +1,0 @@
-﻿  stuctdemo.c
-d:\02ability\learnc\everyday\0struct\6.4structpoint\structpointdemo.c\structpointdemo.c\stuctdemo.c(40): warning C4474: printf: 格式字符串中传递的参数太多
-  d:\02ability\learnc\everyday\0struct\6.4structpoint\structpointdemo.c\structpointdemo.c\stuctdemo.c(40): note: 占位符和其参数预计 1 可变参数，但提供的却是 2 参数
-  StructPointDemo.c.vcxproj -> D:\02ability\LearnC\Everyday\0Struct\6.4StructPoint\StructPointDemo.c\Debug\StructPointDemo.exe

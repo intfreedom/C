@@ -1,7 +1,0 @@
-﻿  tablefind.c
-d:\02ability\learnc\everyday\0struct\6.6tablefind\structtable\structtable\tablefind.c(39): warning C4028: 形参 1 与声明不同
-d:\02ability\learnc\everyday\0struct\6.6tablefind\structtable\structtable\tablefind.c(39): warning C4273: “_strdup”: dll 链接不一致
-  d:\windows kits\10\include\10.0.17763.0\ucrt\string.h(152): note: 参见“_strdup”的前一个定义
-d:\02ability\learnc\everyday\0struct\6.6tablefind\structtable\structtable\tablefind.c(48): warning C4013: “malloc”未定义；假设外部返回 int
-d:\02ability\learnc\everyday\0struct\6.6tablefind\structtable\structtable\tablefind.c(56): warning C4013: “free”未定义；假设外部返回 int
-  structTable.vcxproj -> D:\02ability\LearnC\Everyday\0Struct\6.6TableFind\structTable\Debug\structTable.exe

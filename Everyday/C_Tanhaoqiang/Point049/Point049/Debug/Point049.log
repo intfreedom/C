@@ -1,9 +1,0 @@
-﻿  example01.c
-d:\009c\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\049_指针09_源代码\example01.c(15): warning C4477: “printf”: 格式字符串“%c”需要类型“int”的参数，但可变参数 1 拥有了类型“const char *”
-d:\009c\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\049_指针09_源代码\example01.c(15): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“const char *”
-d:\009c\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\049_指针09_源代码\example01.c(15): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 3 拥有了类型“const char *”
-d:\009c\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\049_指针09_源代码\example01.c(24): warning C4477: “printf”: 格式字符串“%c”需要类型“int”的参数，但可变参数 1 拥有了类型“const char *”
-d:\009c\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\049_指针09_源代码\example01.c(24): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“const char *”
-d:\009c\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\049_指针09_源代码\example01.c(24): warning C4477: “printf”: 格式字符串“%0x”需要类型“unsigned int”的参数，但可变参数 3 拥有了类型“const char *”
-d:\009c\learnc\everyday\c_tanhaoqiang\第八章 指针（源代码）\049_指针09_源代码\example01.c(13): warning C4047: “初始化”:“char”与“char [2]”的间接级别不同
-  Point049.vcxproj -> D:\009C\LearnC\Everyday\C_Tanhaoqiang\Point049\Debug\Point049.exe
